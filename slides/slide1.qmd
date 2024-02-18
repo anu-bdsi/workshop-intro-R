@@ -1,0 +1,125 @@
+---
+title: Introduction 
+subtitle: "BDSI Workshop: Introduction to R"
+format:
+  anu-light-revealjs:
+    width: 1920
+    height: 1080
+    auto-stretch: false
+    html-math-method: katex
+    self-contained: true
+    css: assets/custom.css
+    footer: anu-bdsi.github.io/workshop-intro-to-R/
+author: Emi Tanaka
+institute: Biological Data Science Institute
+date: 2024/04/03
+date-format: "D[rd] MMMM YYYY"
+---
+
+
+# Welcome 👋
+
+
+## Teaching team 
+
+::: {layout-ncol=3 style="text-align:center;"}
+
+
+![Dr. Emi Tanaka](images/team/emi-square.png){.circle-image-120}
+
+![Helper](images/team/dummy.jpg){.circle-image-120}
+
+
+:::
+
+::: incremental
+
+- Who are you?
+  - What statistical software have you used before?
+  - Introduce yourself to people around you
+    
+:::
+
+# Workshop materials
+
+::: box
+
+All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-to-R/>]{.f-subheadline target="_blank"}
+
+:::
+
+
+## Learning objectives
+
+::: {.callout-note icon=false}
+
+## {{< fa crosshairs >}} Overall goal
+
+Develop skills to work with your research data using R 
+
+:::
+
+Today:
+
+- Setting up your data project (R project, folder structure)
+- Reading data into R (csv and xlsx)
+- The basics of R programming (atomic vectors, lists, data.frame, subsetting R objects)
+- Troubleshooting and producing minimal reproducible examples with `reprex`
+- Compute numerical summaries
+- Be familiar with computing density, distribution quantile and random generation of some parametric distributions
+
+
+  
+  
+## What is R?
+
+::: incremental
+
+- **R** is a programming language predominately for data analysis
+- **RStudio Desktop** is an integrated development environment (**IDE**) that helps you to use R
+- **R packages** are community developed extensions to R [(much like apps on your mobile)]{.grey}
+- The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an app store)]{.grey}
+  - There are close to 20,000 packages available on CRAN
+  - The qualities of R packages vary 
+- There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics [(we won't cover this)]{.grey}
+:::
+
+## How to use R?
+
+- RStudio Desktop (or RStudio IDE) is the most common way to use R
+
+![](images/rstudio-desktop-annotation.png){.ba width="75%"}
+
+- You can type operations directly into the Console pane
+
+## Why learn R?
+
+::: incremental
+
+- R is one of the top programming languages for statistics or data science
+  - Python is also a good alternative language for data science 
+  - Better to have a mastery of at least one language rather than none
+- R was initially developed by statisticians for statisticians 
+  - State-of-the-art statistical methods are generally more readily available in R
+- R has an active and friendly community 
+- R is a free and open source software (FOSS) 
+  - free = money is not a barrier to use it
+  - open source software = transparency
+  
+:::
+
+
+## How to get better at R?
+
+::: incremental
+
+- [PRACTICE]{.f-headline}
+- Practice with a purpose (e.g. using R on your own data)
+- Try teaching and helping others with their R problem 
+- Have a [willingness to _continuously_ learn and adapt]{.f-subheadline}
+  - R is an ever evolving language [(check the [release news](https://cran.r-project.org/doc/manuals/r-release/NEWS.html) every so often)]{.grey}
+  - new features and packages are added very frequently
+  - whether you are a beginner or not, there are always things we do not know about R
+- Do you have any strategies or tips? Please share!
+
+:::

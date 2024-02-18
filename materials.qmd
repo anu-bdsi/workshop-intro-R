@@ -1,0 +1,66 @@
+---
+title: "Materials"
+date: 04/03/2024
+---
+
+
+
+
+
+## 🕙 Schedule
+
+
+Time | Content 
+:-----------|:-----------------|
+10.00-10.20 | [Introduction](slides/slide1.html){target="_blank"} |     
+
+## 📑 Resources
+
+- Learn R Chapter 1: Getting started with R & RStudio [{{< fa link >}}](https://learnr.numbat.space/chapter1){target="_blank"}
+- Learn R Chapter 2: R programming basics [{{< fa link >}}](https://learnr.numbat.space/chapter2){target="_blank"}
+- Learn R Chapter 3: Troubleshooting and asking for help [{{< fa link >}}](https://learnr.numbat.space/chapter3){target="_blank"}
+- Learn R Chapter 4: Project structure and importing data [{{< fa link >}}](https://learnr.numbat.space/chapter4){target="_blank"}
+
+## 🏋️‍♀️ Exercises
+
+### Exercise 1
+
+Go through the exercises in [Learn R Chapter 2: R programming basics](https://learnr.numbat.space/chapter2){target="_blank"} (you can skip the Matrices section).
+
+### Exercise 2
+
+The following are all the datasets for this training workshop. Download these and try to read this into R. 
+
+
+- <a href='data/brief-access-lick-data-latency.csv' download>brief-access-lick-data-latency.csv</a>
+- <a href='data/brief-access-lick-data.xlsx' download>brief-access-lick-data.xlsx</a>
+- <a href='data/ch-study-mock-data.xlsx' download>ch-study-mock-data.xlsx</a>
+- <a href='data/complex-formation.csv' download>complex-formation.csv</a>
+- <a href='data/cuzick-2010-breast-cancer-density.csv' download>cuzick-2010-breast-cancer-density.csv</a>
+- <a href='data/guich-feed-data.csv' download>guich-feed-data.csv</a>
+- <a href='data/kingston-data.xlsx' download>kingston-data.xlsx</a>
+- <a href='data/marcato-2021-immunity.csv' download>marcato-2021-immunity.csv</a>
+- <a href='data/overview-20220413-CD45freq-recomp-counts.csv' download>overview-20220413-CD45freq-recomp-counts.csv</a>
+
+
+
+### Exercise 3
+
+*The following exercise is written by Dr. Terry Neeman with slight modifications.*
+
+We will look at the `penguins` dataset that is contained in the `palmerpenguins` package. For more details about the data, see [here](https://allisonhorst.github.io/palmerpenguins/).
+
+```r
+library(palmerpenguins)
+data(penguins)
+```
+
+Using this data, answer the following questions.
+
+1. Produce a numerical summary of the data. 
+1. How many species were studied? 
+1. How many islands are there in the data?
+1. Did they find all species on every island?
+1. For each biometric measure, are there difference between the species?
+1. Explore the associations between the biometric measurements bill length, bill depth, flipper length and body mass. 
+1. Are there differences in these associations between species?

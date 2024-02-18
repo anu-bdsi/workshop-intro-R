@@ -1,0 +1,74 @@
+---
+title: "BDSI Workshop"
+subtitle: "Introduction to R programming"
+---
+
+
+## Welcome 👋
+
+This is a training workshop for R beginners offered by the Australian National University (ANU) Biological Data Science Institute (BDSI).
+
+
+::: callout-important
+
+## Learning objectives 
+
+
+You will develop skills to:
+
+- Navigate the RStudio interactive development environment (IDE)
+- Read data into R (csv and xlsx)
+- Understand the different object types in R
+- Perform basic calculations in R
+- Write simple functions, conditional statements and for loop in R
+- Decipher error messages and try troubleshooting
+- Producing minimal reproducible examples
+
+:::
+
+## Preperation 
+
+Please ensure that you download and install 
+
+- the latest version of [R](https://cran.csiro.au/),
+- the latest version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/), 
+- [Slack](https://slack.com/intl/en-au) (alternatively you can use the web version), and 
+- the following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.
+
+```r
+install.packages(c("tidyverse", "rmarkdown", "janitor", 
+                   "readxl", "gtsummary", "lme4", 
+                   "emmeans", "lmerTest", "ggResidpanel",
+                   "reprex", "palmerpenguins", "quarto",
+                   "report", "correlation", "see",
+                   "parameters", "ggbeeswarm", "hexbin"))
+```
+
+{{< fa hand-holding-medical >}} If you are having issues, see also [here](https://learnr.numbat.space/chapter1) or talk to the teaching team.
+
+::: {.callout-note icon=false style="width:100%"}
+
+## <i class='fab fa-slack'></i> [Slack workspace]{#slack}
+
+::: w-100
+
+[<button class="button">Join ANU Learning Data Slack Community</button>](https://join.slack.com/t/anulearningdata/signup){.no-decoration}
+
+:::
+
+- You must use your ANU email to sign up. 
+- Use your full name. 
+- By joining, you agree to abide by this [**code of conduct**](/slack.html).
+
+:::
+
+## Teaching team 
+
+::: {layout-ncol=3 style="text-align:center;"}
+
+
+![Dr. Emi Tanaka](slides/images/team/emi-square.png){.circle-image-120}
+
+![Helper](slides/images/team/dummy.jpg){.circle-image-120}
+
+:::
