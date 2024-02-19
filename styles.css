@@ -1,6 +1,17 @@
 /* css styles */
 
-
+.tag-label {
+  font-size:0.45em; 
+  line-height:1em; 
+  font-weight: bold; 
+  display:inline-block; 
+  text-align: center;
+  border: 1px solid #fdfefe;
+  background-color: #fdfefe;
+  color: #517699;
+  padding: 3px;
+  border-radius: 2px;
+}
 
 .navbar-dark {
     background-color: #BE830E;

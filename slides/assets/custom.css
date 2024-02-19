@@ -1,3 +1,32 @@
+.tag-label {
+  font-size:0.45em; 
+  line-height:1em; 
+  font-weight: bold; 
+  display:inline-block; 
+  text-align: center;
+  border: 1px solid #BE830E;
+  background-color: #BE830E;
+  color: #fdfefe;
+  padding: 5px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.tag-workshop {
+  line-height:1em; 
+  font-weight: bold; 
+  display:inline-block; 
+  text-align: center;
+  border: 1px solid #F5EDDE;
+  background-color: #F5EDDE;
+  color: #BE830E;
+  padding: 8px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+
+
 .circle-image-120 {
   background: #000;
   border-radius: 50%;

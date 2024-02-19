@@ -1,6 +1,6 @@
 ---
 title: Introduction 
-subtitle: "BDSI Workshop: Introduction to R"
+subtitle: "[ANU BDSI<br>workshop]{.tag-label} [Introduction to R programming]{.tag-workshop}"
 format:
   anu-light-revealjs:
     width: 1920
@@ -27,7 +27,7 @@ date-format: "D[rd] MMMM YYYY"
 
 ![Dr. Emi Tanaka](images/team/emi-square.png){.circle-image-120}
 
-![Helper](images/team/dummy.jpg){.circle-image-120}
+![Helper TBD](images/team/dummy.jpg){.circle-image-120}
 
 
 :::
@@ -44,39 +44,95 @@ date-format: "D[rd] MMMM YYYY"
 
 ::: box
 
-All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-to-R/>]{.f-subheadline target="_blank"}
+All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-R/>]{.f-subheadline target="_blank"}
 
 :::
 
 
 ## Learning objectives
 
-::: {.callout-note icon=false}
+{{< fa hand-point-right >}} The main aim is for you to get started with using R for basic computations.
 
-## {{< fa crosshairs >}} Overall goal
+::: f2
 
-Develop skills to work with your research data using R 
+{{< include _learning-objectives.qmd >}}
+
 
 :::
-
-Today:
-
-- Setting up your data project (R project, folder structure)
-- Reading data into R (csv and xlsx)
-- The basics of R programming (atomic vectors, lists, data.frame, subsetting R objects)
-- Troubleshooting and producing minimal reproducible examples with `reprex`
-- Compute numerical summaries
-- Be familiar with computing density, distribution quantile and random generation of some parametric distributions
-
-
   
   
 ## What is R?
+
+::: flex
+
+::: {.w-70}
 
 ::: incremental
 
 - **R** is a programming language predominately for data analysis
 - **RStudio Desktop** is an integrated development environment (**IDE**) that helps you to use R
+
+:::
+
+:::
+
+::: {.w-30 .pl3 .f4}
+
+
+  
+
+:::
+
+:::
+
+
+## How to use R?
+
+- RStudio Desktop (or RStudio IDE) is the most common way to use R
+
+<center>
+
+![](images/rstudio-desktop-annotation.png){.ba width="75%"}
+
+</center>
+
+- You can type operations directly into the Console pane
+
+
+# Live demo {background-color="#F5EDDE"}
+
+
+## Customise Global Options 
+
+::: flex
+
+::: {.w-50}
+
+- Go to **RStudio** > **Tools** > **Global Options...**
+- Under the **General** tab, make sure the "Restore .RData into workspace at startup" is _unticked_.
+- This avoids unexpectedly loading (old) data into your workspace and making your code only work in your workspace, but not for others (which is bad reproducible practice). 
+
+:::
+
+::: {.w-50 .pl3}
+
+![](images/RStudio-options.png){.ba}
+
+
+:::
+
+:::
+
+
+
+## R Packages
+
+::: flex
+
+::: {.w-70}
+
+::: incremental
+
 - **R packages** are community developed extensions to R [(much like apps on your mobile)]{.grey}
 - The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an app store)]{.grey}
   - There are close to 20,000 packages available on CRAN
@@ -84,27 +140,35 @@ Today:
 - There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics [(we won't cover this)]{.grey}
 :::
 
-## How to use R?
+:::
 
-- RStudio Desktop (or RStudio IDE) is the most common way to use R
+::: {.w-30 .pl3 .f4}
 
-![](images/rstudio-desktop-annotation.png){.ba width="75%"}
+![](images/sara-kurfess-6lcT2kRPvnI-unsplash.jpeg)
 
-- You can type operations directly into the Console pane
+Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sara Kurfeß</a> on <a href="https://unsplash.com/photos/turned-on-gold-iphone-6-6lcT2kRPvnI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
+:::
+
+:::
+
+
+
 
 ## Why learn R?
 
 ::: incremental
 
-- R is one of the top programming languages for statistics or data science
+- **R** is one of the top programming languages for statistics or data science
   - Python is also a good alternative language for data science 
-  - Better to have a mastery of at least one language rather than none
+  - _Better to have a mastery of at least one language rather than none_
 - R was initially developed by statisticians for statisticians 
   - State-of-the-art statistical methods are generally more readily available in R
 - R has an active and friendly community 
 - R is a free and open source software (FOSS) 
-  - free = money is not a barrier to use it
-  - open source software = transparency
+  - **free** = money is not a barrier to use it
+  - **open source software** = transparency
   
 :::
 
@@ -118,7 +182,7 @@ Today:
 - Try teaching and helping others with their R problem 
 - Have a [willingness to _continuously_ learn and adapt]{.f-subheadline}
   - R is an ever evolving language [(check the [release news](https://cran.r-project.org/doc/manuals/r-release/NEWS.html) every so often)]{.grey}
-  - new features and packages are added very frequently
+  - new features and packages are added _very frequently_
   - whether you are a beginner or not, there are always things we do not know about R
 - Do you have any strategies or tips? Please share!
 

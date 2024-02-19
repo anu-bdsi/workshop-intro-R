@@ -5,7 +5,7 @@ project:
    - "!slides/*"
 
 website:
-  title: "BDSI Workshop: Introduction to R programming"
+  title: "[ANU BDSI<br>workshop]{.tag-label} Introduction to R programming"
   navbar:
     left:
       - href: index.qmd

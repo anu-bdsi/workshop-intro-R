@@ -1,0 +1,12 @@
+- Perform basic arithmetic calculations in R
+- Understand missing values in R
+- Compute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R
+- Install contributed packages into R
+- Work with lists, matrix and vectors in R
+- Navigate the RStudio interactive development environment (IDE)
+- Read and write data in R (csv, tsv and xlsx)
+- Understand the different object types in R
+- Saving objects in R (RData and RDS)
+- Write simple functions, conditional statements and for loops in R
+- Decipher error messages and do basic troubleshooting
+- Write minimally reproducible examples

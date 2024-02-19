@@ -3,8 +3,10 @@ title: "Materials"
 date: 04/03/2024
 ---
 
+## Learning objectives 
 
 
+{{< include slides/_learning-objectives.qmd >}}
 
 
 ## 🕙 Schedule
@@ -12,14 +14,22 @@ date: 04/03/2024
 
 Time | Content 
 :-----------|:-----------------|
-10.00-10.20 | [Introduction](slides/slide1.html){target="_blank"} |     
+10.00-10.20 | [Getting started](slides/slide1.html){target="_blank"} |     
+10.20-10.30 | *Exercise 1*
+10.40-11.00 | [Working with objects](slides/slide2.html){target="_blank"} |
+11.00-11.20 | *Exercise 2*
+11.20-11.30 | *Break*
+11.30-11.50 | [Reading and writing data](slides/slide3.html){target="_blank"} |
+11.50-12.10 | *Exercise 3*
+12.10-12.30 | [Functions, loops, and conditional statements](slides/slide4.html){target="_blank"} |
+12.30-12.50 | *Exercise 4*
+12.50-13.00 | [Wrap up](slides/slide4.html){target="_blank"} 
 
 ## 📑 Resources
 
 - Learn R Chapter 1: Getting started with R & RStudio [{{< fa link >}}](https://learnr.numbat.space/chapter1){target="_blank"}
 - Learn R Chapter 2: R programming basics [{{< fa link >}}](https://learnr.numbat.space/chapter2){target="_blank"}
 - Learn R Chapter 3: Troubleshooting and asking for help [{{< fa link >}}](https://learnr.numbat.space/chapter3){target="_blank"}
-- Learn R Chapter 4: Project structure and importing data [{{< fa link >}}](https://learnr.numbat.space/chapter4){target="_blank"}
 
 ## 🏋️‍♀️ Exercises
 
