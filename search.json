@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "slack.html",
+    "href": "slack.html",
+    "title": "Code of Conduct in Slack Workspace",
+    "section": "",
+    "text": "We take making our community safe, friendly, and free from harassment and abuse seriously. In order to participate in this Slack workspace all individuals must read and by participating in the Slack community agree to be bound by this Code of Conduct.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "slack.html#summary",
+    "href": "slack.html#summary",
+    "title": "Code of Conduct in Slack Workspace",
+    "section": "Summary",
+    "text": "Summary\n\nBe respectful, be kind.\nAbusive behaviour is never tolerated.\nYou must use your full name and an image of yourself in your profile in order to participate in the community. Anonymous users who do not edit their profile after being given a warning by the Slack admin team will be removed from the Slack channel.\nShould you have any issues while participating in the Slack community you can reach out to one of the teaching team via Direct Message (DM).\nViolations of this code of conduct may result in immediate and permanent expulsion from the Slack community.\nAny decisions made by the Slack admin team are final."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to R programming",
+    "section": "",
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop aims to get participants started with using R for basic computations. The workshop is suitable for those that are new to R or those who wish to have a refresher in R. It is assumed that the participants know basic statistical summaries (e.g., mean, median, standard deviation, etc).\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Introduction to R programming",
+    "section": "",
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop aims to get participants started with using R for basic computations. The workshop is suitable for those that are new to R or those who wish to have a refresher in R. It is assumed that the participants know basic statistical summaries (e.g., mean, median, standard deviation, etc)."
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Introduction to R programming",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nPerform basic arithmetic calculations in R\nUnderstand missing values in R\nCompute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R\nInstall contributed packages into R\nWork with lists, matrix and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nRead and write data in R (csv, tsv and xlsx)\nUnderstand the different object types in R\nSaving objects in R (RData and RDS)\nWrite simple functions, conditional statements and for loops in R\nDecipher error messages and do basic troubleshooting\nWrite minimally reproducible examples"
+  },
+  {
+    "objectID": "index.html#preperation",
+    "href": "index.html#preperation",
+    "title": "Introduction to R programming",
+    "section": "Preperation",
+    "text": "Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\nSlack (alternatively you can use the web version), and\n\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace\n\n\n\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct."
+  },
+  {
+    "objectID": "index.html#teaching-team",
+    "href": "index.html#teaching-team",
+    "title": "Introduction to R programming",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nHelper"
+  },
+  {
+    "objectID": "help.html",
+    "href": "help.html",
+    "title": "Help",
+    "section": "",
+    "text": "You aren’t alone in your R journey. Make use of the experiences of those around you.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "help.html#during-the-workshop",
+    "href": "help.html#during-the-workshop",
+    "title": "Help",
+    "section": "During the workshop",
+    "text": "During the workshop\n\nDon’t be shy and ask fellow participants in the workshop.\nFlag and ask the teaching team."
+  },
+  {
+    "objectID": "help.html#outside-of-the-workshop",
+    "href": "help.html#outside-of-the-workshop",
+    "title": "Help",
+    "section": "Outside of the workshop",
+    "text": "Outside of the workshop\n\nAsk people around you. A second opinion is often helpful in uncovering a step towards the solution to your problem.\nAsk the local experts such as at the BDSI Drop-In Sessions and ANU Statistical Support Network.\nUse online resources such as:\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nR for Data Science\nR4DS Online Learning Community\nAsk questions on Stack Overflow or Posit Community.\n\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
+  },
+  {
+    "objectID": "help.html#reporting-mistakes",
+    "href": "help.html#reporting-mistakes",
+    "title": "Help",
+    "section": "Reporting mistakes",
+    "text": "Reporting mistakes\nDid you find mistakes in the workshop? Please let us know either by either emailing Emi (emi.tanaka@anu.edu.au) or reporting it at https://github.com/anu-bdsi/training-R1/issues (latter preferred)."
+  },
+  {
+    "objectID": "help.html#providing-feedback",
+    "href": "help.html#providing-feedback",
+    "title": "Help",
+    "section": "Providing feedback",
+    "text": "Providing feedback\nWe want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email Emi (emi.tanaka@anu.edu.au) or use the survey link that was/will be emailed to you (for workshop participants)."
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Materials",
+    "section": "",
+    "text": "Perform basic arithmetic calculations in R\nUnderstand missing values in R\nCompute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R\nInstall contributed packages into R\nWork with lists, matrix and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nRead and write data in R (csv, tsv and xlsx)\nUnderstand the different object types in R\nSaving objects in R (RData and RDS)\nWrite simple functions, conditional statements and for loops in R\nDecipher error messages and do basic troubleshooting\nWrite minimally reproducible examples\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "materials.html#learning-objectives",
+    "href": "materials.html#learning-objectives",
+    "title": "Materials",
+    "section": "",
+    "text": "Perform basic arithmetic calculations in R\nUnderstand missing values in R\nCompute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R\nInstall contributed packages into R\nWork with lists, matrix and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nRead and write data in R (csv, tsv and xlsx)\nUnderstand the different object types in R\nSaving objects in R (RData and RDS)\nWrite simple functions, conditional statements and for loops in R\nDecipher error messages and do basic troubleshooting\nWrite minimally reproducible examples"
+  },
+  {
+    "objectID": "materials.html#schedule",
+    "href": "materials.html#schedule",
+    "title": "Materials",
+    "section": "🕙 Schedule",
+    "text": "🕙 Schedule\n\n\n\nTime\nContent\n\n\n\n\n10.00-10.20\nGetting started\n\n\n10.20-10.30\nExercise 1\n\n\n10.40-11.00\nWorking with objects\n\n\n11.00-11.20\nExercise 2\n\n\n11.20-11.30\nBreak\n\n\n11.30-11.50\nReading and writing data\n\n\n11.50-12.10\nExercise 3\n\n\n12.10-12.30\nFunctions, loops, and conditional statements\n\n\n12.30-12.50\nExercise 4\n\n\n12.50-13.00\nWrap up"
+  },
+  {
+    "objectID": "materials.html#resources",
+    "href": "materials.html#resources",
+    "title": "Materials",
+    "section": "📑 Resources",
+    "text": "📑 Resources\n\nLearn R Chapter 1: Getting started with R & RStudio \nLearn R Chapter 2: R programming basics \nLearn R Chapter 3: Troubleshooting and asking for help"
+  },
+  {
+    "objectID": "materials.html#exercises",
+    "href": "materials.html#exercises",
+    "title": "Materials",
+    "section": "🏋️‍♀️ Exercises",
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1\nGo through the exercises in Learn R Chapter 2: R programming basics (you can skip the Matrices section).\n\n\nExercise 2\nThe following are all the datasets for this training workshop. Download these and try to read this into R.\n\nbrief-access-lick-data-latency.csv\nbrief-access-lick-data.xlsx\nch-study-mock-data.xlsx\ncomplex-formation.csv\ncuzick-2010-breast-cancer-density.csv\nguich-feed-data.csv\nkingston-data.xlsx\nmarcato-2021-immunity.csv\noverview-20220413-CD45freq-recomp-counts.csv\n\n\n\nExercise 3\nThe following exercise is written by Dr. Terry Neeman with slight modifications.\nWe will look at the penguins dataset that is contained in the palmerpenguins package. For more details about the data, see here.\nlibrary(palmerpenguins)\ndata(penguins)\nUsing this data, answer the following questions.\n\nProduce a numerical summary of the data.\nHow many species were studied?\nHow many islands are there in the data?\nDid they find all species on every island?\nFor each biometric measure, are there difference between the species?\nExplore the associations between the biometric measurements bill length, bill depth, flipper length and body mass.\nAre there differences in these associations between species?"
+  }
+]
