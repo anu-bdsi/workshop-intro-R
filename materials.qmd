@@ -10,6 +10,16 @@ format:
 
 ```{r setup, include = FALSE}
 library(webexercises)
+ex_tabset <- function(id) {
+  paste0("[_Exercise ", id, "_](#tabset-1-", id, "-tab){onclick=",
+         'document.getElementById(', "'tabset-1-", id, "-tab').click();",
+         '}')
+}
+slide_title <- function(id) {
+  paste0("[", 
+         rmarkdown::yaml_front_matter(paste0("slides/slide", id, ".qmd"))$title,
+         "](slides/slide", id, ".html){target='_blank'}")
+}
 ```
 
 
@@ -18,16 +28,16 @@ library(webexercises)
 
 Time | Content 
 :-----------|:-----------------|
-10.00-10.20 | [Getting started](slides/slide1.html){target="_blank"} |     
-10.20-10.30 | *Exercise 1*
-10.40-11.00 | [Working with objects](slides/slide2.html){target="_blank"} |
-11.00-11.20 | *Exercise 2*
-11.20-11.30 | *Break*
-11.30-11.50 | [Reading and writing data](slides/slide3.html){target="_blank"} |
-11.50-12.10 | *Exercise 3*
-12.10-12.30 | [Functions, loops, and conditional statements](slides/slide4.html){target="_blank"} |
-12.30-12.50 | *Exercise 4*
-12.50-13.00 | [Wrap up](slides/slide5.html){target="_blank"} 
+10.00-10.20 | `r slide_title(1)` |     
+10.20-10.30 | `r ex_tabset(1)` |     
+10.30-10.50 | `r slide_title(2)`  |     
+10.50-11.10 | `r ex_tabset(2)` |      
+11.10-11.20 | `r slide_title(3)`  |     
+11.20-11.40 | `r ex_tabset(3)` |     
+11.40-12.00 | `r slide_title(4)`  |     
+12.00-12.20 | `r ex_tabset(4)` |     
+12.50-13.00 | `r slide_title(5)`  |     
+
 
 ## 📑 Resources
 

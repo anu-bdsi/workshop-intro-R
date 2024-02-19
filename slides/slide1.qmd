@@ -1,5 +1,5 @@
 ---
-title: Introduction 
+title: Getting Started 
 subtitle: "[ANU BDSI<br>workshop]{.tag-label} [Introduction to R programming]{.tag-workshop}"
 format:
   anu-light-revealjs:
@@ -9,7 +9,7 @@ format:
     html-math-method: katex
     self-contained: true
     css: assets/custom.css
-    footer: anu-bdsi.github.io/workshop-intro-to-R/
+    footer: anu-bdsi.github.io/workshop-intro-R/
 author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/03
