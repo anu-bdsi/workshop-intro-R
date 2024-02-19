@@ -88,21 +88,14 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Perform basic arithmetic calculations in R\nUnderstand missing values in R\nCompute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R\nInstall contributed packages into R\nWork with lists, matrix and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nRead and write data in R (csv, tsv and xlsx)\nUnderstand the different object types in R\nSaving objects in R (RData and RDS)\nWrite simple functions, conditional statements and for loops in R\nDecipher error messages and do basic troubleshooting\nWrite minimally reproducible examples\nThis website is brought to you by the ANU Biological Data Science Institute."
-  },
-  {
-    "objectID": "materials.html#learning-objectives",
-    "href": "materials.html#learning-objectives",
-    "title": "Materials",
-    "section": "",
-    "text": "Perform basic arithmetic calculations in R\nUnderstand missing values in R\nCompute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R\nInstall contributed packages into R\nWork with lists, matrix and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nRead and write data in R (csv, tsv and xlsx)\nUnderstand the different object types in R\nSaving objects in R (RData and RDS)\nWrite simple functions, conditional statements and for loops in R\nDecipher error messages and do basic troubleshooting\nWrite minimally reproducible examples"
+    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nGetting started\n\n\n10.20-10.30\nExercise 1\n\n\n10.40-11.00\nWorking with objects\n\n\n11.00-11.20\nExercise 2\n\n\n11.20-11.30\nBreak\n\n\n11.30-11.50\nReading and writing data\n\n\n11.50-12.10\nExercise 3\n\n\n12.10-12.30\nFunctions, loops, and conditional statements\n\n\n12.30-12.50\nExercise 4\n\n\n12.50-13.00\nWrap up\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "materials.html#schedule",
     "href": "materials.html#schedule",
     "title": "Materials",
-    "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\nTime\nContent\n\n\n\n\n10.00-10.20\nGetting started\n\n\n10.20-10.30\nExercise 1\n\n\n10.40-11.00\nWorking with objects\n\n\n11.00-11.20\nExercise 2\n\n\n11.20-11.30\nBreak\n\n\n11.30-11.50\nReading and writing data\n\n\n11.50-12.10\nExercise 3\n\n\n12.10-12.30\nFunctions, loops, and conditional statements\n\n\n12.30-12.50\nExercise 4\n\n\n12.50-13.00\nWrap up"
+    "section": "",
+    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nGetting started\n\n\n10.20-10.30\nExercise 1\n\n\n10.40-11.00\nWorking with objects\n\n\n11.00-11.20\nExercise 2\n\n\n11.20-11.30\nBreak\n\n\n11.30-11.50\nReading and writing data\n\n\n11.50-12.10\nExercise 3\n\n\n12.10-12.30\nFunctions, loops, and conditional statements\n\n\n12.30-12.50\nExercise 4\n\n\n12.50-13.00\nWrap up"
   },
   {
     "objectID": "materials.html#resources",
@@ -116,6 +109,6 @@
     "href": "materials.html#exercises",
     "title": "Materials",
     "section": "🏋️‍♀️ Exercises",
-    "text": "🏋️‍♀️ Exercises\n\nExercise 1\nGo through the exercises in Learn R Chapter 2: R programming basics (you can skip the Matrices section).\n\n\nExercise 2\nThe following are all the datasets for this training workshop. Download these and try to read this into R.\n\nbrief-access-lick-data-latency.csv\nbrief-access-lick-data.xlsx\nch-study-mock-data.xlsx\ncomplex-formation.csv\ncuzick-2010-breast-cancer-density.csv\nguich-feed-data.csv\nkingston-data.xlsx\nmarcato-2021-immunity.csv\noverview-20220413-CD45freq-recomp-counts.csv\n\n\n\nExercise 3\nThe following exercise is written by Dr. Terry Neeman with slight modifications.\nWe will look at the penguins dataset that is contained in the palmerpenguins package. For more details about the data, see here.\nlibrary(palmerpenguins)\ndata(penguins)\nUsing this data, answer the following questions.\n\nProduce a numerical summary of the data.\nHow many species were studied?\nHow many islands are there in the data?\nDid they find all species on every island?\nFor each biometric measure, are there difference between the species?\nExplore the associations between the biometric measurements bill length, bill depth, flipper length and body mass.\nAre there differences in these associations between species?"
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2\n\n\n\n2 + 2 is"
   }
 ]
