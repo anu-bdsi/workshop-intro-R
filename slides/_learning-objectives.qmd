@@ -6,7 +6,6 @@
 - Navigate the RStudio interactive development environment (IDE)
 - Read and write data in R (csv, tsv and xlsx)
 - Understand the different object types in R
-- Saving objects in R (RData and RDS)
 - Write simple functions, conditional statements and for loops in R
 - Decipher error messages and do basic troubleshooting
 - Write minimally reproducible examples
