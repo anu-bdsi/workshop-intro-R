@@ -32,7 +32,7 @@
     "href": "index.html#learning-objectives",
     "title": "Introduction to R programming",
     "section": "Learning objectives",
-    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nPerform basic arithmetic calculations in R\nUnderstand missing values in R\nCompute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R\nInstall contributed packages into R\nWork with lists, matrix and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nRead and write data in R (csv, tsv and xlsx)\nUnderstand the different object types in R\nSaving objects in R (RData and RDS)\nWrite simple functions, conditional statements and for loops in R\nDecipher error messages and do basic troubleshooting\nWrite minimally reproducible examples"
+    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nPerform basic arithmetic calculations in R\nUnderstand missing values in R\nCompute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R\nInstall contributed packages into R\nWork with lists, matrix and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nRead and write data in R (csv, tsv and xlsx)\nUnderstand the different object types in R\nWrite simple functions, conditional statements and for loops in R\nDecipher error messages and do basic troubleshooting\nWrite minimally reproducible examples"
   },
   {
     "objectID": "index.html#preperation",
@@ -88,14 +88,14 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nGetting started\n\n\n10.20-10.30\nExercise 1\n\n\n10.40-11.00\nWorking with objects\n\n\n11.00-11.20\nExercise 2\n\n\n11.20-11.30\nBreak\n\n\n11.30-11.50\nReading and writing data\n\n\n11.50-12.10\nExercise 3\n\n\n12.10-12.30\nFunctions, loops, and conditional statements\n\n\n12.30-12.50\nExercise 4\n\n\n12.50-13.00\nWrap up\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nGetting Started\n\n\n10.20-10.30\nExercise 1\n\n\n10.30-10.50\nWorking with objects\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nReading and writing data\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nFunctions, loops and conditional statements\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap-up\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "materials.html#schedule",
     "href": "materials.html#schedule",
     "title": "Materials",
     "section": "",
-    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nGetting started\n\n\n10.20-10.30\nExercise 1\n\n\n10.40-11.00\nWorking with objects\n\n\n11.00-11.20\nExercise 2\n\n\n11.20-11.30\nBreak\n\n\n11.30-11.50\nReading and writing data\n\n\n11.50-12.10\nExercise 3\n\n\n12.10-12.30\nFunctions, loops, and conditional statements\n\n\n12.30-12.50\nExercise 4\n\n\n12.50-13.00\nWrap up"
+    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nGetting Started\n\n\n10.20-10.30\nExercise 1\n\n\n10.30-10.50\nWorking with objects\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nReading and writing data\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nFunctions, loops and conditional statements\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap-up"
   },
   {
     "objectID": "materials.html#resources",
