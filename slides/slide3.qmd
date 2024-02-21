@@ -16,3 +16,120 @@ date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
 ---
 
+## Data file formats [Part 1]{.f3}
+
+::: incremental
+
+- Data are stored as a file, which points to a block of computer memory.
+- A file format signals a way to interpret the information stored in the computer memory.
+- A common approach is to have as a text file format where 
+  - a delimiter (e.g. "," and tabs) separate columns,
+  - the first row (header) corresponds to the names of the variables, and 
+  - subsequent rows correspond to the values.
+- A file with the extension "csv" (comma-separated values) uses a comma as a delimiter while "tsv" uses tabs as a delimiter. 
+
+:::
+
+```{.markdown filename="data.csv"}
+len, supp, dose
+4.2, VC, 0.5
+11.5, VC, 0.5
+...
+```
+
+## Data formats [Part 2]{.f3}
+
+::: incremental 
+
+- You may open csv or tsv files using a spreadsheet software (e.g. Excel or Libre Office).
+- If you open as a text file, you'll just see these are just texts like before -- the spreadsheet software just gives you a nicer layout to visualise/modify the data. 
+- Data are also stored as a binary format [(in R, these include `.RData` and `.rda` but we won't cover this)]{.grey}.
+- Data can also come in a propriety format (e.g. xls and xlsx) -- these require special ways to open/view/read it.
+
+:::
+
+## Formatting data
+
+::: incremental
+
+- Unless you are responsible for entering the data, you should never modify the original, stored data [(note: exceptions do apply)]{.grey}.
+- For scientific integrity, any modification to the original data should be recorded in a reproducible manner (e.g. by programming in R!) so that you can trace the exact modifications.
+
+:::
+
+## Importing data
+
+- Reading data into R requires using the function that matches with the right file format.
+
+. . . 
+
+- For reading csv file, you can use `readr::read_csv()` (note: `readr` is part of `tidyverse`)
+
+```r
+cfdata <- readr::read_csv("complex-formation.csv")
+```
+
+. . . 
+
+- For reading excel files, you can use `readxl::read_xlsx`:
+
+```{r}
+#| echo: true
+#| error: true
+#| output-location: fragment
+kingston <- readxl::read_xlsx("kingston-data.xlsx", sheet = "A")
+```
+
+. . . 
+
+- But why the error?!
+
+
+## File paths
+
+::: flex
+
+::: {.w-60 .pr3}
+
+- Your file has to be in the right location to be read!
+- You may use a **relative path** (e.g. `data/data.csv`) or an **absolute path** (e.g. `C:\\user/myproject/data/data.csv`) to point to the right location of the data 
+- {{< fa exclamation-triangle >}} You should avoid using absolute path! Why?
+- You can get and set the current path using `getwd()` and `setwd()`, respectively.
+
+:::
+
+::: {.w-40 .pl3}
+
+![](images/rstudio-desktop-wd.png){.ba width="100%"}
+
+
+:::
+
+:::
+
+
+
+
+## Folder structure 
+
+- Your folder structure depends on the project, but it is generally a good idea to have a folder on its own for each project.
+
+. . . 
+
+- Within the project, it is also good to have a separate folder for:
+  - data
+  - script/analysis
+  - report/paper
+  - figures/images.
+
+## R project
+
+::: incremental
+
+- Within RStudio, you can create a project file (with an .Rproj extension).
+- Double clicking on this project file launches RStudio Desktop with the current working directory set to the location of the project file. 
+- You can create this project file by going to RStudio > File > New Project ...
+
+:::
+
+
