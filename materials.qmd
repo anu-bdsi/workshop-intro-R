@@ -52,10 +52,15 @@ Time | Content
 
 ## Exercise 1
 
-- 2 + 2 is `r fitb(4)`
-
 
 ## Exercise 2
+
+
+## Exercise 3
+
+## Exercise 4
+
+
 
 
 :::
