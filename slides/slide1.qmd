@@ -65,21 +65,26 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 
 ::: flex
 
-::: {.w-70}
+::: {.w-50}
 
-::: incremental
 
 - **R** is a programming language predominately for data analysis
+
+<center>
+![](images/R_logo.png){width="50%"}
+</center>
+
+:::
+
+::: {.w-50 .pl3}
+
 - **RStudio Desktop** is an integrated development environment (**IDE**) that helps you to use R
 
-:::
+<center>
 
-:::
+![](images/RStudio-Logo-Flat.png){width="100%"}
 
-::: {.w-30 .pl3 .f4}
-
-
-  
+</center>
 
 :::
 
@@ -137,7 +142,7 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 - The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an app store)]{.grey}
   - There are close to 20,000 packages available on CRAN
   - The qualities of R packages vary 
-- There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics [(we won't cover this)]{.grey}
+- There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics, **R Universe**, **R-Forge**, **GitHub** [(we won't cover these)]{.grey}
 :::
 
 :::
