@@ -281,6 +281,7 @@ mean(x, na.rm = TRUE)
 sum(x, na.rm = TRUE) / length(x)
 ```
 
+## Looking at documentation
 
 ## Some parametric distributions 
 
