@@ -14,5 +14,229 @@ author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
+execute:
+  echo: true
 ---
 
+## Simple algebraic operations
+
+- You can use R like a calculator
+
+```{r}
+#| output-location: fragment
+3 + 2 * (2 - 6 / 3) 
+```
+
+. . . 
+
+- Assignments to object:
+  - You can assign values to objects using `<-` or `=`
+  - The name of the object can be variable so long as it is _syntactically valid_ (no spaces and most special characters, and the name cannot start with a digit)
+
+```{r}
+a <- 3
+b = 2
+2 * a - b 
+```
+
+## Vectors
+
+- We can combine scalars to form vectors using `c()`:
+
+```{r}
+a <- c(1, 2, 3)
+a / 2
+```
+
+. . . 
+
+- This is a vector of length 3 
+
+```{r}
+length(a)
+```
+
+. . . 
+
+- This vector is stored as a `double` with the class as `numeric`
+
+```{r}
+typeof(a)
+class(a)
+```
+
+## Vectors types
+
+- There are four primary types of atomic vectors: **logical**, **integer**, **double** and **character**.
+
+
+
+```{r}
+logical_vec <- c(TRUE, FALSE, T, F)
+integer_vec <- c(1L, 2L, 3L, 4L)
+double_vec <- c(1, 2, 3, 4)
+character_vec <- c("A", "B", 'C', 'D')
+```
+- The integer and double vectors are collectively called **numeric** vectors.
+
+. . . 
+
+- A vector can only consist of the same type.
+- If you attempt to combine mismatched types together, it will try to coerce all values to the same type.
+
+```{r}
+c(TRUE, F, "3", 10, 'X')
+```
+
+## Lists 
+
+- Lists allow to combine elements of different types.
+```{r}
+l <- list(c(1, 2, 3), 
+          c(2.5, 3.0),
+          c(TRUE, FALSE),
+          c("a", "b"))
+```
+
+- You can use `str()` to see the internal structure of an object in R.
+
+```{r}
+str(l)
+```
+
+## Data frames
+
+- `data.frame` is a special type of a _named_ list where each element of the vector is the same length.
+
+```{r}
+df <- data.frame(grade = c("A", "B", "C"),
+                     n = c(10, 14, 30))
+
+df
+```
+
+```{r}
+colnames(df)
+nrow(df)
+ncol(df)
+```
+
+## Subsetting vectors [Part 1]{.f3}
+
+- **Positive integers** select elements at the specified positions:
+
+```{r}
+#| code-line-numbers: false
+x <- c(1.1, 2.2, 3.3, 4.4, 5.5)
+x[c(3, 1)]
+x[c(2, 2)]
+x[c(2.3, 2.8)] # double is silently truncated to integers
+```
+. . . 
+
+- **Negative integers** exclude elements at the specified positions:
+
+```{r}
+#| code-line-numbers: false
+#| error: true
+x[-c(3, 1)]
+x[c(-3, 1)] # you can't mix positive and negative integers
+```
+
+## Subsetting vectors [Part 2]{.f3}
+
+- **Logical vectors** select elements where logical value is `TRUE`.
+
+```{r}
+x[c(TRUE, FALSE, TRUE, FALSE, TRUE)]
+x[x > 3]
+```
+
+- If the logical vector used for subsetting a vector is shorter than it then the logical vector is _recycled_ to match the length of the vector.
+
+```{r}
+x[c(TRUE, FALSE)] # the same as the first one
+```
+
+## Subsetting named vectors 
+
+- **Character vectors** select elements based on the name of the vector (if any):
+
+```{r}
+y <- c("a" = 1.1, "b" = 2.2, "c" = 3.3, "d" = 4.4, "e" = 5.5)
+y
+y[c("c", "a", "a", "f")]
+```
+
+## Subsetting lists
+
+::: flex
+
+::: {.w-50}
+
+```{r}
+str(l)
+```
+
+
+:::
+
+::: {.w-50 .pl3}
+
+```{r}
+#| error: true
+l[1]
+l[[1]]
+l[c(1, 2)]
+l[[c(1, 2)]] # what's happened here?!
+```
+
+:::
+
+:::
+
+
+
+
+## Subsetting named lists
+
+
+```{r}
+l2 <- list(A = c(1, 2, 3),
+           log = c(TRUE, FALSE),
+           who = c("Terry", "Jon"))
+
+l2$A
+l2[c("A", "log")]
+l2[["A"]]
+```
+
+
+## Subsetting data frames
+
+::: flex
+
+::: {.w-20}
+
+```{r}
+df
+```
+
+
+:::
+
+::: {.w-80 .pl3}
+
+
+```{r}
+df[1, ]
+df[, 1]
+df[, 1, drop = FALSE]
+df$n
+df[["n"]]
+```
+
+
+:::
+
+:::
