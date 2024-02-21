@@ -18,35 +18,35 @@
     "href": "index.html",
     "title": "Introduction to R programming",
     "section": "",
-    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop aims to get participants started with using R for basic computations. The workshop is suitable for those who have no prior knowledge of R or those who wish to have a refresher in R. It is assumed that the participants know basic statistical summaries (e.g., mean, median, standard deviation, etc).\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop is designed to introduce participants to the fundamentals of using R for basic computations. It is suitable for individuals with no prior experience in R or those seeking a refresher in R. Familiarity with basic summary statistics (mean, median, standard deviation, quartiles, etc.) is assumed. It’s important to note that this workshop alone is not sufficient to practice data analysis. Attendees are encouraged to also participate in the Data Wrangling with R (Part 1) and Data Visualization with R (Part 1) workshops to acquire essential skills for contemporary data wrangling and visualization practices.\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Introduction to R programming",
     "section": "",
-    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop aims to get participants started with using R for basic computations. The workshop is suitable for those who have no prior knowledge of R or those who wish to have a refresher in R. It is assumed that the participants know basic statistical summaries (e.g., mean, median, standard deviation, etc)."
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop is designed to introduce participants to the fundamentals of using R for basic computations. It is suitable for individuals with no prior experience in R or those seeking a refresher in R. Familiarity with basic summary statistics (mean, median, standard deviation, quartiles, etc.) is assumed. It’s important to note that this workshop alone is not sufficient to practice data analysis. Attendees are encouraged to also participate in the Data Wrangling with R (Part 1) and Data Visualization with R (Part 1) workshops to acquire essential skills for contemporary data wrangling and visualization practices."
   },
   {
     "objectID": "index.html#learning-objectives",
     "href": "index.html#learning-objectives",
     "title": "Introduction to R programming",
     "section": "Learning objectives",
-    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nPerform basic arithmetic calculations in R\nUnderstand missing values in R\nCompute basic summary statistics (e.g., mean, median, quartiles, standard deviation, etc) in R\nInstall contributed packages into R\nWork with lists, matrix and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nRead and write data in R (csv, tsv and xlsx)\nUnderstand the different object types in R\nWrite simple functions, conditional statements and for loops in R\nDecipher error messages and do basic troubleshooting\nWrite minimally reproducible examples"
+    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nConduct elementary arithmetic operations using R\nGrasp the concept of missing values within the R environment\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nInstall external packages in R to extend functionality\nManipulate lists, matrices, and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nImport and export data in R\nComprehend various object types in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "index.html#preperation",
     "href": "index.html#preperation",
     "title": "Introduction to R programming",
     "section": "Preperation",
-    "text": "Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\nSlack (alternatively you can use the web version), and\n\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace\n\n\n\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct."
+    "text": "Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\nSlack (alternatively you can use the web version), and\n\n If you are having issues, ask in the slack channel or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace\n\n\n\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages."
   },
   {
     "objectID": "index.html#teaching-team",
     "href": "index.html#teaching-team",
     "title": "Introduction to R programming",
     "section": "Teaching team",
-    "text": "Teaching team\n\n\n\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nHelper"
+    "text": "Teaching team\n\n\n\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nHelper TBD"
   },
   {
     "objectID": "help.html",
@@ -109,6 +109,6 @@
     "href": "materials.html#exercises",
     "title": "Materials",
     "section": "🏋️‍♀️ Exercises",
-    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2\n\n\n\n2 + 2 is"
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4"
   }
 ]
