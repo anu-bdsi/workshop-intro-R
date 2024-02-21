@@ -14,6 +14,8 @@ author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
+execute:
+  echo: true
 ---
 
 
@@ -192,3 +194,150 @@ Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyTex
 - Do you have any strategies or tips? Please share!
 
 :::
+
+
+## Functions in R 
+
+::: incremental
+
+- There are many functions in R!
+- Generally if you need to compute some numerical summary that is common in your field, then there is probably already an existing function in the R ecosystem.
+- Try always searching it on a search engine (e.g. Google) with the right keywords. 
+- If it's computed from a community contributed R package, then check to see if there's some quality indicators:
+  - Is it actively maintained?
+  - Is it widely used?
+  - Does the package have tests for its functions? Etc.
+
+:::
+
+## Base packages 
+
+::: incremental
+
+- R has 7 packages (`stats`, `graphics`, `grDevices`, `utils`, `datasets`, `methods`, `base`), collectively referred to as the "base packages", that are loaded automatically when you launch it. 
+- The functions in the base packages are generally well-tested and trustworthy.
+
+:::
+
+
+## Artihmetics
+
+- Many of the arithmetic functions come from `base`.
+- You can see `library(help = "base")` for indexed help files.
+
+```{r}
+#| echo: true
+sqrt(3)
+abs(-3)
+exp(1)
+log(4, base = exp(1))
+sum(1:3)
+```
+
+
+## Numerical summaries 
+
+- Numerical summaries generally come `base` or `stats` package.
+- Some common numerical summaries include:
+  - Mean: `mean()`
+  - Median: `median()`
+  - Five number summary: `fivenum()`
+  - Minimum: `min()`
+  - Maximum: `max()`
+  - Quantile: `quantile()`
+  - Correlation coefficient: `cor()`
+
+
+## Missing values 
+
+::: incremental
+
+- `NA` in R denotes missing values -- there are in fact different types of missing values (`NA_character_`, `NA_integer_`, `NA_real_`, `NA_complex_`).
+
+:::
+
+. . . 
+
+- When there are missing values, it can cause issues in the computation.
+
+```{r}
+x <- c(2.3, NA, 4.7)
+mean(x)
+```
+
+. . . 
+
+- Below we remove the missing values:
+
+```{r}
+mean(x, na.rm = TRUE)
+```
+
+. . . 
+
+- Notice that the above is different to below when there are missing value(s):
+
+```{r}
+sum(x, na.rm = TRUE) / length(x)
+```
+
+
+## Some parametric distributions 
+
+- The density (`d`), distribution (`p`) or quantile (`q`) functions of a parametric distribution are generally in the `stats` package.
+- There are functions to generate random values from a particular parametric distribution (`r`).
+
+- Some examples are:
+
+::: flex
+
+::: {.w-25}
+
+Normal distribution
+
+- `dnorm()`
+- `pnorm()`
+- `qnorm()`
+- `rnorm()`
+
+
+:::
+
+::: {.w-25 .pl3}
+
+t-distribution 
+
+- `dt()`
+- `pt()`
+- `qt()`
+- `rt()`
+
+:::
+
+::: {.w-25 .pl3}
+
+Poisson distribution 
+
+- `dpois()`
+- `ppois()`
+- `qpois()`
+- `rpois()`
+
+:::
+
+::: {.w-25 .pl3}
+
+F distribution 
+
+- `df()`
+- `pf()`
+- `qf()`
+- `rf()`
+
+:::
+
+:::
+
+
+
+
