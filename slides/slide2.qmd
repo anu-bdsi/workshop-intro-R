@@ -1,6 +1,6 @@
 ---
 title: Working with objects 
-subtitle: "[ANU BDSI<br>workshop]{.tag-label} [Introduction to R programming]{.tag-workshop}"
+subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Introduction to R programming]{.tag-workshop}"
 format:
   anu-light-revealjs:
     width: 1920
