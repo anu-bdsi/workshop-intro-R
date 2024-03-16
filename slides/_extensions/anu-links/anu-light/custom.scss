@@ -1,14 +1,12 @@
 /*-- scss:defaults --*/
 
 $link-color: #be830e;
-$presentation-font-size-root: 50px;
+$presentation-font-size-root: 60px;
+$code-block-font-size: 1em;
 /* See https://quarto.org/docs/presentations/revealjs/themes.html#customizing-themes */
 
 /*-- scss:rules --*/
 
-.reveal pre {
-    font-size: 0.85em;
-}
 
 .anu-gold { color: #be830e!important; }
 .anu-black { color: #000000!important; }

@@ -7,7 +7,7 @@ format:
     height: 1080
     auto-stretch: false
     html-math-method: katex
-    self-contained: true
+    self-contained: false
     css: assets/custom.css
     footer: anu-bdsi.github.io/workshop-intro-R/
 author: Emi Tanaka
@@ -18,16 +18,28 @@ execute:
   echo: true
 ---
 
+```{r}
+#| include: false
+library(tidyverse)
+library(plotly)
+library(crosstalk)
+theme_set(theme_classic(base_size = 24))
+```
 
 # Welcome 👋
 
 
 ## Teaching team 
 
-::: {layout-ncol=3 style="text-align:center;"}
+::: {layout-ncol=4 style="text-align:center;"}
 
 
 ![Dr. Emi Tanaka](images/team/emi-square.png){.circle-image-120}
+
+![Helper TBD](images/team/dummy.jpg){.circle-image-120}
+
+![Helper TBD](images/team/dummy.jpg){.circle-image-120}
+
 
 ![Helper TBD](images/team/dummy.jpg){.circle-image-120}
 
@@ -36,9 +48,10 @@ execute:
 
 ::: incremental
 
-- Who are you?
+- Your turn to introduce yourself!
   - What statistical software have you used before?
-  - Introduce yourself to people around you
+  - What type of data do you work with or plan to work with?
+
     
 :::
 
@@ -93,6 +106,148 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 :::
 
 
+## R Packages
+
+::: flex
+
+::: {.w-70}
+
+::: incremental
+
+- **R packages** are community developed extensions to R [(much like **apps** on your mobile)]{.grey}
+- The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an **app store**)]{.grey}
+- There are close to 20,000 packages available on CRAN but the qualities of R packages vary.
+- There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics, **R Universe**, **R-Forge**, **GitHub** [(we won't cover these)]{.grey}.
+:::
+
+:::
+
+::: {.w-30 .pl3 .f4}
+
+![](images/sara-kurfess-6lcT2kRPvnI-unsplash.jpeg)
+
+Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sara Kurfeß</a> on <a href="https://unsplash.com/photos/turned-on-gold-iphone-6-6lcT2kRPvnI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
+:::
+
+:::
+
+
+
+
+
+## What can you do with R?
+
+- R has a rich environment for statistical computing and graphics.
+- If you get proficient, you can easily create beautiful and interactive graphics!
+
+::: flex
+
+::: {.w-50}
+
+```{r}
+#| echo: false
+regdata <- read_csv(here::here("data/2024-04-Registration-Cohort(Form1).csv"), locale=locale(encoding="latin1"),
+         col_names = c("affiliation", "workshop", "confidence", "comment", "role"),
+         skip = 1) |> 
+  mutate(aff2 = fct_lump(affiliation, 4)) |> 
+  mutate(n = n(), .by = aff2) |> 
+  mutate(aff2 = fct_reorder(aff2, -n)) |> 
+  mutate(aff2 = fct_relevel(aff2, "Other", after = Inf))
+
+regdatas <- regdata |> 
+  group_by(aff2) |> 
+  highlight_key(~aff2)
+```
+
+```{r}
+#| echo: false
+g <- regdatas |> 
+  ggplot(aes(aff2)) +
+  geom_bar() 
+ggplotly(g)
+```
+
+
+
+
+
+
+:::
+
+::: {.w-50 .pl3}
+
+```{r}
+#| echo: false
+g2 <- regdatas |> 
+  ggplot(aes(confidence)) +
+  #geom_bar(aes(fill = aff2), position = position_dodge(preserve = "single")) +
+  geom_bar() + 
+  scale_x_continuous(breaks = 1:10) 
+
+g2 <- regdatas |> 
+  plot_ly() |> 
+  add_histogram(x = ~confidence, histnorm = "percent")
+
+g2 |> 
+  layout(barmode = "group", showlegend = FALSE)
+```
+
+
+:::
+
+
+
+:::
+
+
+## Better computational reproducibility
+
+::: flex
+
+::: {.w-50}
+
+- Create beatufiul reports
+
+:::
+
+::: {.w-50 .pl3}
+
+<iframe src="assets/Report-for-BDSI-Workshops-2024Q1-demo.html" width="100%" height="700px" class="ba"></iframe>
+
+<center class="f2">
+scroll down  
+<i class='fas fa-long-arrow-alt-down'></i>
+</center>
+
+:::
+
+:::
+
+
+
+
+
+
+
+
+## Why learn R?
+
+::: incremental
+
+- **R** is one of the top programming languages for statistics or data science
+  - Python is also a good alternative language for data science 
+  - _Better to have a mastery of at least one language rather than none_
+- R was initially developed by statisticians for statisticians 
+  - State-of-the-art statistical methods are generally more readily available in R
+- R has an active and friendly community 
+- R is a free and open source software (FOSS) 
+  - **free** = money is not a barrier to use it
+  - **open source software** = transparency
+  
+:::
+
 ## How to use R?
 
 - RStudio Desktop (or RStudio IDE) is the most common way to use R
@@ -132,52 +287,8 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 
 
 
-## R Packages
-
-::: flex
-
-::: {.w-70}
-
-::: incremental
-
-- **R packages** are community developed extensions to R [(much like apps on your mobile)]{.grey}
-- The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an app store)]{.grey}
-  - There are close to 20,000 packages available on CRAN
-  - The qualities of R packages vary 
-- There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics, **R Universe**, **R-Forge**, **GitHub** [(we won't cover these)]{.grey}
-:::
-
-:::
-
-::: {.w-30 .pl3 .f4}
-
-![](images/sara-kurfess-6lcT2kRPvnI-unsplash.jpeg)
-
-Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sara Kurfeß</a> on <a href="https://unsplash.com/photos/turned-on-gold-iphone-6-6lcT2kRPvnI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
-
-:::
-
-:::
 
 
-
-
-## Why learn R?
-
-::: incremental
-
-- **R** is one of the top programming languages for statistics or data science
-  - Python is also a good alternative language for data science 
-  - _Better to have a mastery of at least one language rather than none_
-- R was initially developed by statisticians for statisticians 
-  - State-of-the-art statistical methods are generally more readily available in R
-- R has an active and friendly community 
-- R is a free and open source software (FOSS) 
-  - **free** = money is not a barrier to use it
-  - **open source software** = transparency
-  
-:::
 
 
 ## How to get better at R?

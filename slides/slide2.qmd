@@ -14,16 +14,20 @@ author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
+filters:
+  - webr
+webr: 
+  show-startup-message: false    
 execute:
   echo: true
 ---
 
-## Simple algebraic operations
+## {{< fa square-root-alt >}} Simple algebraic operations
 
 - You can use R like a calculator
 
-```{r}
-#| output-location: fragment
+
+```{webr-r}
 3 + 2 * (2 - 6 / 3) 
 ```
 
