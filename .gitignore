@@ -11,3 +11,5 @@
 
 _site/
 *.docx
+
+*_cache/

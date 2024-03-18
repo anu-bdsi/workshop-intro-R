@@ -133,7 +133,17 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 :::
 
 
+## Rapid development
 
+```{r}
+#| cache: true
+library(openai)
+out <- create_image("A data scientist with a laptop 
+                    and R logo in an anime style")
+download.file(out$data$url, destfile = "images/openai-creation.png")
+```
+
+![](images/openai-creation.png){.fragment}
 
 ## Rich graphical outputs
 
@@ -218,8 +228,7 @@ g2 |>
 ::: {.w-50}
 
 - Create beautiful documents with better reproducible practices and workflow!
-- If you ever use click-and-point software, remember those actions are not generally recorded.
-- This slide is made using a combination of R and Quarto.
+- This slide and the website is made using a combination of R and Quarto.
 
 :::
 
@@ -264,7 +273,7 @@ scroll down
 
 </center>
 
-- You can type operations directly into the Console pane.
+- You can type commands directly into the Console pane.
 - Use Source pane to write and save scripts.
 
 
