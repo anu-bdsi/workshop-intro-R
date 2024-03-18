@@ -116,3 +116,7 @@
   height: 18%!important;
   margin-right: 2%!important;
 }
+
+.qwebr-output-code-area {
+  font-size: 0.75em;
+}

@@ -14,6 +14,10 @@ author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
+filters:
+  - webr
+webr: 
+  show-startup-message: false   
 execute:
   echo: true
 ---
@@ -36,12 +40,12 @@ theme_set(theme_classic(base_size = 24))
 
 ![Dr. Emi Tanaka](images/team/emi-square.png){.circle-image-120}
 
-![Helper TBD](images/team/dummy.jpg){.circle-image-120}
+![Helper 1 TBD](images/team/avatar4.png){.circle-image-120}
 
-![Helper TBD](images/team/dummy.jpg){.circle-image-120}
+![Helper 2 TBD](images/team/avatar2.png){.circle-image-120}
 
 
-![Helper TBD](images/team/dummy.jpg){.circle-image-120}
+![Helper 3 TBD](images/team/avatar3.png){.circle-image-120}
 
 
 :::
@@ -49,7 +53,7 @@ theme_set(theme_classic(base_size = 24))
 ::: incremental
 
 - Your turn to introduce yourself!
-  - What statistical software have you used before?
+  - What statistical software, if any, have you used before? 
   - What type of data do you work with or plan to work with?
 
     
@@ -83,7 +87,7 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 ::: {.w-50}
 
 
-- **R** is a programming language predominately for data analysis
+- **R** is a programming language predominately for data analysis.
 
 <center>
 ![](images/R_logo.png){width="50%"}
@@ -91,9 +95,9 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 
 :::
 
-::: {.w-50 .pl3}
+::: {.w-50 .pl3 .fragment}
 
-- **RStudio Desktop** is an integrated development environment (**IDE**) that helps you to use R
+- **RStudio Desktop** is an integrated development environment (**IDE**) that helps you to use R.
 
 <center>
 
@@ -101,46 +105,41 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 
 </center>
 
+::: fragment
+
+- **Visual Studio Code** is another popular IDE (we don't use this).
+
+:::
+
 :::
 
 :::
 
+## Why learn R?
 
-## R Packages
+::: {.incremental .f1}
 
-::: flex
-
-::: {.w-70}
-
-::: incremental
-
-- **R packages** are community developed extensions to R [(much like **apps** on your mobile)]{.grey}
-- The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an **app store**)]{.grey}
-- There are close to 20,000 packages available on CRAN but the qualities of R packages vary.
-- There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics, **R Universe**, **R-Forge**, **GitHub** [(we won't cover these)]{.grey}.
-:::
-
-:::
-
-::: {.w-30 .pl3 .f4}
-
-![](images/sara-kurfess-6lcT2kRPvnI-unsplash.jpeg)
-
-Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sara Kurfeß</a> on <a href="https://unsplash.com/photos/turned-on-gold-iphone-6-6lcT2kRPvnI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- **R** is one of the top programming languages for statistics or data science.
+  - Python is also a good alternative language for data science.
+  - _Better to have a mastery of at least one language rather than none_.
+- R was initially developed by statisticians for statisticians. 
+  - [_State-of-the-art statistical methods are more readily available in R._]{.anu-gold}
+- R has a very active and friendly community.
+- R is a free and open source software (FOSS) and is a cross-platform language:
+  - **free** = money is not a barrier to use it,
+  - **open source software** = transparency,
+  - **cross-platform** = can be used on Windows, Mac, and Linux.
   
-
-:::
-
 :::
 
 
 
 
+## Rich graphical outputs
 
-## What can you do with R?
-
-- R has a rich environment for statistical computing and graphics.
-- If you get proficient, you can easily create beautiful and interactive graphics!
+- R not only has a wide range of statistical methods.
+- R also has a wide range of packages for creating beautiful and interactive graphics.
+- [<i class='fas fa-mouse-pointer'></i> Try clicking on a bar on the left plot.]{.grey}
 
 ::: flex
 
@@ -151,7 +150,7 @@ Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyTex
 regdata <- read_csv(here::here("data/2024-04-Registration-Cohort(Form1).csv"), locale=locale(encoding="latin1"),
          col_names = c("affiliation", "workshop", "confidence", "comment", "role"),
          skip = 1) |> 
-  mutate(aff2 = fct_lump(affiliation, 4)) |> 
+  mutate(aff2 = fct_lump(affiliation, 3)) |> 
   mutate(n = n(), .by = aff2) |> 
   mutate(aff2 = fct_reorder(aff2, -n)) |> 
   mutate(aff2 = fct_relevel(aff2, "Other", after = Inf))
@@ -163,10 +162,14 @@ regdatas <- regdata |>
 
 ```{r}
 #| echo: false
-g <- regdatas |> 
+g1 <- regdatas |> 
   ggplot(aes(aff2)) +
-  geom_bar() 
-ggplotly(g)
+  geom_bar(fill = "#226BA7") +
+  labs(x = "Affiliation", y = "# of Registrants") +
+  scale_y_continuous(expand = expansion(add = c(0, 5)))
+ggplotly(g1) |> 
+  config(displayModeBar = FALSE) |> 
+  style(hoverinfo = 'none')
 ```
 
 
@@ -191,7 +194,13 @@ g2 <- regdatas |>
   add_histogram(x = ~confidence, histnorm = "percent")
 
 g2 |> 
-  layout(barmode = "group", showlegend = FALSE)
+  layout(barmode = "group", showlegend = FALSE,
+         font = list(size = 28),
+         xaxis = list(dtick = 1,
+                      title = list(text = "Confidence in R skills", font = list(size = 30)), ticksuffix = "   "),
+         yaxis = list(title = list(text = "Percentage (%)", font = list(size = 30)), ticksuffix = " ")) |> 
+  config(displayModeBar = FALSE) |> 
+  style(hoverinfo = 'none')
 ```
 
 
@@ -202,13 +211,15 @@ g2 |>
 :::
 
 
-## Better computational reproducibility
+## Dynamic documents
 
 ::: flex
 
 ::: {.w-50}
 
-- Create beatufiul reports
+- Create beautiful documents with better reproducible practices and workflow!
+- If you ever use click-and-point software, remember those actions are not generally recorded.
+- This slide is made using a combination of R and Quarto.
 
 :::
 
@@ -227,38 +238,34 @@ scroll down
 
 
 
+## Interactively working with R
+
+- You can use R like a calculator:
+
+
+```{webr-r}
+1 + 1 
+6 / 2 + 0.5
+(1 - 4) * 3 - 6^2
+```
 
 
 
 
 
-## Why learn R?
 
-::: incremental
+## How do you use R?
 
-- **R** is one of the top programming languages for statistics or data science
-  - Python is also a good alternative language for data science 
-  - _Better to have a mastery of at least one language rather than none_
-- R was initially developed by statisticians for statisticians 
-  - State-of-the-art statistical methods are generally more readily available in R
-- R has an active and friendly community 
-- R is a free and open source software (FOSS) 
-  - **free** = money is not a barrier to use it
-  - **open source software** = transparency
-  
-:::
-
-## How to use R?
-
-- RStudio Desktop (or RStudio IDE) is the most common way to use R
+- RStudio Desktop (or RStudio IDE) is the most common way to use R.
 
 <center>
 
-![](images/rstudio-desktop-annotation.png){.ba width="75%"}
+![](images/rstudio-desktop-annotation.png){.ba width="60%"}
 
 </center>
 
-- You can type operations directly into the Console pane
+- You can type operations directly into the Console pane.
+- Use Source pane to write and save scripts.
 
 
 # Live demo {background-color="#F5EDDE"}
@@ -289,30 +296,25 @@ scroll down
 
 
 
+## Arithmetics
 
 
-## How to get better at R?
 
-::: incremental
-
-- [PRACTICE]{.f-headline}
-- Practice with a purpose (e.g. using R on your own data)
-- Try teaching and helping others with their R problem 
-- Have a [willingness to _continuously_ learn and adapt]{.f-subheadline}
-  - R is an ever evolving language [(check the [release news](https://cran.r-project.org/doc/manuals/r-release/NEWS.html) every so often)]{.grey}
-  - new features and packages are added _very frequently_
-  - whether you are a beginner or not, there are always things we do not know about R
-- Do you have any strategies or tips? Please share!
-
-:::
+```{webr-r}
+sqrt(3)
+abs(-3)
+exp(1)
+log(4, base = exp(1))
+sum(1:3)
+```
 
 
-## Functions in R 
+## Finding functions
 
 ::: incremental
 
 - There are many functions in R!
-- Generally if you need to compute some numerical summary that is common in your field, then there is probably already an existing function in the R ecosystem.
+- Generally if you need to apply some statistical method, then there is probably already an existing function in the R ecosystem.
 - Try always searching it on a search engine (e.g. Google) with the right keywords. 
 - If it's computed from a community contributed R package, then check to see if there's some quality indicators:
   - Is it actively maintained?
@@ -320,6 +322,19 @@ scroll down
   - Does the package have tests for its functions? Etc.
 
 :::
+
+## Help files
+
+
+- Many of the arithmetic functions come from `base`.
+- You can see `library(help = "base")` for indexed help files.
+
+```{webr-r}
+library(help = "base")
+?log
+help(log)
+```
+
 
 ## Base packages 
 
@@ -331,20 +346,9 @@ scroll down
 :::
 
 
-## Artihmetics
 
-- Many of the arithmetic functions come from `base`.
-- You can see `library(help = "base")` for indexed help files.
 
-```{r}
-#| echo: true
-sqrt(3)
-abs(-3)
-exp(1)
-log(4, base = exp(1))
-sum(1:3)
-```
-
+## Looking at documentation
 
 ## Numerical summaries 
 
@@ -392,64 +396,50 @@ mean(x, na.rm = TRUE)
 sum(x, na.rm = TRUE) / length(x)
 ```
 
-## Looking at documentation
 
-## Some parametric distributions 
 
-- The density (`d`), distribution (`p`) or quantile (`q`) functions of a parametric distribution are generally in the `stats` package.
-- There are functions to generate random values from a particular parametric distribution (`r`).
-
-- Some examples are:
+## Contributed R Packages
 
 ::: flex
 
-::: {.w-25}
+::: {.w-70}
 
-Normal distribution
+::: incremental
 
-- `dnorm()`
-- `pnorm()`
-- `qnorm()`
-- `rnorm()`
-
+- **R packages** are community developed extensions to R [(much like **apps** on your mobile)]{.grey}
+- The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an **app store**)]{.grey}
+- There are close to 20,000 packages available on CRAN but the qualities of R packages vary.
+- There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics, **R Universe**, **R-Forge**, **GitHub** [(we won't cover these)]{.grey}.
+:::
 
 :::
 
-::: {.w-25 .pl3}
+::: {.w-30 .pl3 .f4}
 
-t-distribution 
+![](images/sara-kurfess-6lcT2kRPvnI-unsplash.jpeg)
 
-- `dt()`
-- `pt()`
-- `qt()`
-- `rt()`
-
-:::
-
-::: {.w-25 .pl3}
-
-Poisson distribution 
-
-- `dpois()`
-- `ppois()`
-- `qpois()`
-- `rpois()`
-
-:::
-
-::: {.w-25 .pl3}
-
-F distribution 
-
-- `df()`
-- `pf()`
-- `qf()`
-- `rf()`
+Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sara Kurfeß</a> on <a href="https://unsplash.com/photos/turned-on-gold-iphone-6-6lcT2kRPvnI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
 
 :::
 
 :::
 
 
+## How to get better at R?
+
+[PRACTICE]{.f-headline .fragment}
+
+::: incremental
+
+- Practice with a purpose (e.g. using R on your own data).
+- Try teaching and helping others with their R problem. 
+- Have a [willingness to _continuously_ learn and adapt]{.f-subheadline}.
+  - R is an ever evolving language [(check the [release news](https://cran.r-project.org/doc/manuals/r-release/NEWS.html) every so often)]{.grey},
+  - new features and packages are added _very frequently_,
+  - whether you are a beginner or not, there are always things we do not know about R.
+- Do you have any strategies or tips? 
+
+:::
 
 
