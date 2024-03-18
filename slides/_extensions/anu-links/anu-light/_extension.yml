@@ -6,7 +6,11 @@ contributes:
   formats:
     revealjs:
       slide-number: "c/t"
-      theme: [default, custom.scss, tachyons-addon.scss, syntax-highlight.scss]
+      theme: 
+       - default
+       - custom.scss
+       - tachyons-addon.scss
+       #- syntax-highlight.scss
       logo: logo/ANU_ Crest_Gold.png
       include-after-body: clean-title-slide.html
       title-slide-attributes:
