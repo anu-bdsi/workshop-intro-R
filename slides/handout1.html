@@ -255,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 // Document level settings ----
 
 // Determine if we need to install R packages
-globalThis.qwebrInstallRPackagesList = [''];
+globalThis.qwebrInstallRPackagesList = ['praise'];
 
 // Specify possible locations to search for the repository
 globalThis.qwebrPackageRepoURLS = ['https://repo.r-wasm.org/'];
@@ -277,7 +277,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"results":"markup","fig-cap":"","read-only":"false","output":"true","comment":"","fig-width":7,"dpi":72,"context":"interactive","out-height":"","fig-height":5,"out-width":"700px","autorun":"false","label":"unnamed-chunk-1","warning":"true","classes":"","message":"true"},"code":"1 + 1 \n6 / 2 + 0.5\n(1 - 4) * 3 - 6^2"},{"id":2,"options":{"results":"markup","fig-cap":"","read-only":"false","output":"true","comment":"","fig-width":7,"dpi":72,"context":"interactive","out-height":"","fig-height":5,"out-width":"700px","autorun":"false","label":"unnamed-chunk-2","warning":"true","classes":"","message":"true"},"code":"sqrt(3)\nabs(-3)\nexp(1)\nlog(4, base = exp(1))\nsum(1:3)"},{"id":3,"options":{"results":"markup","fig-cap":"","read-only":"false","output":"true","comment":"","fig-width":7,"dpi":72,"context":"interactive","out-height":"","fig-height":5,"out-width":"700px","autorun":"false","label":"unnamed-chunk-3","warning":"true","classes":"","message":"true"},"code":"library(help = \"base\")\n?log\nhelp(log)"}];
+globalThis.qwebrCellDetails = [{"options":{"read-only":"false","fig-width":7,"results":"markup","out-height":"","message":"true","warning":"true","dpi":72,"context":"interactive","comment":"","classes":"","autorun":"false","fig-height":5,"fig-cap":"","label":"unnamed-chunk-1","out-width":"700px","output":"true"},"id":1,"code":"1 + 1 \n6 / 2 + 0.5\n(1 - 4) * 3 - 6^2"},{"options":{"read-only":"false","fig-width":7,"results":"markup","out-height":"","message":"true","warning":"true","dpi":72,"context":"interactive","comment":"","classes":"","autorun":"false","fig-height":5,"fig-cap":"","label":"unnamed-chunk-2","out-width":"700px","output":"true"},"id":2,"code":"sqrt(3)\nabs(-3)\nexp(1)\nlog(4, base = exp(1))\nsum(1:3)"},{"options":{"read-only":"false","fig-width":7,"results":"markup","out-height":"","message":"true","warning":"true","dpi":72,"context":"interactive","comment":"","classes":"","autorun":"false","fig-height":5,"fig-cap":"","label":"unnamed-chunk-3","out-width":"700px","output":"true"},"id":3,"code":"2:10\nseq(1, 10, by = 0.5)\nc(1, 4, -4, 20.5)"},{"options":{"read-only":"false","fig-width":7,"results":"markup","out-height":"","message":"true","warning":"true","dpi":72,"context":"interactive","comment":"","classes":"","autorun":"false","fig-height":5,"fig-cap":"","label":"unnamed-chunk-4","out-width":"700px","output":"true"},"id":4,"code":"?seq\nhelp(seq)"},{"options":{"read-only":"false","fig-width":7,"results":"markup","out-height":"","message":"true","warning":"true","dpi":72,"context":"interactive","comment":"","classes":"","autorun":"false","fig-height":5,"fig-cap":"","label":"unnamed-chunk-5","out-width":"700px","output":"true"},"id":5,"code":"library(help = \"base\")"},{"options":{"read-only":"false","fig-width":7,"results":"markup","out-height":"","message":"true","warning":"true","dpi":72,"context":"interactive","comment":"","classes":"","autorun":"false","fig-height":5,"fig-cap":"","label":"unnamed-chunk-6","out-width":"700px","output":"true"},"id":6,"code":"library(praise)\npraise()"},{"options":{"read-only":"false","fig-width":7,"results":"markup","out-height":"","message":"true","warning":"true","dpi":72,"context":"interactive","comment":"","classes":"","autorun":"false","fig-height":5,"fig-cap":"","label":"unnamed-chunk-7","out-width":"700px","output":"true"},"id":7,"code":"praise::praise()"}];
 
 </script>
 <script type="module">
@@ -1064,14 +1064,13 @@ globalThis.qwebrExecuteCode = async function (
   <ul class="collapse">
   <li><a href="#customise-global-options" id="toc-customise-global-options" class="nav-link" data-scroll-target="#customise-global-options">Customise Global Options</a></li>
   <li><a href="#arithmetics" id="toc-arithmetics" class="nav-link" data-scroll-target="#arithmetics">Arithmetics</a></li>
-  <li><a href="#base-r" id="toc-base-r" class="nav-link" data-scroll-target="#base-r">Base R</a></li>
-  <li><a href="#finding-functions" id="toc-finding-functions" class="nav-link" data-scroll-target="#finding-functions">Finding functions</a></li>
-  <li><a href="#help-files" id="toc-help-files" class="nav-link" data-scroll-target="#help-files">Help files</a></li>
-  <li><a href="#base-packages" id="toc-base-packages" class="nav-link" data-scroll-target="#base-packages">Base packages</a></li>
-  <li><a href="#looking-at-documentation" id="toc-looking-at-documentation" class="nav-link" data-scroll-target="#looking-at-documentation">Looking at documentation</a></li>
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
   <li><a href="#numerical-summaries" id="toc-numerical-summaries" class="nav-link" data-scroll-target="#numerical-summaries">Numerical summaries</a></li>
-  <li><a href="#missing-values" id="toc-missing-values" class="nav-link" data-scroll-target="#missing-values">Missing values</a></li>
+  <li><a href="#finding-functions" id="toc-finding-functions" class="nav-link" data-scroll-target="#finding-functions">Finding functions</a></li>
+  <li><a href="#base-r" id="toc-base-r" class="nav-link" data-scroll-target="#base-r">Base R</a></li>
   <li><a href="#contributed-r-packages" id="toc-contributed-r-packages" class="nav-link" data-scroll-target="#contributed-r-packages">Contributed R Packages</a></li>
+  <li><a href="#using-packages-on-cran" id="toc-using-packages-on-cran" class="nav-link" data-scroll-target="#using-packages-on-cran">Using packages on CRAN</a></li>
   <li><a href="#how-to-get-better-at-r" id="toc-how-to-get-better-at-r" class="nav-link" data-scroll-target="#how-to-get-better-at-r">How to get better at R?</a></li>
   </ul></li>
   </ul>
@@ -1112,13 +1111,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
     editor = monaco.editor.create(editorDiv, {
       value: initialCode,
       language: 'r',
-      theme: 'vs-light',
+      theme: 'vs-dark',
       automaticLayout: true,           // Works wonderfully with RevealJS
       scrollBeyondLastLine: false,
       minimap: {
         enabled: false
       },
-      fontSize: '17.5pt',              // Bootstrap is 1 rem
+      fontSize: '32px',              // Bootstrap is 1 rem
       renderLineHighlight: "none",     // Disable current line highlighting
       hideCursorInOverviewRuler: true,  // Remove cursor indictor in right hand side scroll bar
       readOnly: qwebrOptions['read-only'] ?? false
@@ -1300,7 +1299,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div>
 
 </div>
-<div class="quarto-layout-panel" style="text-align:center;" data-layout-ncol="4">
+<div class="quarto-layout-panel" data-layout-ncol="4" style="text-align:center;">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
@@ -1313,16 +1312,16 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/team/avatar4.png" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Helper 1 TBD</figcaption>
+<p><img src="images/team/jeremias-ivan.jpg" class="circle-image-120 img-fluid figure-img"></p>
+<figcaption>Jeremias Ivan</figcaption>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/team/avatar2.png" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Helper 2 TBD</figcaption>
+<p><img src="images/team/audrey-prasetya.jpeg" class="circle-image-120 img-fluid figure-img"></p>
+<figcaption>Audrey Prasetya</figcaption>
 </figure>
 </div>
 </div>
@@ -1330,7 +1329,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/team/avatar3.png" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Helper 3 TBD</figcaption>
+<figcaption>Nils Kreuter (TBA)</figcaption>
 </figure>
 </div>
 </div>
@@ -1430,16 +1429,15 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">                     statistical software in an anime style"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <center>
-<p><img src="images/openai-creation.png" class="fragment img-fluid" style="width:50.0%"></p>
+<p><img src="images/openai-creation.png" class="fragment img-fluid" style="width:35.0%"></p>
 </center>
 </section>
 <section id="rich-graphical-outputs" class="level2">
 <h2 class="anchored" data-anchor-id="rich-graphical-outputs">Rich graphical outputs</h2>
 <ul>
-<li>R not only has a wide range of statistical methods.</li>
 <li>R also has a wide range of packages for creating beautiful and interactive graphics.</li>
-<li><span class="grey"><i class="fas fa-mouse-pointer"></i> Try clicking on a bar on the left plot.</span></li>
 </ul>
+<p><span class="grey f2"><i class="fas fa-mouse-pointer"></i> Try clicking on a bar on the left plot.</span></p>
 <div class="flex">
 <div class="w-50">
 <div class="cell">
@@ -1456,16 +1454,16 @@ dbl (1): confidence
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-bb30a16fe344aa1cf166" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-bb30a16fe344aa1cf166">{"x":{"data":[{"orientation":"v","width":[0.89999999999999991,0.90000000000000013,0.90000000000000036,0.90000000000000036],"base":[0,0,0,0],"x":[1,2,3,4],"y":[33,30,8,6],"text":["count: 33<br />aff2: RSB","count: 30<br />aff2: JCSMR","count:  8<br />aff2: NCEPH","count:  6<br />aff2: Other"],"key":[["RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB"],["JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR"],["NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH"],["Other","Other","Other","Other","Other","Other"]],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(34,107,167,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"set":"SharedDataab54d2c4","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"none","_isNestedKey":true,"frame":null}],"layout":{"margin":{"t":38.316313823163149,"r":15.940224159402243,"b":87.671232876712352,"l":81.295143212951444},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,4.5999999999999996],"tickmode":"array","ticktext":["RSB","JCSMR","NCEPH","Other"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["RSB","JCSMR","NCEPH","Other"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011207,"tickwidth":1.4491112872183856,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183856,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Affiliation","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,38],"tickmode":"array","ticktext":["0","10","20","30"],"tickvals":[0,10,20,30],"categoryorder":"array","categoryarray":["0","10","20","30"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011216,"tickwidth":1.4491112872183858,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183858,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"# of Registrants","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":4.1231209735146743,"font":{"color":"rgba(0,0,0,1)","family":"","size":25.5043586550436}},"hovermode":"closest","barmode":"relative","dragmode":"zoom"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"3d4c5fc65de4":{"x":{},"type":"bar"}},"cur_data":"3d4c5fc65de4","visdat":{"3d4c5fc65de4":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedDataab54d2c4"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-fb1e2594f14885f764ec" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-fb1e2594f14885f764ec">{"x":{"data":[{"orientation":"v","width":[0.89999999999999991,0.90000000000000013,0.90000000000000036,0.90000000000000036],"base":[0,0,0,0],"x":[1,2,3,4],"y":[33,30,8,6],"text":["count: 33<br />aff2: RSB","count: 30<br />aff2: JCSMR","count:  8<br />aff2: NCEPH","count:  6<br />aff2: Other"],"key":[["RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB"],["JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR"],["NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH"],["Other","Other","Other","Other","Other","Other"]],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(34,107,167,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"set":"SharedData664da236","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"none","_isNestedKey":true,"frame":null}],"layout":{"margin":{"t":38.316313823163149,"r":15.940224159402243,"b":87.671232876712352,"l":81.295143212951444},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,4.5999999999999996],"tickmode":"array","ticktext":["RSB","JCSMR","NCEPH","Other"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["RSB","JCSMR","NCEPH","Other"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011207,"tickwidth":1.4491112872183856,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183856,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Affiliation","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,38],"tickmode":"array","ticktext":["0","10","20","30"],"tickvals":[0,10,20,30],"categoryorder":"array","categoryarray":["0","10","20","30"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011216,"tickwidth":1.4491112872183858,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183858,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"# of Registrants","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":4.1231209735146743,"font":{"color":"rgba(0,0,0,1)","family":"","size":25.5043586550436}},"hovermode":"closest","barmode":"relative","dragmode":"zoom"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"780072dd1e92":{"x":{},"type":"bar"}},"cur_data":"780072dd1e92","visdat":{"780072dd1e92":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData664da236"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 <div class="w-50 pl3">
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-076bdeeb5f24a2021c14" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-076bdeeb5f24a2021c14">{"x":{"visdat":{"3d4c6435231f":["function () ","plotlyVisDat"]},"cur_data":"3d4c6435231f","attrs":{"3d4c6435231f":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"type":"histogram","histnorm":"percent","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"group","showlegend":false,"font":{"size":28},"xaxis":{"domain":[0,1],"automargin":true,"dtick":1,"title":{"text":"Confidence in R skills","font":{"size":30}},"ticksuffix":"   "},"yaxis":{"domain":[0,1],"automargin":true,"title":{"text":"Percentage (%)","font":{"size":30}},"ticksuffix":" "},"dragmode":"zoom","hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[1,3,1,4,5,6,2,4,7,4,4,4,6,1,1,3,3,6,1,10,1,7,3,5,7,5,1,1,2,6,6,1,2,4,8,2,4,3,5,5,2,10,6,1,5,4,5,7,5,3,1,7,3,5,2,1,2,1,1,2,6,8,3,2,4,3,5,5,4,1,1,1,1,6,4,1,2],"type":"histogram","histnorm":"percent","key":["Other","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","JCSMR","RSB","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","RSB","RSB","RSB","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","JCSMR","RSB","RSB","Other","Other","JCSMR","NCEPH","NCEPH","NCEPH","RSB","RSB","RSB","RSB","RSB","NCEPH","RSB","NCEPH","RSB","NCEPH","JCSMR","NCEPH","Other","Other","JCSMR","RSB","NCEPH","JCSMR","Other"],"set":"SharedDataab54d2c4","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null,"hoverinfo":"none"}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedDataab54d2c4"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-1370a2c3edf41bd81243" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-1370a2c3edf41bd81243">{"x":{"visdat":{"7800783ebdd7":["function () ","plotlyVisDat"]},"cur_data":"7800783ebdd7","attrs":{"7800783ebdd7":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"type":"histogram","histnorm":"percent","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"group","showlegend":false,"font":{"size":28},"xaxis":{"domain":[0,1],"automargin":true,"dtick":1,"title":{"text":"Confidence in R skills","font":{"size":30}},"ticksuffix":"   "},"yaxis":{"domain":[0,1],"automargin":true,"title":{"text":"Percentage (%)","font":{"size":30}},"ticksuffix":" "},"dragmode":"zoom","hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[1,3,1,4,5,6,2,4,7,4,4,4,6,1,1,3,3,6,1,10,1,7,3,5,7,5,1,1,2,6,6,1,2,4,8,2,4,3,5,5,2,10,6,1,5,4,5,7,5,3,1,7,3,5,2,1,2,1,1,2,6,8,3,2,4,3,5,5,4,1,1,1,1,6,4,1,2],"type":"histogram","histnorm":"percent","key":["Other","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","JCSMR","RSB","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","RSB","RSB","RSB","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","JCSMR","RSB","RSB","Other","Other","JCSMR","NCEPH","NCEPH","NCEPH","RSB","RSB","RSB","RSB","RSB","NCEPH","RSB","NCEPH","RSB","NCEPH","JCSMR","NCEPH","Other","Other","JCSMR","RSB","NCEPH","JCSMR","Other"],"set":"SharedData664da236","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null,"hoverinfo":"none"}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData664da236"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1504,12 +1502,8 @@ scroll down<br>
 <li>RStudio Desktop (or RStudio IDE) is the most common way to use R.</li>
 </ul>
 <center>
-<p><img src="images/rstudio-desktop-annotation.png" class="ba img-fluid" style="width:60.0%"></p>
+<p><img src="images/rstudio-ide.png" class="img-fluid"></p>
 </center>
-<ul>
-<li>You can type commands directly into the Console pane.</li>
-<li>Use Source pane to write and save scripts.</li>
-</ul>
 </section>
 </section>
 <section id="live-demo" class="level1" data-background-color="#F5EDDE">
@@ -1534,46 +1528,19 @@ scroll down<br>
 <div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="base-r" class="level2">
-<h2 class="anchored" data-anchor-id="base-r">Base R</h2>
-<p><img src="images/base-r.png" class="img-fluid"></p>
-</section>
-<section id="finding-functions" class="level2">
-<h2 class="anchored" data-anchor-id="finding-functions">Finding functions</h2>
-<div class="incremental">
-<ul class="incremental">
-<li>There are many functions in R!</li>
-<li>Generally if you need to apply some statistical method, then there is probably already an existing function in the R ecosystem.</li>
-<li>Try always searching it on a search engine (e.g.&nbsp;Google) with the right keywords.</li>
-<li>If it’s computed from a community contributed R package, then check to see if there’s some quality indicators:
-<ul class="incremental">
-<li>Is it actively maintained?</li>
-<li>Is it widely used?</li>
-<li>Does the package have tests for its functions? Etc.</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="help-files" class="level2">
-<h2 class="anchored" data-anchor-id="help-files">Help files</h2>
-<ul>
-<li>Many of the arithmetic functions come from <code>base</code>.</li>
-<li>You can see <code>library(help = "base")</code> for indexed help files.</li>
-</ul>
+<section id="vectors" class="level2">
+<h2 class="anchored" data-anchor-id="vectors">Vectors</h2>
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="base-packages" class="level2">
-<h2 class="anchored" data-anchor-id="base-packages">Base packages</h2>
-<div class="incremental">
-<ul class="incremental">
-<li>R has 7 packages (<code>stats</code>, <code>graphics</code>, <code>grDevices</code>, <code>utils</code>, <code>datasets</code>, <code>methods</code>, <code>base</code>), collectively referred to as the “base packages”, that are loaded automatically when you launch it.</li>
-<li>The functions in the base packages are generally well-tested and trustworthy.</li>
+<section id="functions" class="level2">
+<h2 class="anchored" data-anchor-id="functions">Functions</h2>
+<ul>
+<li>There are <em>many</em> functions in R.</li>
+<li>You can look at the documentation on how to use it:</li>
 </ul>
-</div>
-</section>
-<section id="looking-at-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="looking-at-documentation">Looking at documentation</h2>
+<div id="qwebr-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="numerical-summaries" class="level2">
 <h2 class="anchored" data-anchor-id="numerical-summaries">Numerical summaries</h2>
@@ -1591,42 +1558,31 @@ scroll down<br>
 </ul></li>
 </ul>
 </section>
-<section id="missing-values" class="level2">
-<h2 class="anchored" data-anchor-id="missing-values">Missing values</h2>
+<section id="finding-functions" class="level2">
+<h2 class="anchored" data-anchor-id="finding-functions">Finding functions</h2>
+<ul>
+<li>To find indexed functions for a <em>package</em>:</li>
+</ul>
+<div id="qwebr-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <div class="incremental">
 <ul class="incremental">
-<li><code>NA</code> in R denotes missing values – there are in fact different types of missing values (<code>NA_character_</code>, <code>NA_integer_</code>, <code>NA_real_</code>, <code>NA_complex_</code>).</li>
+<li><span class="f-headline">Google it</span> with a good set of keywords.</li>
+<li>The recent trend is <span class="f-headline">ask generative AI</span>.</li>
 </ul>
 </div>
-<p>. . .</p>
+</section>
+<section id="base-r" class="level2">
+<h2 class="anchored" data-anchor-id="base-r">Base R</h2>
+<div class="flex">
+<div class="w-60">
+<p><img src="images/base-r.png" class="img-fluid"></p>
+</div>
+<div class="w-40">
 <ul>
-<li>When there are missing values, it can cause issues in the computation.</li>
+<li>R has <strong>7 packages</strong>, collectively referred to as the “base R”, that are <strong>loaded automatically</strong> when you launch it.</li>
+<li>The functions in the base packages are generally well-tested and trustworthy.</li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">2.3</span>, <span class="cn">NA</span>, <span class="fl">4.7</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] NA</code></pre>
-</div>
-</div>
-<p>. . .</p>
-<ul>
-<li>Below we remove the missing values:</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 3.5</code></pre>
-</div>
-</div>
-<p>. . .</p>
-<ul>
-<li>Notice that the above is different to below when there are missing value(s):</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">length</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2.333333</code></pre>
 </div>
 </div>
 </section>
@@ -1649,6 +1605,32 @@ scroll down<br>
 </div>
 </div>
 </section>
+<section id="using-packages-on-cran" class="level2">
+<h2 class="anchored" data-anchor-id="using-packages-on-cran">Using packages on CRAN</h2>
+<div class="fragment">
+<ul>
+<li>If the package (say <code>praise</code>) is on CRAN, you can install it by:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"praise"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>You only need to <code>install.packages()</code> once!</strong></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Loading exported functions from a package:</li>
+</ul>
+<div id="qwebr-insertion-location-6"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div class="fragment">
+<ul>
+<li>Use <code>package::function()</code> for without loading package:</li>
+</ul>
+<div id="qwebr-insertion-location-7"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</section>
 <section id="how-to-get-better-at-r" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-get-better-at-r">How to get better at R?</h2>
 <p><span class="f-headline fragment">PRACTICE</span></p>
@@ -1662,7 +1644,6 @@ scroll down<br>
 <li>new features and packages are added <em>very frequently</em>,</li>
 <li>whether you are a beginner or not, there are always things we do not know about R.</li>
 </ul></li>
-<li>Do you have any strategies or tips?</li>
 </ul>
 </div>
 
