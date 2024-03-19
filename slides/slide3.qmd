@@ -16,16 +16,12 @@ date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
 ---
 
-## Data file formats [Part 1]{.f3}
+## Data file formats 
 
 ::: incremental
 
 - Data are stored as a file, which points to a block of computer memory.
 - A file format signals a way to interpret the information stored in the computer memory.
-- A common approach is to have as a text file format where 
-  - a delimiter (e.g. "," and tabs) separate columns,
-  - the first row (header) corresponds to the names of the variables, and 
-  - subsequent rows correspond to the values.
 - A file with the extension "csv" (comma-separated values) uses a comma as a delimiter while "tsv" uses tabs as a delimiter. 
 
 :::
@@ -37,13 +33,22 @@ len, supp, dose
 ...
 ```
 
-## Data formats [Part 2]{.f3}
+
+::: notes
+
+- A common approach is to have as a text file format where 
+  - a delimiter (e.g. "," and tabs) separate columns,
+  - the first row (header) corresponds to the names of the variables, and 
+  - subsequent rows correspond to the values.
+  
+:::
+
+
+## Binary or propriety file formats 
 
 ::: incremental 
 
-- You may open csv or tsv files using a spreadsheet software (e.g. Excel or Libre Office).
-- If you open as a text file, you'll just see these are just texts like before -- the spreadsheet software just gives you a nicer layout to visualise/modify the data. 
-- Data are also stored as a binary format [(in R, these include `.RData` and `.rda` but we won't cover this)]{.grey}.
+- Data can also be stored as a binary format [(in R, these include `.RData` and `.rda` but we won't cover this)]{.grey}.
 - Data can also come in a propriety format (e.g. xls and xlsx) -- these require special ways to open/view/read it.
 
 :::
