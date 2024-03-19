@@ -42,88 +42,88 @@
     "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4"
   },
   {
-    "objectID": "slides/slide2.html#simple-algebraic-operations",
-    "href": "slides/slide2.html#simple-algebraic-operations",
+    "objectID": "slides/slide2.html#assignment-to-object",
+    "href": "slides/slide2.html#assignment-to-object",
     "title": "Working with objects",
-    "section": " Simple algebraic operations",
-    "text": "Simple algebraic operations\n\nYou can use R like a calculator\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nAssignments to object:\n\nYou can assign values to objects using &lt;- or =\nThe name of the object can be variable so long as it is syntactically valid (no spaces and most special characters, and the name cannot start with a digit)\n\n\n\na &lt;- 3\nb = 2\n2 * a - b \n\n[1] 4"
+    "section": "Assignment to object",
+    "text": "Assignment to object\n\nAssignments to object:\n\nYou can assign values to objects using &lt;- or =\nThe name of the object can be variable so long as it is syntactically valid (no spaces and most special characters, and the name cannot start with a digit)\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#vectors",
     "href": "slides/slide2.html#vectors",
     "title": "Working with objects",
     "section": "Vectors",
-    "text": "Vectors\n\nWe can combine scalars to form vectors using c():\n\n\na &lt;- c(1, 2, 3)\na / 2\n\n[1] 0.5 1.0 1.5\n\n\n\n\nThis is a vector of length 3\n\n\nlength(a)\n\n[1] 3\n\n\n\n\n\nThis vector is stored as a double with the class as numeric\n\n\ntypeof(a)\n\n[1] \"double\"\n\nclass(a)\n\n[1] \"numeric\""
+    "text": "Vectors\n\nWe can combine scalars to form vectors using c():\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nThis is a vector of length 3\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nThis vector is stored as a double with the class as numeric\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#vectors-types",
     "href": "slides/slide2.html#vectors-types",
     "title": "Working with objects",
     "section": "Vectors types",
-    "text": "Vectors types\n\nThere are four primary types of atomic vectors: logical, integer, double and character.\n\n\nlogical_vec &lt;- c(TRUE, FALSE, T, F)\ninteger_vec &lt;- c(1L, 2L, 3L, 4L)\ndouble_vec &lt;- c(1, 2, 3, 4)\ncharacter_vec &lt;- c(\"A\", \"B\", 'C', 'D')\n\n\nThe integer and double vectors are collectively called numeric vectors.\n\n\n\nA vector can only consist of the same type.\nIf you attempt to combine mismatched types together, it will try to coerce all values to the same type.\n\n\nc(TRUE, F, \"3\", 10, 'X')\n\n[1] \"TRUE\"  \"FALSE\" \"3\"     \"10\"    \"X\""
+    "text": "Vectors types\n\nThere are four primary types of atomic vectors: logical, integer, double and character.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nThe integer and double vectors are collectively called numeric vectors.\n\n\n\nA vector can only consist of the same type.\nIf you attempt to combine mismatched types together, it will try to coerce all values to the same type.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#lists",
     "href": "slides/slide2.html#lists",
     "title": "Working with objects",
     "section": "Lists",
-    "text": "Lists\n\nLists allow to combine elements of different types.\n\n\nl &lt;- list(c(1, 2, 3), \n          c(2.5, 3.0),\n          c(TRUE, FALSE),\n          c(\"a\", \"b\"))\n\n\nYou can use str() to see the internal structure of an object in R.\n\n\nstr(l)\n\nList of 4\n $ : num [1:3] 1 2 3\n $ : num [1:2] 2.5 3\n $ : logi [1:2] TRUE FALSE\n $ : chr [1:2] \"a\" \"b\""
+    "text": "Lists\n\nLists allow to combine elements of different types.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nYou can use str() to see the internal structure of an object in R.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#data-frames",
     "href": "slides/slide2.html#data-frames",
     "title": "Working with objects",
     "section": "Data frames",
-    "text": "Data frames\n\ndata.frame is a special type of a named list where each element of the vector is the same length.\n\n\ndf &lt;- data.frame(grade = c(\"A\", \"B\", \"C\"),\n                     n = c(10, 14, 30))\n\ndf\n\n  grade  n\n1     A 10\n2     B 14\n3     C 30\n\n\n\ncolnames(df)\n\n[1] \"grade\" \"n\"    \n\nnrow(df)\n\n[1] 3\n\nncol(df)\n\n[1] 2"
+    "text": "Data frames\n\ndata.frame is a special type of a named list where each element of the vector is the same length.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#subsetting-vectors-part-1",
     "href": "slides/slide2.html#subsetting-vectors-part-1",
     "title": "Working with objects",
     "section": "Subsetting vectors Part 1",
-    "text": "Subsetting vectors Part 1\n\nPositive integers select elements at the specified positions:\n\n\nx &lt;- c(1.1, 2.2, 3.3, 4.4, 5.5)\nx[c(3, 1)]\n\n[1] 3.3 1.1\n\nx[c(2, 2)]\n\n[1] 2.2 2.2\n\nx[c(2.3, 2.8)] # double is silently truncated to integers\n\n[1] 2.2 2.2\n\n\n\n\nNegative integers exclude elements at the specified positions:\n\n\nx[-c(3, 1)]\n\n[1] 2.2 4.4 5.5\n\nx[c(-3, 1)] # you can't mix positive and negative integers\n\nError in x[c(-3, 1)]: only 0's may be mixed with negative subscripts"
+    "text": "Subsetting vectors Part 1\n\nPositive integers select elements at the specified positions:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nNegative integers exclude elements at the specified positions:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#subsetting-vectors-part-2",
     "href": "slides/slide2.html#subsetting-vectors-part-2",
     "title": "Working with objects",
     "section": "Subsetting vectors Part 2",
-    "text": "Subsetting vectors Part 2\n\nLogical vectors select elements where logical value is TRUE.\n\n\nx[c(TRUE, FALSE, TRUE, FALSE, TRUE)]\n\n[1] 1.1 3.3 5.5\n\nx[x &gt; 3]\n\n[1] 3.3 4.4 5.5\n\n\n\nIf the logical vector used for subsetting a vector is shorter than it then the logical vector is recycled to match the length of the vector.\n\n\nx[c(TRUE, FALSE)] # the same as the first one\n\n[1] 1.1 3.3 5.5"
+    "text": "Subsetting vectors Part 2\n\nLogical vectors select elements where logical value is TRUE.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nIf the logical vector used for subsetting a vector is shorter than it then the logical vector is recycled to match the length of the vector.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#subsetting-named-vectors",
     "href": "slides/slide2.html#subsetting-named-vectors",
     "title": "Working with objects",
     "section": "Subsetting named vectors",
-    "text": "Subsetting named vectors\n\nCharacter vectors select elements based on the name of the vector (if any):\n\n\ny &lt;- c(\"a\" = 1.1, \"b\" = 2.2, \"c\" = 3.3, \"d\" = 4.4, \"e\" = 5.5)\ny\n\n  a   b   c   d   e \n1.1 2.2 3.3 4.4 5.5 \n\ny[c(\"c\", \"a\", \"a\", \"f\")]\n\n   c    a    a &lt;NA&gt; \n 3.3  1.1  1.1   NA"
+    "text": "Subsetting named vectors\n\nCharacter vectors select elements based on the name of the vector (if any):\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#subsetting-lists",
     "href": "slides/slide2.html#subsetting-lists",
     "title": "Working with objects",
     "section": "Subsetting lists",
-    "text": "Subsetting lists\n\n\n\nstr(l)\n\nList of 4\n $ : num [1:3] 1 2 3\n $ : num [1:2] 2.5 3\n $ : logi [1:2] TRUE FALSE\n $ : chr [1:2] \"a\" \"b\"\n\n\n\n\n\nl[1]\n\n[[1]]\n[1] 1 2 3\n\nl[[1]]\n\n[1] 1 2 3\n\nl[c(1, 2)]\n\n[[1]]\n[1] 1 2 3\n\n[[2]]\n[1] 2.5 3.0\n\nl[[c(1, 2)]] # what's happened here?!\n\n[1] 2"
+    "text": "Subsetting lists\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#subsetting-named-lists",
     "href": "slides/slide2.html#subsetting-named-lists",
     "title": "Working with objects",
     "section": "Subsetting named lists",
-    "text": "Subsetting named lists\n\nl2 &lt;- list(A = c(1, 2, 3),\n           log = c(TRUE, FALSE),\n           who = c(\"Terry\", \"Jon\"))\n\nl2$A\n\n[1] 1 2 3\n\nl2[c(\"A\", \"log\")]\n\n$A\n[1] 1 2 3\n\n$log\n[1]  TRUE FALSE\n\nl2[[\"A\"]]\n\n[1] 1 2 3"
+    "text": "Subsetting named lists\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#subsetting-data-frames",
     "href": "slides/slide2.html#subsetting-data-frames",
     "title": "Working with objects",
     "section": "Subsetting data frames",
-    "text": "Subsetting data frames\n\n\n\ndf\n\n  grade  n\n1     A 10\n2     B 14\n3     C 30\n\n\n\n\n\ndf[1, ]\n\n  grade  n\n1     A 10\n\ndf[, 1]\n\n[1] \"A\" \"B\" \"C\"\n\ndf[, 1, drop = FALSE]\n\n  grade\n1     A\n2     B\n3     C\n\ndf$n\n\n[1] 10 14 30\n\ndf[[\"n\"]]\n\n[1] 10 14 30"
+    "text": "Subsetting data frames\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#missing-values",
     "href": "slides/slide2.html#missing-values",
     "title": "Working with objects",
     "section": "Missing values",
-    "text": "Missing values\n\nNA in R denotes missing values\n\n\n\nWhen there are missing values, it can cause issues in the computation.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+    "text": "Missing values\n\n\nNA in R denotes missing values – there are in fact different types of missing values (NA_character_, NA_integer_, NA_real_, NA_complex_).\n\n\n\n\nWhen there are missing values, it can cause issues in the computation.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nBelow we remove the missing values:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
   },
   {
     "objectID": "next-time.html",
