@@ -16,3 +16,40 @@ date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
 ---
 
+
+## How to get better at R?
+
+[PRACTICE]{.f-headline}
+
+
+- Practice with a purpose (e.g. using R on your own data).
+- Try teaching and helping others with their R problem. 
+- Have a [willingness to _continuously_ learn and adapt]{.f-subheadline}.
+  - R is an ever evolving language [(check the [release news](https://cran.r-project.org/doc/manuals/r-release/NEWS.html) every so often)]{.grey},
+  - new features and packages are added _very frequently_,
+  - whether you are a beginner or not, there are always things we do not know about R.
+
+
+## Joining the R community 
+
+## Resources
+
+
+- [R for Data Science](https://r4ds.hadley.nz/)
+- [R4DS Online Learning Community](https://rfordatasci.com/)
+- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/r) or [Posit Community](https://community.rstudio.com/).
+
+## Local Resources
+
+- Ask the local experts such as at the 
+  - [BDSI Drop-In Sessions](https://bdsi.anu.edu.au/news-events/event-series/bdsi-bioinformatics-and-statistics-drop-sessions) and 
+  - [ANU Statistical Support Network](https://services.anu.edu.au/business-units/research-initiatives-and-infrastructure/statistical-support-network).
+- [Online Statistics Courses](https://services.anu.edu.au/training/online-statistics-courses#overlay-context=business-units/statistical-consulting-unit)  by ANU Statistical Support Network
+- [R Project Sharepoint Resources](https://anu365.sharepoint.com/sites/StatSupportoNline/SitePages/R-Project(1).aspx?promotedState=0) by ANU Statistical Support Network
+- You can continue to use the [ANU Learning Data Slack Community](https://anu-bdsi.github.io/training-R1/#slack) to connect with each other.
+
+## Feedback
+
+- What worked or didn't work for you?
+- What other workshops?
+
