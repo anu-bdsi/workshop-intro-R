@@ -20,13 +20,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
     editor = monaco.editor.create(editorDiv, {
       value: initialCode,
       language: 'r',
-      theme: 'vs-light',
+      theme: 'vs-dark',
       automaticLayout: true,           // Works wonderfully with RevealJS
       scrollBeyondLastLine: false,
       minimap: {
         enabled: false
       },
-      fontSize: '17.5pt',              // Bootstrap is 1 rem
+      fontSize: '32px',              // Bootstrap is 1 rem
       renderLineHighlight: "none",     // Disable current line highlighting
       hideCursorInOverviewRuler: true,  // Remove cursor indictor in right hand side scroll bar
       readOnly: qwebrOptions['read-only'] ?? false

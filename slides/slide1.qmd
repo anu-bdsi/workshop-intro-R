@@ -20,6 +20,7 @@ filters:
   - webr
 webr: 
   show-startup-message: false   
+  packages: ['praise']
 execute:
   echo: true
 ---
@@ -144,15 +145,16 @@ download.file(out$data$url, destfile = "images/openai-creation.png")
 
 <center>
 
-![](images/openai-creation.png){.fragment width="50%"}
+![](images/openai-creation.png){.fragment width="35%"}
 
 </center>
 
 ## Rich graphical outputs
 
-- R not only has a wide range of statistical methods.
 - R also has a wide range of packages for creating beautiful and interactive graphics.
-- [<i class='fas fa-mouse-pointer'></i> Try clicking on a bar on the left plot.]{.grey}
+
+
+[<i class='fas fa-mouse-pointer'></i> Try clicking on a bar on the left plot.]{.grey .f2}
 
 ::: flex
 
@@ -180,6 +182,7 @@ g1 <- regdatas |>
   geom_bar(fill = "#226BA7") +
   labs(x = "Affiliation", y = "# of Registrants") +
   scale_y_continuous(expand = expansion(add = c(0, 5)))
+
 ggplotly(g1) |> 
   config(displayModeBar = FALSE) |> 
   style(hoverinfo = 'none')
@@ -196,17 +199,9 @@ ggplotly(g1) |>
 
 ```{r}
 #| echo: false
-g2 <- regdatas |> 
-  ggplot(aes(confidence)) +
-  #geom_bar(aes(fill = aff2), position = position_dodge(preserve = "single")) +
-  geom_bar() + 
-  scale_x_continuous(breaks = 1:10) 
-
-g2 <- regdatas |> 
+regdatas |> 
   plot_ly() |> 
-  add_histogram(x = ~confidence, histnorm = "percent")
-
-g2 |> 
+  add_histogram(x = ~confidence, histnorm = "percent") |> 
   layout(barmode = "group", showlegend = FALSE,
          font = list(size = 28),
          xaxis = list(dtick = 1,
@@ -272,12 +267,10 @@ scroll down
 
 <center>
 
-![](images/rstudio-desktop-annotation.png){.ba width="60%"}
+![](images/rstudio-ide.png)
 
 </center>
 
-- You can type commands directly into the Console pane.
-- Use Source pane to write and save scripts.
 
 
 # Live demo {background-color="#F5EDDE"}
@@ -320,50 +313,23 @@ log(4, base = exp(1))
 sum(1:3)
 ```
 
-## Base R
-
-![](images/base-r.png)
-
-## Finding functions
-
-::: incremental
-
-- There are many functions in R!
-- Generally if you need to apply some statistical method, then there is probably already an existing function in the R ecosystem.
-- Try always searching it on a search engine (e.g. Google) with the right keywords. 
-- If it's computed from a community contributed R package, then check to see if there's some quality indicators:
-  - Is it actively maintained?
-  - Is it widely used?
-  - Does the package have tests for its functions? Etc.
-
-:::
-
-## Help files
-
-
-- Many of the arithmetic functions come from `base`.
-- You can see `library(help = "base")` for indexed help files.
+## Vectors 
 
 ```{webr-r}
-library(help = "base")
-?log
-help(log)
+2:10
+seq(1, 10, by = 0.5)
+c(1, 4, -4, 20.5)
 ```
 
+## Functions
 
-## Base packages 
+- There are _many_ functions in R.
+- You can look at the documentation on how to use it:
 
-::: incremental
-
-- R has 7 packages (`stats`, `graphics`, `grDevices`, `utils`, `datasets`, `methods`, `base`), collectively referred to as the "base packages", that are loaded automatically when you launch it. 
-- The functions in the base packages are generally well-tested and trustworthy.
-
-:::
-
-
-
-
-## Looking at documentation
+```{webr-r}
+?seq
+help(seq)
+```
 
 ## Numerical summaries 
 
@@ -377,39 +343,41 @@ help(log)
   - Quantile: `quantile()`
   - Correlation coefficient: `cor()`
 
+## Finding functions
 
-## Missing values 
+- To find indexed functions for a _package_:
 
-::: incremental
+```{webr-r}
+library(help = "base")
+```
 
-- `NA` in R denotes missing values -- there are in fact different types of missing values (`NA_character_`, `NA_integer_`, `NA_real_`, `NA_complex_`).
+::: {.incremental}
+
+- [Google it]{.f-headline} with a good set of keywords.
+- The recent trend is [ask generative AI]{.f-headline}.
 
 :::
 
-. . . 
+## Base R
 
-- When there are missing values, it can cause issues in the computation.
+::: flex
 
-```{r}
-x <- c(2.3, NA, 4.7)
-mean(x)
-```
+::: {.w-60}
 
-. . . 
+![](images/base-r.png)
 
-- Below we remove the missing values:
 
-```{r}
-mean(x, na.rm = TRUE)
-```
+:::
 
-. . . 
+::: {.w-40}
 
-- Notice that the above is different to below when there are missing value(s):
+- R has **7 packages**, collectively referred to as the "base R", that are **loaded automatically** when you launch it. 
+- The functions in the base packages are generally well-tested and trustworthy.
 
-```{r}
-sum(x, na.rm = TRUE) / length(x)
-```
+:::
+
+:::
+
 
 
 
@@ -441,6 +409,41 @@ Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyTex
 :::
 
 
+## Using packages on CRAN
+
+
+::: fragment
+
+- If the package (say `praise`) is on CRAN, you can install it by:
+```r
+install.packages("praise")
+```
+
+- **You only need to `install.packages()` once!**
+
+:::
+
+::: fragment
+
+- Loading exported functions from a package:
+
+```{webr-r}
+library(praise)
+praise()
+```
+
+:::
+
+::: fragment
+
+- Use `package::function()` for without loading package:
+
+```{webr-r}
+praise::praise()
+```
+
+:::
+
 ## How to get better at R?
 
 [PRACTICE]{.f-headline .fragment}
@@ -453,7 +456,6 @@ Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyTex
   - R is an ever evolving language [(check the [release news](https://cran.r-project.org/doc/manuals/r-release/NEWS.html) every so often)]{.grey},
   - new features and packages are added _very frequently_,
   - whether you are a beginner or not, there are always things we do not know about R.
-- Do you have any strategies or tips? 
 
 :::
 

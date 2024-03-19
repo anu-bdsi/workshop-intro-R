@@ -5,10 +5,10 @@
 
 ![Jeremias Ivan](`r photo_path`images/team/jeremias-ivan.jpg){.circle-image-120}
 
-![Audrey Prasetya](`r photo_path`images/team/avatar2.png){.circle-image-120}
+![Audrey Prasetya](`r photo_path`images/team/audrey-prasetya.jpeg){.circle-image-120}
 
 
-![Nils Kreuter](`r photo_path`images/team/avatar3.png){.circle-image-120}
+![Nils Kreuter (TBA)](`r photo_path`images/team/avatar3.png){.circle-image-120}
 
 
 :::

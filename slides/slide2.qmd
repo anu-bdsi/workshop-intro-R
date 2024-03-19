@@ -244,3 +244,18 @@ df[["n"]]
 :::
 
 :::
+
+
+## Missing values 
+
+
+- `NA` in R denotes missing values
+
+. . . 
+
+- When there are missing values, it can cause issues in the computation.
+
+```{webr-r}
+mean(c(2.3, NA, 4.7))
+```
+
