@@ -37,20 +37,11 @@ theme_set(theme_classic(base_size = 24))
 
 ## Teaching team 
 
-::: {layout-ncol=4 style="text-align:center;"}
+`r photo_path <- ""`
+
+{{< include _team.qmd >}}
 
 
-![Dr. Emi Tanaka](images/team/emi-square.png){.circle-image-120}
-
-![Helper 1 TBD](images/team/avatar4.png){.circle-image-120}
-
-![Helper 2 TBD](images/team/avatar2.png){.circle-image-120}
-
-
-![Helper 3 TBD](images/team/avatar3.png){.circle-image-120}
-
-
-:::
 
 ::: incremental
 

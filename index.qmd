@@ -2,6 +2,7 @@
 title: "Introduction to R programming"
 date: 2024/04/03
 categories: BDSI Workshop
+engine: knitr
 ---
 
 
@@ -46,15 +47,7 @@ Please ensure that you download and install
 
 ## Teaching team 
 
-::: {layout-ncol=4 style="text-align:center;"}
+`r photo_path <- "slides/"`
 
+{{< include slides/_team.qmd >}}
 
-![Dr. Emi Tanaka](slides/images/team/emi-square.png){.circle-image-120}
-
-![Helper 1 TBD](slides/images/team/avatar4.png){.circle-image-120}
-
-![Helper 2 TBD](slides/images/team/avatar2.png){.circle-image-120}
-
-![Helper 3 TBD](slides/images/team/avatar3.png){.circle-image-120}
-
-:::
