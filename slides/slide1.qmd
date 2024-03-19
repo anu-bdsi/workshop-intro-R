@@ -2,6 +2,8 @@
 title: Getting Started 
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Introduction to R programming]{.tag-workshop}"
 format:
+  html: 
+    output-file: handout1.html
   anu-light-revealjs:
     width: 1920
     height: 1080
