@@ -16,3 +16,10 @@ date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
 ---
 
+## Functions 
+
+
+## Loops
+
+
+## Conditional statements
