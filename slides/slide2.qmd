@@ -22,22 +22,14 @@ execute:
   echo: true
 ---
 
-## {{< fa square-root-alt >}} Simple algebraic operations
+## Assignment to object
 
-- You can use R like a calculator
-
-
-```{webr-r}
-3 + 2 * (2 - 6 / 3) 
-```
-
-. . . 
 
 - Assignments to object:
   - You can assign values to objects using `<-` or `=`
   - The name of the object can be variable so long as it is _syntactically valid_ (no spaces and most special characters, and the name cannot start with a digit)
 
-```{r}
+```{webr-r}
 a <- 3
 b = 2
 2 * a - b 
@@ -47,7 +39,7 @@ b = 2
 
 - We can combine scalars to form vectors using `c()`:
 
-```{r}
+```{webr-r}
 a <- c(1, 2, 3)
 a / 2
 ```
@@ -56,7 +48,7 @@ a / 2
 
 - This is a vector of length 3 
 
-```{r}
+```{webr-r}
 length(a)
 ```
 
@@ -64,7 +56,7 @@ length(a)
 
 - This vector is stored as a `double` with the class as `numeric`
 
-```{r}
+```{webr-r}
 typeof(a)
 class(a)
 ```
@@ -75,7 +67,7 @@ class(a)
 
 
 
-```{r}
+```{webr-r}
 logical_vec <- c(TRUE, FALSE, T, F)
 integer_vec <- c(1L, 2L, 3L, 4L)
 double_vec <- c(1, 2, 3, 4)
@@ -88,14 +80,14 @@ character_vec <- c("A", "B", 'C', 'D')
 - A vector can only consist of the same type.
 - If you attempt to combine mismatched types together, it will try to coerce all values to the same type.
 
-```{r}
+```{webr-r}
 c(TRUE, F, "3", 10, 'X')
 ```
 
 ## Lists 
 
 - Lists allow to combine elements of different types.
-```{r}
+```{webr-r}
 l <- list(c(1, 2, 3), 
           c(2.5, 3.0),
           c(TRUE, FALSE),
@@ -104,7 +96,7 @@ l <- list(c(1, 2, 3),
 
 - You can use `str()` to see the internal structure of an object in R.
 
-```{r}
+```{webr-r}
 str(l)
 ```
 
@@ -112,14 +104,14 @@ str(l)
 
 - `data.frame` is a special type of a _named_ list where each element of the vector is the same length.
 
-```{r}
+```{webr-r}
 df <- data.frame(grade = c("A", "B", "C"),
                      n = c(10, 14, 30))
 
 df
 ```
 
-```{r}
+```{webr-r}
 colnames(df)
 nrow(df)
 ncol(df)
@@ -129,8 +121,7 @@ ncol(df)
 
 - **Positive integers** select elements at the specified positions:
 
-```{r}
-#| code-line-numbers: false
+```{webr-r}
 x <- c(1.1, 2.2, 3.3, 4.4, 5.5)
 x[c(3, 1)]
 x[c(2, 2)]
@@ -140,8 +131,7 @@ x[c(2.3, 2.8)] # double is silently truncated to integers
 
 - **Negative integers** exclude elements at the specified positions:
 
-```{r}
-#| code-line-numbers: false
+```{webr-r}
 #| error: true
 x[-c(3, 1)]
 x[c(-3, 1)] # you can't mix positive and negative integers
@@ -151,14 +141,14 @@ x[c(-3, 1)] # you can't mix positive and negative integers
 
 - **Logical vectors** select elements where logical value is `TRUE`.
 
-```{r}
+```{webr-r}
 x[c(TRUE, FALSE, TRUE, FALSE, TRUE)]
 x[x > 3]
 ```
 
 - If the logical vector used for subsetting a vector is shorter than it then the logical vector is _recycled_ to match the length of the vector.
 
-```{r}
+```{webr-r}
 x[c(TRUE, FALSE)] # the same as the first one
 ```
 
@@ -166,7 +156,7 @@ x[c(TRUE, FALSE)] # the same as the first one
 
 - **Character vectors** select elements based on the name of the vector (if any):
 
-```{r}
+```{webr-r}
 y <- c("a" = 1.1, "b" = 2.2, "c" = 3.3, "d" = 4.4, "e" = 5.5)
 y
 y[c("c", "a", "a", "f")]
@@ -178,7 +168,7 @@ y[c("c", "a", "a", "f")]
 
 ::: {.w-50}
 
-```{r}
+```{webr-r}
 str(l)
 ```
 
@@ -187,7 +177,7 @@ str(l)
 
 ::: {.w-50 .pl3}
 
-```{r}
+```{webr-r}
 #| error: true
 l[1]
 l[[1]]
@@ -205,7 +195,7 @@ l[[c(1, 2)]] # what's happened here?!
 ## Subsetting named lists
 
 
-```{r}
+```{webr-r}
 l2 <- list(A = c(1, 2, 3),
            log = c(TRUE, FALSE),
            who = c("Terry", "Jon"))
@@ -222,7 +212,7 @@ l2[["A"]]
 
 ::: {.w-20}
 
-```{r}
+```{webr-r}
 df
 ```
 
@@ -232,7 +222,7 @@ df
 ::: {.w-80 .pl3}
 
 
-```{r}
+```{webr-r}
 df[1, ]
 df[, 1]
 df[, 1, drop = FALSE]
@@ -248,14 +238,27 @@ df[["n"]]
 
 ## Missing values 
 
+::: incremental
 
-- `NA` in R denotes missing values
+- `NA` in R denotes missing values -- there are in fact different types of missing values (`NA_character_`, `NA_integer_`, `NA_real_`, `NA_complex_`).
+
+:::
 
 . . . 
 
 - When there are missing values, it can cause issues in the computation.
 
 ```{webr-r}
-mean(c(2.3, NA, 4.7))
+x <- c(2.3, NA, 4.7)
+mean(x)
 ```
+
+. . . 
+
+- Below we remove the missing values:
+
+```{webr-r}
+mean(x, na.rm = TRUE)
+```
+
 
