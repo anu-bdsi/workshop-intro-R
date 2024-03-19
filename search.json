@@ -42,6 +42,27 @@
     "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4"
   },
   {
+    "objectID": "slides/slide4.html#functions",
+    "href": "slides/slide4.html#functions",
+    "title": "Functions, loops and conditional statements",
+    "section": "Functions",
+    "text": "Functions"
+  },
+  {
+    "objectID": "slides/slide4.html#loops",
+    "href": "slides/slide4.html#loops",
+    "title": "Functions, loops and conditional statements",
+    "section": "Loops",
+    "text": "Loops"
+  },
+  {
+    "objectID": "slides/slide4.html#conditional-statements",
+    "href": "slides/slide4.html#conditional-statements",
+    "title": "Functions, loops and conditional statements",
+    "section": "Conditional statements",
+    "text": "Conditional statements\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+  },
+  {
     "objectID": "slides/slide2.html#assignment-to-object",
     "href": "slides/slide2.html#assignment-to-object",
     "title": "Working with objects",
@@ -441,18 +462,18 @@
     "text": "How to get better at R?\nPRACTICE\n\n\nPractice with a purpose (e.g. using R on your own data).\nTry teaching and helping others with their R problem.\nHave a willingness to continuously learn and adapt.\n\nR is an ever evolving language (check the release news every so often),\nnew features and packages are added very frequently,\nwhether you are a beginner or not, there are always things we do not know about R."
   },
   {
-    "objectID": "slides/slide3.html#data-file-formats-part-1",
-    "href": "slides/slide3.html#data-file-formats-part-1",
+    "objectID": "slides/slide3.html#data-file-formats",
+    "href": "slides/slide3.html#data-file-formats",
     "title": "Reading and writing data",
-    "section": "Data file formats Part 1",
-    "text": "Data file formats Part 1\n\n\nData are stored as a file, which points to a block of computer memory.\nA file format signals a way to interpret the information stored in the computer memory.\nA common approach is to have as a text file format where\n\na delimiter (e.g. “,” and tabs) separate columns,\nthe first row (header) corresponds to the names of the variables, and\nsubsequent rows correspond to the values.\n\nA file with the extension “csv” (comma-separated values) uses a comma as a delimiter while “tsv” uses tabs as a delimiter.\n\n\n\n\ndata.csv\n\nlen, supp, dose\n4.2, VC, 0.5\n11.5, VC, 0.5\n..."
+    "section": "Data file formats",
+    "text": "Data file formats\n\n\nData are stored as a file, which points to a block of computer memory.\nA file format signals a way to interpret the information stored in the computer memory.\nA file with the extension “csv” (comma-separated values) uses a comma as a delimiter while “tsv” uses tabs as a delimiter.\n\n\n\n\ndata.csv\n\nlen, supp, dose\n4.2, VC, 0.5\n11.5, VC, 0.5\n...\n\n\n\nA common approach is to have as a text file format where\n\na delimiter (e.g. “,” and tabs) separate columns,\nthe first row (header) corresponds to the names of the variables, and\nsubsequent rows correspond to the values."
   },
   {
-    "objectID": "slides/slide3.html#data-formats-part-2",
-    "href": "slides/slide3.html#data-formats-part-2",
+    "objectID": "slides/slide3.html#binary-or-propriety-file-formats",
+    "href": "slides/slide3.html#binary-or-propriety-file-formats",
     "title": "Reading and writing data",
-    "section": "Data formats Part 2",
-    "text": "Data formats Part 2\n\n\nYou may open csv or tsv files using a spreadsheet software (e.g. Excel or Libre Office).\nIf you open as a text file, you’ll just see these are just texts like before – the spreadsheet software just gives you a nicer layout to visualise/modify the data.\nData are also stored as a binary format (in R, these include .RData and .rda but we won’t cover this).\nData can also come in a propriety format (e.g. xls and xlsx) – these require special ways to open/view/read it."
+    "section": "Binary or propriety file formats",
+    "text": "Binary or propriety file formats\n\n\nData can also be stored as a binary format (in R, these include .RData and .rda but we won’t cover this).\nData can also come in a propriety format (e.g. xls and xlsx) – these require special ways to open/view/read it."
   },
   {
     "objectID": "slides/slide3.html#formatting-data",
@@ -488,6 +509,41 @@
     "title": "Reading and writing data",
     "section": "R project",
     "text": "R project\n\n\nWithin RStudio, you can create a project file (with an .Rproj extension).\nDouble clicking on this project file launches RStudio Desktop with the current working directory set to the location of the project file.\nYou can create this project file by going to RStudio &gt; File &gt; New Project …\n\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+  },
+  {
+    "objectID": "slides/slide5.html#how-to-get-better-at-r",
+    "href": "slides/slide5.html#how-to-get-better-at-r",
+    "title": "Wrap-up",
+    "section": "How to get better at R?",
+    "text": "How to get better at R?\nPRACTICE\n\nPractice with a purpose (e.g. using R on your own data).\nTry teaching and helping others with their R problem.\nHave a willingness to continuously learn and adapt.\n\nR is an ever evolving language (check the release news every so often),\nnew features and packages are added very frequently,\nwhether you are a beginner or not, there are always things we do not know about R."
+  },
+  {
+    "objectID": "slides/slide5.html#joining-the-r-community",
+    "href": "slides/slide5.html#joining-the-r-community",
+    "title": "Wrap-up",
+    "section": "Joining the R community",
+    "text": "Joining the R community"
+  },
+  {
+    "objectID": "slides/slide5.html#resources",
+    "href": "slides/slide5.html#resources",
+    "title": "Wrap-up",
+    "section": "Resources",
+    "text": "Resources\n\nR for Data Science\nR4DS Online Learning Community\nAsk questions on Stack Overflow or Posit Community."
+  },
+  {
+    "objectID": "slides/slide5.html#local-resources",
+    "href": "slides/slide5.html#local-resources",
+    "title": "Wrap-up",
+    "section": "Local Resources",
+    "text": "Local Resources\n\nAsk the local experts such as at the\n\nBDSI Drop-In Sessions and\nANU Statistical Support Network.\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
+  },
+  {
+    "objectID": "slides/slide5.html#feedback",
+    "href": "slides/slide5.html#feedback",
+    "title": "Wrap-up",
+    "section": "Feedback",
+    "text": "Feedback\n\nWhat worked or didn’t work for you?\nWhat other workshops?\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
   },
   {
     "objectID": "help.html",
