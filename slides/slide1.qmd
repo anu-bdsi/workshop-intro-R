@@ -43,15 +43,10 @@ theme_set(theme_classic(base_size = 24))
 {{< include _team.qmd >}}
 
 
+## Your turn! Tell us about you
 
-::: incremental
+<iframe src="https://embed.polleverywhere.com/free_text_polls/Jo8dbOzhFN5sVwqzpUc67?controls=none&short_poll=true" width="100%" height="800px"></iframe>
 
-- Your turn to introduce yourself!
-  - What statistical software, if any, have you used before? 
-  - What type of data do you work with or plan to work with?
-
-    
-:::
 
 # Workshop materials
 
