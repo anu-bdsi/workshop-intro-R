@@ -14,12 +14,97 @@ author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/03
 date-format: "D[rd] MMMM YYYY"
+filters:
+  - webr
+webr: 
+  show-startup-message: false  
 ---
 
 ## Functions 
+
+::: incremental
+
+- A function in R has three parts: 
+  - `formals()`: the list of input arguments,
+  - `body()`: the code inside the function,
+  - `environment()`: the environment (out of scope for this workshop).
+- Writing your own functions can make repetitive tasks easier.
+- You can make a new function using `function()`.
+
+:::
+
+. . . 
+
+```{webr-r}
+add <- function(x, y) x + y
+add(1, 2)
+```
+
+
+## Examining functions
+
+- Writing the name of the function without arguments shows the internal code:
+
+```{webr-r}
+fivenum
+```
+
 
 
 ## Loops
 
 
+```{webr-r}
+for(i in 1:3) {
+  print(paste("Item", i))
+  next 
+  break
+}
+
+while(condition)
+repeat(action)
+```
+
+
+
+
 ## Conditional statements
+
+- The condition in the `if` statement needs to evaluate to a single `TRUE` or `FALSE`
+- `ifelse()` is the vectorised 
+
+```{webr-r}
+if(TRUE) print("It's true!")
+if(TRUE) "Hi" else "Bye"
+ifelse(TRUE, "Hi", "Bye")
+switch("HD"
+       HD = "Great!",
+       D = "Superb",
+       "Undetermined value")
+```
+
+
+## Example
+
+
+```{webr-r}
+grade <- function(mark) {
+  if(mark >= 80) {
+    "HD"
+  } else if(mark >= 70) {
+    "D"
+  } else if(mark >= 60) {
+    "CR"
+  } else if(mark >= 50) {
+    "P"
+  } else {
+    "N"
+  }
+}
+
+grade(80)
+grade(c(80, 83, 70, 48))
+```
+
+
+
