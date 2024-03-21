@@ -7,6 +7,10 @@ format:
   html:
     css: assets/webex.css
     include-after-body: assets/webex.js
+filters:
+  - webr2
+webr: 
+  show-startup-message: false    
 ---
 
 ```{r setup, include = FALSE}
@@ -29,9 +33,9 @@ slide_title <- function(id) {
 
 Time | Content 
 :-----------|:-----------------|
-10.00-10.20 | `r slide_title(1)` |     
-10.20-10.30 | `r ex_tabset(1)` |     
-10.30-10.50 | `r slide_title(2)`  |     
+10.00-10.30 | `r slide_title(1)` |     
+10.30-10.40 | `r ex_tabset(1)` |     
+10.40-10.50 | `r slide_title(2)`  |     
 10.50-11.10 | `r ex_tabset(2)` |      
 11.10-11.20 | `r slide_title(3)`  |     
 11.20-11.40 | `r ex_tabset(3)` |     
@@ -52,15 +56,46 @@ Time | Content
 
 ## Exercise 1
 
+```{webr-r}
+
+
+
+
+```
+
+
+Using R
+
 
 ## Exercise 2
 
 
+```{webr-r}
+
+
+
+
+```
+
 ## Exercise 3
+
+
+```{webr-r}
+
+
+
+
+```
 
 ## Exercise 4
 
 
+```{webr-r}
+
+
+
+
+```
 
 
 :::
