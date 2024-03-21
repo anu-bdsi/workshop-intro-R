@@ -125,5 +125,286 @@ grade(80)
 grade(c(80, 83, 70, 48))
 ```
 
+## Basic troubleshooting 
+
+If you encounter an error,
+
+1. Read the error message!
+2. Google the error message
+3. Ask for help [_with a reproducible example_]{.fragment}
+
+## 🆘 Asking for help 
+
+* What do you think about the question below?
+<center>
+<img class="border-box" width = "900px" style="padding:0px" src="images/stackoverflow-1.png">
+</center>
+
+
+## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Part 2]{.f4}
+
+
+* What do you think now?
+
+
+
+::: {.ba .pa3}
+
+I am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn't work. Does anyone have any ideas? My code is below.
+````md
+`r ''````{r, fig.height = 3, fig.width = 3}
+ggplot(df, aes(weight, height)) +
+  geom_point()
+
+ggplot(df, aes(height, volume)) +
+  geom_point()
+```
+````
+
+:::
+
+::: notes
+
+* could not find function "ggplot"
+* the package needs to be loaded
+
+:::
+
+
+
+## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Part 3]{.f4}
+
+
+* Is this better?
+
+
+::: {.ba .pa3}
+I am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn't work. Does anyone have any ideas? My code is below.
+````md
+`r ''````{r, fig.height = 3, fig.width = 3}
+library(ggplot2)
+ggplot(df, aes(weight, height)) +
+  geom_point()
+
+ggplot(df, aes(height, volume)) +
+  geom_point()
+```
+````
+
+:::
+
+::: notes
+
+* Data `df` is not defined!
+
+:::
+
+
+## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Part 4]{.f4}
+
+
+* Okay better now?
+
+
+::: {.ba .pa3}
+
+I am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn't work. Does anyone have any ideas? My code is below.
+````md
+`r ''````{r, fig.height = 3, fig.width = 3}
+library(ggplot2)
+df <- read.csv("mydata.csv")
+ggplot(df, aes(weight, height)) +
+  geom_point()
+
+ggplot(df, aes(height, volume)) +
+  geom_point()
+```
+````
+
+:::
+
+::: notes
+
+* Is the data used in this question necessarily for the question?
+* Do we even have a copy of `mydata.csv`??
+
+:::
+
+
+
+
+## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Part 5]{.f4}
+
+
+* Are we done now?
+
+::: {.ba .pa3}
+
+I am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn't work. Does anyone have any ideas? My code is below.
+````md
+`r ''````{r, fig.height = 3, fig.width = 3}
+library(ggplot2)
+ggplot(trees, aes(Girth, Height)) +
+  geom_point()
+
+ggplot(trees, aes(Height, Volume)) +
+  geom_point()
+```
+````
+
+:::
+
+
+::: notes
+
+* Author is using the built-in dataset `trees` here
+
+:::
+
+
+
+# ❓ How to ask questions?
+
+
+
+## Checklist [(note: not an exhaustive checklist)]{.f3}
+
+
+<label class="checkbox-container">Is the problem clearly and succinctly described?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Is the expected solution or behaviour outlined?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Are you asking the right people at the right place?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+
+
+If the question is **asked in an public forum** or similar:
+
+<label class="checkbox-container">Can people who can answer your question find your question? E.g. does the post have appropriate tags or keywords to reach the right experts?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+  
+  
+If the **problem is computer system related**...
+
+<label class="checkbox-container">Can the problem be easily reproduced on other people's system?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Is the minimum reproducible code or steps supplied?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+
+If the **problem is based on data** ...
+
+<label class="checkbox-container">Is the data supplied?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+<label class="checkbox-container">If the data is big, could you cull your data further to communicate or reproduce the problem?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+
+
+
+
+## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Check]{.f4} 
+::: flex
+::: w-60
+<img class="border-box" width = "100%" style="padding:0px" src="images/stackoverflow-1.png">
+:::
+::: {.w-40 .pl3 .f2}
+<label class="checkbox-container">Is the problem clearly and succintly defined?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Is the expected solution or behaviour outlined?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Is the problem asked at the right place or person?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+
+<label class="checkbox-container">Can people who can answer your question find your question?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+
+<label class="checkbox-container">Can the problem be easily reproduced on other people's system?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Is the minimum reproducible code or steps supplied?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+
+<label class="checkbox-container">Is the data supplied?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+<label class="checkbox-container">If the data is big, could you cull your data further to communicate or reproduce the problem?
+<input type="checkbox"><span class="checkmark"></span>
+</label>
+
+:::
+:::
+
+
+## 🆘 Asking for help [2]{.circle .monash-bg-red2 .monash-white}
+
+::: flex
+::: w-30
+* How about the question on the right?
+* What makes it *hard* or *easy* for people to answer this question?
+
+
+
+:::
+::: w-70
+
+<center>
+<img class="ba" width = "100%" style="padding:0px" src="images/stackoverflow-2-1.png">
+<img class="ba" width = "100%" style="padding:0px" src="images/stackoverflow-2-2.png">
+
+</center>
+:::
+:::
+
+
+::: notes
+
+* In this example, the author provides the data but it requires work for others to read this data in.
+
+:::
+
+
+## Session Information 
+
+You can easily get the session information in R using `sessionInfo()`. <br>[Scroll to see the packages used to make these slides.]{.f4}
+
+::: {.overflow-scroll .h-70}
+```{r, include = FALSE}
+options(width = 80)
+```
+
+```{r}
+sessionInfo()
+```
+:::
+
+
+
+## 🎁 Reproducible Example with `reprex` [LIVE DEMO]{.f4}
+
+* Copy your **minimum reproducible example** then run
+
+```{r, eval = FALSE}
+reprex::reprex(session_info = TRUE)
+```
+
+
+* Once you run the above command, your clipboard contains the formatted code and output for you to paste into places like [GitHub issues](https://docs.github.com/en/enterprise/2.15/user/articles/creating-an-issue), [Stackoverflow](https://stackoverflow.com/) and forums powered by [Discourse](https://www.discourse.org/), e.g. [RStudio Community](https://community.rstudio.com/).
+
+
+
+
+
 
 
