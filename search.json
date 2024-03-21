@@ -18,14 +18,14 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nGetting Started\n\n\n10.20-10.30\nExercise 1\n\n\n10.30-10.50\nWorking with objects\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nReading and writing data\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nFunctions, loops and conditional statements\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap-up\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "Time\nContent\n\n\n\n\n10.00-10.30\nGetting Started\n\n\n10.30-10.40\nExercise 1\n\n\n10.40-10.50\nWorking with objects\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nReading and writing data\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nFunctions, loops and conditional statements\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap-up\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "materials.html#schedule",
     "href": "materials.html#schedule",
     "title": "Materials",
     "section": "",
-    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nGetting Started\n\n\n10.20-10.30\nExercise 1\n\n\n10.30-10.50\nWorking with objects\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nReading and writing data\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nFunctions, loops and conditional statements\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap-up"
+    "text": "Time\nContent\n\n\n\n\n10.00-10.30\nGetting Started\n\n\n10.30-10.40\nExercise 1\n\n\n10.40-10.50\nWorking with objects\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nReading and writing data\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nFunctions, loops and conditional statements\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap-up"
   },
   {
     "objectID": "materials.html#resources",
@@ -39,7 +39,7 @@
     "href": "materials.html#exercises",
     "title": "Materials",
     "section": "🏋️‍♀️ Exercises",
-    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4"
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nUsing R\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide4.html#current-learning-objective",
@@ -151,14 +151,14 @@
     "href": "slides/slide4.html#session-information",
     "title": "Functions, loops and conditional statements",
     "section": "Session Information",
-    "text": "Session Information\nYou can easily get the session information in R using sessionInfo(). Scroll to see the packages used to make these slides.\n\n\n\nR version 4.3.1 (2023-06-16)\nPlatform: aarch64-apple-darwin20 (64-bit)\nRunning under: macOS Sonoma 14.2.1\n\nMatrix products: default\nBLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib \nLAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0\n\nlocale:\n[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n\ntime zone: Australia/Sydney\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n [1] lubridate_1.9.3 forcats_1.0.0   stringr_1.5.1   dplyr_1.1.4    \n [5] purrr_1.0.2     readr_2.1.4     tidyr_1.3.0     tibble_3.2.1   \n [9] ggplot2_3.5.0   tidyverse_2.0.0\n\nloaded via a namespace (and not attached):\n [1] gtable_0.3.4      jsonlite_1.8.8    compiler_4.3.1    tidyselect_1.2.0 \n [5] scales_1.3.0      yaml_2.3.8        fastmap_1.1.1     R6_2.5.1         \n [9] generics_0.1.3    knitr_1.45        munsell_0.5.0     pillar_1.9.0     \n[13] tzdb_0.4.0        rlang_1.1.3       utf8_1.2.4        stringi_1.8.3    \n[17] xfun_0.41         timechange_0.2.0  cli_3.6.2         withr_3.0.0      \n[21] magrittr_2.0.3    digest_0.6.34     grid_4.3.1        rstudioapi_0.15.0\n[25] hms_1.1.3         lifecycle_1.0.4   vctrs_0.6.5       evaluate_0.23    \n[29] glue_1.7.0        fansi_1.0.6       colorspace_2.1-0  rmarkdown_2.25   \n[33] tools_4.3.1       pkgconfig_2.0.3   htmltools_0.5.7"
+    "text": "Session Information\nYou can easily get the session information in R using sessioninfo::session_info(). Scroll to see the packages used to make these slides.\n\n\nsessioninfo::session_info()\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.3.1 (2023-06-16)\n os       macOS Sonoma 14.2.1\n system   aarch64, darwin20\n ui       X11\n language (EN)\n collate  en_US.UTF-8\n ctype    en_US.UTF-8\n tz       Australia/Sydney\n date     2024-03-22\n pandoc   3.1.1 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n cli           3.6.2   2023-12-11 [1] CRAN (R 4.3.1)\n colorspace    2.1-0   2023-01-23 [1] CRAN (R 4.3.0)\n digest        0.6.34  2024-01-11 [1] CRAN (R 4.3.1)\n dplyr       * 1.1.4   2023-11-17 [1] CRAN (R 4.3.1)\n evaluate      0.23    2023-11-01 [1] CRAN (R 4.3.1)\n fansi         1.0.6   2023-12-08 [1] CRAN (R 4.3.1)\n fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.3.0)\n forcats     * 1.0.0   2023-01-29 [1] CRAN (R 4.3.0)\n generics      0.1.3   2022-07-05 [1] CRAN (R 4.3.0)\n ggplot2     * 3.5.0   2024-02-23 [1] CRAN (R 4.3.1)\n glue          1.7.0   2024-01-09 [1] CRAN (R 4.3.1)\n gtable        0.3.4   2023-08-21 [1] CRAN (R 4.3.0)\n hms           1.1.3   2023-03-21 [1] CRAN (R 4.3.0)\n htmltools     0.5.7   2023-11-03 [1] CRAN (R 4.3.1)\n jsonlite      1.8.8   2023-12-04 [1] CRAN (R 4.3.1)\n knitr         1.45    2023-10-30 [1] CRAN (R 4.3.1)\n lifecycle     1.0.4   2023-11-07 [1] CRAN (R 4.3.1)\n lubridate   * 1.9.3   2023-09-27 [1] CRAN (R 4.3.1)\n magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.3.0)\n munsell       0.5.0   2018-06-12 [1] CRAN (R 4.3.0)\n pillar        1.9.0   2023-03-22 [1] CRAN (R 4.3.0)\n pkgconfig     2.0.3   2019-09-22 [1] CRAN (R 4.3.0)\n purrr       * 1.0.2   2023-08-10 [1] CRAN (R 4.3.0)\n R6            2.5.1   2021-08-19 [1] CRAN (R 4.3.0)\n readr       * 2.1.4   2023-02-10 [1] CRAN (R 4.3.0)\n rlang         1.1.3   2024-01-10 [1] CRAN (R 4.3.1)\n rmarkdown     2.25    2023-09-18 [1] CRAN (R 4.3.1)\n rstudioapi    0.15.0  2023-07-07 [1] CRAN (R 4.3.0)\n scales        1.3.0   2023-11-28 [1] CRAN (R 4.3.1)\n sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.3.0)\n stringi       1.8.3   2023-12-11 [1] CRAN (R 4.3.1)\n stringr     * 1.5.1   2023-11-14 [1] CRAN (R 4.3.1)\n tibble      * 3.2.1   2023-03-20 [1] CRAN (R 4.3.0)\n tidyr       * 1.3.0   2023-01-24 [1] CRAN (R 4.3.0)\n tidyselect    1.2.0   2022-10-10 [1] CRAN (R 4.3.0)\n tidyverse   * 2.0.0   2023-02-22 [1] CRAN (R 4.3.0)\n timechange    0.2.0   2023-01-11 [1] CRAN (R 4.3.0)\n tzdb          0.4.0   2023-05-12 [1] CRAN (R 4.3.0)\n utf8          1.2.4   2023-10-22 [1] CRAN (R 4.3.1)\n vctrs         0.6.5   2023-12-01 [1] CRAN (R 4.3.1)\n withr         3.0.0   2024-01-16 [1] CRAN (R 4.3.1)\n xfun          0.41    2023-11-01 [1] CRAN (R 4.3.1)\n yaml          2.3.8   2023-12-11 [1] CRAN (R 4.3.1)\n\n [1] /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────"
   },
   {
     "objectID": "slides/slide4.html#reproducible-example-with-reprex-live-demo",
     "href": "slides/slide4.html#reproducible-example-with-reprex-live-demo",
     "title": "Functions, loops and conditional statements",
     "section": "🎁 Reproducible Example with reprex LIVE DEMO",
-    "text": "🎁 Reproducible Example with reprex LIVE DEMO\n\nCopy your minimum reproducible example then run\n\n\nOnce you run the above command, your clipboard contains the formatted code and output for you to paste into places like GitHub issues, Stackoverflow and forums powered by Discourse, e.g. RStudio Community.\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+    "text": "🎁 Reproducible Example with reprex LIVE DEMO\n\nCopy your minimum reproducible example then run\n\n\nreprex::reprex(session_info = TRUE)\n\n\nOnce you run the above command, your clipboard contains the formatted code and output for you to paste into places like GitHub issues, Stackoverflow and forums powered by Discourse, e.g. RStudio Community.\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
   },
   {
     "objectID": "slides/slide2.html#current-learning-objective",
@@ -291,14 +291,14 @@
     "href": "index.html#teaching-team",
     "title": "Introduction to R programming",
     "section": "Teaching team",
-    "text": "Teaching team\n\n\n\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)"
+    "text": "Teaching team\n\n\n\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nRyan O’Donnell (TBA)"
   },
   {
     "objectID": "slides/slide1.html#teaching-team",
     "href": "slides/slide1.html#teaching-team",
     "title": "Getting Started",
     "section": "Teaching team",
-    "text": "Teaching team\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)"
+    "text": "Teaching team\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nRyan O’Donnell (TBA)"
   },
   {
     "objectID": "slides/slide1.html#your-turn-tell-us-about-you",
@@ -315,11 +315,11 @@
     "text": "Learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
   },
   {
-    "objectID": "slides/slide1.html#current-learning-objective",
-    "href": "slides/slide1.html#current-learning-objective",
+    "objectID": "slides/slide1.html#current-learning-objectives",
+    "href": "slides/slide1.html#current-learning-objectives",
     "title": "Getting Started",
-    "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+    "section": " Current learning objectives",
+    "text": "Current learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide1.html#what-is-r",
@@ -434,25 +434,25 @@
     "text": "Using packages on CRAN\n\n\nIf the package (say praise) is on CRAN, you can install it by:\n\ninstall.packages(\"praise\")\n\nYou only need to install.packages() once!\n\n\n\n\nLoading exported functions from a package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nUse package::function() for without loading package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "slides/slide1.html#how-to-get-better-at-r",
-    "href": "slides/slide1.html#how-to-get-better-at-r",
+    "objectID": "slides/slide1.html#summary",
+    "href": "slides/slide1.html#summary",
     "title": "Getting Started",
-    "section": "How to get better at R?",
-    "text": "How to get better at R?\nPRACTICE\n\n\nPractice with a purpose (e.g. using R on your own data).\nTry teaching and helping others with their R problem.\nHave a willingness to continuously learn and adapt.\n\nR is an ever evolving language (check the release news every so often),\nnew features and packages are added very frequently,\nwhether you are a beginner or not, there are always things we do not know about R.\n\n\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-R/"
+    "section": "Summary",
+    "text": "Summary\n\n\nRStudio Desktop (or RStudio IDE)\n\n\n\n\n\nConsole or Source\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nUse install.packages() to install a package (only once).\nUse library() to load a package.\nUse package::function() to use a function from a package without loading it."
   },
   {
     "objectID": "slides/handout1.html",
     "href": "slides/handout1.html",
     "title": "Getting Started",
     "section": "",
-    "text": "Dr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "Dr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nRyan O’Donnell (TBA)\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "slides/handout1.html#teaching-team",
     "href": "slides/handout1.html#teaching-team",
     "title": "Getting Started",
     "section": "",
-    "text": "Dr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)"
+    "text": "Dr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nRyan O’Donnell (TBA)"
   },
   {
     "objectID": "slides/handout1.html#learning-objectives",
@@ -462,11 +462,11 @@
     "text": "Learning objectives\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
   },
   {
-    "objectID": "slides/handout1.html#current-learning-objective",
-    "href": "slides/handout1.html#current-learning-objective",
+    "objectID": "slides/handout1.html#current-learning-objectives",
+    "href": "slides/handout1.html#current-learning-objectives",
     "title": "Getting Started",
-    "section": " Current learning objective",
-    "text": "Current learning objective\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+    "section": " Current learning objectives",
+    "text": "Current learning objectives\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/handout1.html#what-is-r",
@@ -581,11 +581,11 @@
     "text": "Using packages on CRAN\n\n\nIf the package (say praise) is on CRAN, you can install it by:\n\ninstall.packages(\"praise\")\n\nYou only need to install.packages() once!\n\n\n\n\nLoading exported functions from a package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nUse package::function() for without loading package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "slides/handout1.html#how-to-get-better-at-r",
-    "href": "slides/handout1.html#how-to-get-better-at-r",
+    "objectID": "slides/handout1.html#summary",
+    "href": "slides/handout1.html#summary",
     "title": "Getting Started",
-    "section": "How to get better at R?",
-    "text": "How to get better at R?\nPRACTICE\n\n\nPractice with a purpose (e.g. using R on your own data).\nTry teaching and helping others with their R problem.\nHave a willingness to continuously learn and adapt.\n\nR is an ever evolving language (check the release news every so often),\nnew features and packages are added very frequently,\nwhether you are a beginner or not, there are always things we do not know about R."
+    "section": "Summary",
+    "text": "Summary\n\n\nRStudio Desktop (or RStudio IDE)\n\n\n\n\n\nConsole or Source\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nUse install.packages() to install a package (only once).\nUse library() to load a package.\nUse package::function() to use a function from a package without loading it."
   },
   {
     "objectID": "slides/slide3.html#current-learning-objective",
