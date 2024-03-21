@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.551">
+  <meta name="generator" content="quarto-1.4.545">
 
   <meta name="author" content="Emi Tanaka">
   <title>ANU BDSIworkshop Introduction to R programming - Getting Started</title>
@@ -389,7 +389,7 @@
     }
   </style>
   <script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-  <script src="../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+  <script src="../site_libs/plotly-binding-4.10.4.9000/plotly.js"></script>
   <script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
   <script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
   <link href="../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
@@ -562,7 +562,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"id":1,"options":{"autorun":"false","message":"true","fig-width":7,"fig-height":5,"context":"interactive","comment":"","results":"markup","warning":"true","label":"unnamed-chunk-1","output":"true","dpi":72,"out-width":"700px","classes":"","fig-cap":"","out-height":"","read-only":"false"},"code":"1 + 1 \n6 / 2 + 0.5\n(1 - 4) * 3 - 6^2"},{"id":2,"options":{"autorun":"false","message":"true","fig-width":7,"fig-height":5,"context":"interactive","comment":"","results":"markup","warning":"true","label":"unnamed-chunk-2","output":"true","dpi":72,"out-width":"700px","classes":"","fig-cap":"","out-height":"","read-only":"false"},"code":"sqrt(3)\nabs(-3)\nexp(1)\nlog(4, base = exp(1))\nsum(1:3)"},{"id":3,"options":{"autorun":"false","message":"true","fig-width":7,"fig-height":5,"context":"interactive","comment":"","results":"markup","warning":"true","label":"unnamed-chunk-3","output":"true","dpi":72,"out-width":"700px","classes":"","fig-cap":"","out-height":"","read-only":"false"},"code":"2:10\nseq(1, 10, by = 0.5)\nc(1, 4, -4, 20.5)"},{"id":4,"options":{"autorun":"false","message":"true","fig-width":7,"fig-height":5,"context":"interactive","comment":"","results":"markup","warning":"true","label":"unnamed-chunk-4","output":"true","dpi":72,"out-width":"700px","classes":"","fig-cap":"","out-height":"","read-only":"false"},"code":"?seq\nhelp(seq)"},{"id":5,"options":{"autorun":"false","message":"true","fig-width":7,"fig-height":5,"context":"interactive","comment":"","results":"markup","warning":"true","label":"unnamed-chunk-5","output":"true","dpi":72,"out-width":"700px","classes":"","fig-cap":"","out-height":"","read-only":"false"},"code":"library(help = \"base\")"},{"id":6,"options":{"autorun":"false","message":"true","fig-width":7,"fig-height":5,"context":"interactive","comment":"","results":"markup","warning":"true","label":"unnamed-chunk-6","output":"true","dpi":72,"out-width":"700px","classes":"","fig-cap":"","out-height":"","read-only":"false"},"code":"library(praise)\npraise()"},{"id":7,"options":{"autorun":"false","message":"true","fig-width":7,"fig-height":5,"context":"interactive","comment":"","results":"markup","warning":"true","label":"unnamed-chunk-7","output":"true","dpi":72,"out-width":"700px","classes":"","fig-cap":"","out-height":"","read-only":"false"},"code":"praise::praise()"}];
+  globalThis.qwebrCellDetails = [{"id":1,"code":"1 + 1 \n6 / 2 + 0.5\n(1 - 4) * 3 - 6^2","options":{"output":"true","message":"true","warning":"true","label":"unnamed-chunk-1","results":"markup","read-only":"false","context":"interactive","autorun":"false","dpi":72,"comment":"","fig-width":7,"fig-height":5,"fig-cap":"","classes":"","out-width":"700px","out-height":""}},{"id":2,"code":"sqrt(3)\nabs(-3)\nexp(1)\nlog(4, base = exp(1))\nsum(1:3)","options":{"output":"true","message":"true","warning":"true","label":"unnamed-chunk-2","results":"markup","read-only":"false","context":"interactive","autorun":"false","dpi":72,"comment":"","fig-width":7,"fig-height":5,"fig-cap":"","classes":"","out-width":"700px","out-height":""}},{"id":3,"code":"2:10\nseq(1, 10, by = 0.5)\nc(1, 4, -4, 20.5)","options":{"output":"true","message":"true","warning":"true","label":"unnamed-chunk-3","results":"markup","read-only":"false","context":"interactive","autorun":"false","dpi":72,"comment":"","fig-width":7,"fig-height":5,"fig-cap":"","classes":"","out-width":"700px","out-height":""}},{"id":4,"code":"?seq\nhelp(seq)","options":{"output":"true","message":"true","warning":"true","label":"unnamed-chunk-4","results":"markup","read-only":"false","context":"interactive","autorun":"false","dpi":72,"comment":"","fig-width":7,"fig-height":5,"fig-cap":"","classes":"","out-width":"700px","out-height":""}},{"id":5,"code":"library(help = \"base\")","options":{"output":"true","message":"true","warning":"true","label":"unnamed-chunk-5","results":"markup","read-only":"false","context":"interactive","autorun":"false","dpi":72,"comment":"","fig-width":7,"fig-height":5,"fig-cap":"","classes":"","out-width":"700px","out-height":""}},{"id":6,"code":"library(praise)\npraise()","options":{"output":"true","message":"true","warning":"true","label":"unnamed-chunk-6","results":"markup","read-only":"false","context":"interactive","autorun":"false","dpi":72,"comment":"","fig-width":7,"fig-height":5,"fig-cap":"","classes":"","out-width":"700px","out-height":""}},{"id":7,"code":"praise::praise()","options":{"output":"true","message":"true","warning":"true","label":"unnamed-chunk-7","results":"markup","read-only":"false","context":"interactive","autorun":"false","dpi":72,"comment":"","fig-width":7,"fig-height":5,"fig-cap":"","classes":"","out-width":"700px","out-height":""}}];
 
   </script>
   <script type="module">
@@ -1517,15 +1517,11 @@ Emi Tanaka
 </div>
 </div>
 </div>
-<div>
-<ul>
-<li class="fragment">Your turn to introduce yourself!
-<ul>
-<li class="fragment">What statistical software, if any, have you used before?</li>
-<li class="fragment">What type of data do you work with or plan to work with?</li>
-</ul></li>
-</ul>
-</div>
+</section>
+<section id="your-turn-tell-us-about-you" class="slide level2">
+<h2>Your turn! Tell us about you</h2>
+<iframe src="https://embed.polleverywhere.com/free_text_polls/Jo8dbOzhFN5sVwqzpUc67?controls=none&amp;short_poll=true" width="100%" height="800px">
+</iframe>
 </section></section>
 <section>
 <section id="workshop-materials" class="title-slide slide level1 center">
@@ -1536,19 +1532,75 @@ Emi Tanaka
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> The main aim is for you to get started with using R for basic computations.</p>
 <div class="f2">
-<ul>
-<li>Conduct elementary arithmetic operations using R</li>
-<li>Grasp the concept of missing values within the R environment</li>
-<li>Compute basic summary statistics including mean, median, quartiles, and standard deviation using R</li>
-<li>Install external packages in R to extend functionality</li>
-<li>Manipulate lists, matrices, and vectors in R</li>
-<li>Navigate the RStudio interactive development environment (IDE)</li>
-<li>Import and export data in R</li>
-<li>Comprehend various object types in R</li>
-<li>Create basic functions, employ conditional statements, and utilize for loops in R</li>
-<li>Decipher error messages and do basic troubleshooting</li>
+<ul class="fa-ul">
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Conduct elementary arithmetic operations using R
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Navigate the RStudio interactive development environment (IDE)
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Compute basic summary statistics including mean, median, quartiles, and standard deviation using R
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Install external packages in R to extend functionality
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Comprehend various object types in R
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Manipulate lists, matrices, and vectors in R
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Grasp the concept of missing values within the R environment
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Import and export data in R
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Create basic functions, employ conditional statements, and utilize for loops in R
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Decipher error messages and do basic troubleshooting
+</li>
+</ul>
+</div>
+</section>
+<section id="current-learning-objective" class="slide level2">
+<h2><i class="fa-solid fa-crosshairs" aria-label="crosshairs"></i> Current learning objective</h2>
+<div class="f2">
+<ul class="fa-ul">
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Conduct elementary arithmetic operations using R
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Navigate the RStudio interactive development environment (IDE)
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Compute basic summary statistics including mean, median, quartiles, and standard deviation using R
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Install external packages in R to extend functionality
+</li>
+<li style="opacity:0.25;">
+<span class="fa-li">-</span>Comprehend various object types in R
+</li>
+<li style="opacity:0.25;">
+<span class="fa-li">-</span>Manipulate lists, matrices, and vectors in R
+</li>
+<li style="opacity:0.25;">
+<span class="fa-li">-</span>Grasp the concept of missing values within the R environment
+</li>
+<li style="opacity:0.25;">
+<span class="fa-li">-</span>Import and export data in R
+</li>
+<li style="opacity:0.25;">
+<span class="fa-li">-</span>Create basic functions, employ conditional statements, and utilize for loops in R
+</li>
+<li style="opacity:0.25;">
+<span class="fa-li">-</span>Decipher error messages and do basic troubleshooting
+</li>
 </ul>
 </div>
 </section>
@@ -1625,16 +1677,16 @@ Emi Tanaka
 <div class="w-50">
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-3e14e69a2d82d82ac6b2" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-3e14e69a2d82d82ac6b2">{"x":{"data":[{"orientation":"v","width":[0.89999999999999991,0.90000000000000013,0.90000000000000036,0.90000000000000036],"base":[0,0,0,0],"x":[1,2,3,4],"y":[33,30,8,6],"text":["count: 33<br />aff2: RSB","count: 30<br />aff2: JCSMR","count:  8<br />aff2: NCEPH","count:  6<br />aff2: Other"],"key":[["RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB"],["JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR"],["NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH"],["Other","Other","Other","Other","Other","Other"]],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(34,107,167,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"set":"SharedData9d52d780","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"none","_isNestedKey":true,"frame":null}],"layout":{"margin":{"t":47.880448318804483,"r":15.940224159402241,"b":97.235367372353693,"l":81.295143212951444},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,4.5999999999999996],"tickmode":"array","ticktext":["RSB","JCSMR","NCEPH","Other"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["RSB","JCSMR","NCEPH","Other"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011207,"tickwidth":1.4491112872183856,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183856,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Affiliation","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,38],"tickmode":"array","ticktext":["0","10","20","30"],"tickvals":[0,10,20,30],"categoryorder":"array","categoryarray":["0","10","20","30"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011207,"tickwidth":1.4491112872183856,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183856,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"# of Registrants","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":4.1231209735146734,"font":{"color":"rgba(0,0,0,1)","family":"","size":25.5043586550436}},"hovermode":"closest","barmode":"relative","dragmode":"zoom"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"a891212e1405":{"x":{},"type":"bar"}},"cur_data":"a891212e1405","visdat":{"a891212e1405":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData9d52d780"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-f3ff05cd417e1e8adee2" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-f3ff05cd417e1e8adee2">{"x":{"data":[{"orientation":"v","width":[0.89999999999999991,0.90000000000000013,0.90000000000000036,0.90000000000000036],"base":[0,0,0,0],"x":[1,2,3,4],"y":[33,30,8,6],"text":["count: 33<br />aff2: RSB","count: 30<br />aff2: JCSMR","count:  8<br />aff2: NCEPH","count:  6<br />aff2: Other"],"key":[["RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB"],["JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR"],["NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH"],["Other","Other","Other","Other","Other","Other"]],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(34,107,167,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"set":"SharedData0d445932","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"none","_isNestedKey":true,"frame":null}],"layout":{"margin":{"t":47.880448318804483,"r":15.940224159402241,"b":97.235367372353693,"l":81.295143212951444},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,4.5999999999999996],"tickmode":"array","ticktext":["RSB","JCSMR","NCEPH","Other"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["RSB","JCSMR","NCEPH","Other"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011207,"tickwidth":1.4491112872183856,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183856,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Affiliation","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,38],"tickmode":"array","ticktext":["0","10","20","30"],"tickvals":[0,10,20,30],"categoryorder":"array","categoryarray":["0","10","20","30"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011207,"tickwidth":1.4491112872183856,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183856,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"# of Registrants","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":4.1231209735146734,"font":{"color":"rgba(0,0,0,1)","family":"","size":25.5043586550436}},"hovermode":"closest","barmode":"relative","dragmode":"zoom"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"c2f680dcc56":{"x":{},"type":"bar"}},"cur_data":"c2f680dcc56","visdat":{"c2f680dcc56":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData0d445932"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 <div class="w-50 pl3">
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-5f990c3850d6e84e3ffd" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-5f990c3850d6e84e3ffd">{"x":{"visdat":{"a8913d754586":["function () ","plotlyVisDat"]},"cur_data":"a8913d754586","attrs":{"a8913d754586":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"type":"histogram","histnorm":"percent","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"group","showlegend":false,"font":{"size":28},"xaxis":{"domain":[0,1],"automargin":true,"dtick":1,"title":{"text":"Confidence in R skills","font":{"size":30}},"ticksuffix":"   "},"yaxis":{"domain":[0,1],"automargin":true,"title":{"text":"Percentage (%)","font":{"size":30}},"ticksuffix":" "},"dragmode":"zoom","hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[1,3,1,4,5,6,2,4,7,4,4,4,6,1,1,3,3,6,1,10,1,7,3,5,7,5,1,1,2,6,6,1,2,4,8,2,4,3,5,5,2,10,6,1,5,4,5,7,5,3,1,7,3,5,2,1,2,1,1,2,6,8,3,2,4,3,5,5,4,1,1,1,1,6,4,1,2],"type":"histogram","histnorm":"percent","key":["Other","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","JCSMR","RSB","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","RSB","RSB","RSB","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","JCSMR","RSB","RSB","Other","Other","JCSMR","NCEPH","NCEPH","NCEPH","RSB","RSB","RSB","RSB","RSB","NCEPH","RSB","NCEPH","RSB","NCEPH","JCSMR","NCEPH","Other","Other","JCSMR","RSB","NCEPH","JCSMR","Other"],"set":"SharedData9d52d780","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null,"hoverinfo":"none"}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData9d52d780"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-fc80224208d2f3ae3f79" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-fc80224208d2f3ae3f79">{"x":{"visdat":{"c2f6663c0d47":["function () ","plotlyVisDat"]},"cur_data":"c2f6663c0d47","attrs":{"c2f6663c0d47":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"type":"histogram","histnorm":"percent","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"group","showlegend":false,"font":{"size":28},"xaxis":{"domain":[0,1],"automargin":true,"dtick":1,"title":{"text":"Confidence in R skills","font":{"size":30}},"ticksuffix":"   "},"yaxis":{"domain":[0,1],"automargin":true,"title":{"text":"Percentage (%)","font":{"size":30}},"ticksuffix":" "},"dragmode":"zoom","hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[1,3,1,4,5,6,2,4,7,4,4,4,6,1,1,3,3,6,1,10,1,7,3,5,7,5,1,1,2,6,6,1,2,4,8,2,4,3,5,5,2,10,6,1,5,4,5,7,5,3,1,7,3,5,2,1,2,1,1,2,6,8,3,2,4,3,5,5,4,1,1,1,1,6,4,1,2],"type":"histogram","histnorm":"percent","key":["Other","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","JCSMR","RSB","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","RSB","RSB","RSB","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","JCSMR","RSB","RSB","Other","Other","JCSMR","NCEPH","NCEPH","NCEPH","RSB","RSB","RSB","RSB","RSB","NCEPH","RSB","NCEPH","RSB","NCEPH","JCSMR","NCEPH","Other","Other","JCSMR","RSB","NCEPH","JCSMR","Other"],"set":"SharedData0d445932","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null,"hoverinfo":"none"}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData0d445932"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -2150,24 +2202,6 @@ scroll down<br>
         // clear code selection
         e.clearSelection();
       });
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/anu-bdsi\.github\.io\/workshop-intro-R\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -2204,11 +2238,7 @@ scroll down<br>
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {

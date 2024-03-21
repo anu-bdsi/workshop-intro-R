@@ -42,25 +42,130 @@
     "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4"
   },
   {
+    "objectID": "slides/slide4.html#current-learning-objective",
+    "href": "slides/slide4.html#current-learning-objective",
+    "title": "Functions, loops and conditional statements",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Install external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
+  },
+  {
     "objectID": "slides/slide4.html#functions",
     "href": "slides/slide4.html#functions",
     "title": "Functions, loops and conditional statements",
     "section": "Functions",
-    "text": "Functions"
+    "text": "Functions\n\n\nA function in R has three parts:\n\nformals(): the list of input arguments,\nbody(): the code inside the function,\nenvironment(): the environment (out of scope for this workshop).\n\nWriting your own functions can make repetitive tasks easier.\nYou can make a new function using function().\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide4.html#examining-functions",
+    "href": "slides/slide4.html#examining-functions",
+    "title": "Functions, loops and conditional statements",
+    "section": "Examining functions",
+    "text": "Examining functions\n\nWriting the name of the function without arguments shows the internal code:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide4.html#loops",
     "href": "slides/slide4.html#loops",
     "title": "Functions, loops and conditional statements",
     "section": "Loops",
-    "text": "Loops"
+    "text": "Loops\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide4.html#conditional-statements",
     "href": "slides/slide4.html#conditional-statements",
     "title": "Functions, loops and conditional statements",
     "section": "Conditional statements",
-    "text": "Conditional statements\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+    "text": "Conditional statements\n\nThe condition in the if statement needs to evaluate to a single TRUE or FALSE\nifelse() is the vectorised\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide4.html#example",
+    "href": "slides/slide4.html#example",
+    "title": "Functions, loops and conditional statements",
+    "section": "Example",
+    "text": "Example\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide4.html#basic-troubleshooting",
+    "href": "slides/slide4.html#basic-troubleshooting",
+    "title": "Functions, loops and conditional statements",
+    "section": "Basic troubleshooting",
+    "text": "Basic troubleshooting\nIf you encounter an error,\n\nRead the error message!\nGoogle the error message\nAsk for help with a reproducible example"
+  },
+  {
+    "objectID": "slides/slide4.html#asking-for-help",
+    "href": "slides/slide4.html#asking-for-help",
+    "title": "Functions, loops and conditional statements",
+    "section": "🆘 Asking for help",
+    "text": "🆘 Asking for help\n\nWhat do you think about the question below?"
+  },
+  {
+    "objectID": "slides/slide4.html#asking-for-help-1-part-2",
+    "href": "slides/slide4.html#asking-for-help-1-part-2",
+    "title": "Functions, loops and conditional statements",
+    "section": "🆘 Asking for help 1 Part 2",
+    "text": "🆘 Asking for help 1 Part 2\n\nWhat do you think now?\n\n\nI am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn’t work. Does anyone have any ideas? My code is below.\n```{r, fig.height = 3, fig.width = 3}\nggplot(df, aes(weight, height)) +\n  geom_point()\n\nggplot(df, aes(height, volume)) +\n  geom_point()\n```\n\n\n\ncould not find function “ggplot”\nthe package needs to be loaded"
+  },
+  {
+    "objectID": "slides/slide4.html#asking-for-help-1-part-3",
+    "href": "slides/slide4.html#asking-for-help-1-part-3",
+    "title": "Functions, loops and conditional statements",
+    "section": "🆘 Asking for help 1 Part 3",
+    "text": "🆘 Asking for help 1 Part 3\n\nIs this better?\n\n\nI am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn’t work. Does anyone have any ideas? My code is below.\n```{r, fig.height = 3, fig.width = 3}\nlibrary(ggplot2)\nggplot(df, aes(weight, height)) +\n  geom_point()\n\nggplot(df, aes(height, volume)) +\n  geom_point()\n```\n\n\n\nData df is not defined!"
+  },
+  {
+    "objectID": "slides/slide4.html#asking-for-help-1-part-4",
+    "href": "slides/slide4.html#asking-for-help-1-part-4",
+    "title": "Functions, loops and conditional statements",
+    "section": "🆘 Asking for help 1 Part 4",
+    "text": "🆘 Asking for help 1 Part 4\n\nOkay better now?\n\n\nI am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn’t work. Does anyone have any ideas? My code is below.\n```{r, fig.height = 3, fig.width = 3}\nlibrary(ggplot2)\ndf &lt;- read.csv(\"mydata.csv\")\nggplot(df, aes(weight, height)) +\n  geom_point()\n\nggplot(df, aes(height, volume)) +\n  geom_point()\n```\n\n\n\nIs the data used in this question necessarily for the question?\nDo we even have a copy of mydata.csv??"
+  },
+  {
+    "objectID": "slides/slide4.html#asking-for-help-1-part-5",
+    "href": "slides/slide4.html#asking-for-help-1-part-5",
+    "title": "Functions, loops and conditional statements",
+    "section": "🆘 Asking for help 1 Part 5",
+    "text": "🆘 Asking for help 1 Part 5\n\nAre we done now?\n\n\nI am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn’t work. Does anyone have any ideas? My code is below.\n```{r, fig.height = 3, fig.width = 3}\nlibrary(ggplot2)\nggplot(trees, aes(Girth, Height)) +\n  geom_point()\n\nggplot(trees, aes(Height, Volume)) +\n  geom_point()\n```\n\n\n\nAuthor is using the built-in dataset trees here"
+  },
+  {
+    "objectID": "slides/slide4.html#checklist-note-not-an-exhaustive-checklist",
+    "href": "slides/slide4.html#checklist-note-not-an-exhaustive-checklist",
+    "title": "Functions, loops and conditional statements",
+    "section": "Checklist (note: not an exhaustive checklist)",
+    "text": "Checklist (note: not an exhaustive checklist)\nIs the problem clearly and succinctly described?   Is the expected solution or behaviour outlined?   Are you asking the right people at the right place?  \nIf the question is asked in an public forum or similar:\nCan people who can answer your question find your question? E.g. does the post have appropriate tags or keywords to reach the right experts?  \nIf the problem is computer system related…\nCan the problem be easily reproduced on other people’s system?   Is the minimum reproducible code or steps supplied?  \nIf the problem is based on data …\nIs the data supplied?   If the data is big, could you cull your data further to communicate or reproduce the problem?"
+  },
+  {
+    "objectID": "slides/slide4.html#asking-for-help-1-check",
+    "href": "slides/slide4.html#asking-for-help-1-check",
+    "title": "Functions, loops and conditional statements",
+    "section": "🆘 Asking for help 1 Check",
+    "text": "🆘 Asking for help 1 Check\n\n\n\n\n\nIs the problem clearly and succintly defined?   Is the expected solution or behaviour outlined?   Is the problem asked at the right place or person?  \nCan people who can answer your question find your question?  \nCan the problem be easily reproduced on other people’s system?   Is the minimum reproducible code or steps supplied?  \nIs the data supplied?   If the data is big, could you cull your data further to communicate or reproduce the problem?"
+  },
+  {
+    "objectID": "slides/slide4.html#asking-for-help-2",
+    "href": "slides/slide4.html#asking-for-help-2",
+    "title": "Functions, loops and conditional statements",
+    "section": "🆘 Asking for help 2",
+    "text": "🆘 Asking for help 2\n\n\n\nHow about the question on the right?\nWhat makes it hard or easy for people to answer this question?\n\n\n\n\n \n\n\n\n\n\nIn this example, the author provides the data but it requires work for others to read this data in."
+  },
+  {
+    "objectID": "slides/slide4.html#session-information",
+    "href": "slides/slide4.html#session-information",
+    "title": "Functions, loops and conditional statements",
+    "section": "Session Information",
+    "text": "Session Information\nYou can easily get the session information in R using sessionInfo(). Scroll to see the packages used to make these slides.\n\n\n\nR version 4.3.1 (2023-06-16)\nPlatform: aarch64-apple-darwin20 (64-bit)\nRunning under: macOS Sonoma 14.2.1\n\nMatrix products: default\nBLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib \nLAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0\n\nlocale:\n[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n\ntime zone: Australia/Sydney\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n [1] lubridate_1.9.3 forcats_1.0.0   stringr_1.5.1   dplyr_1.1.4    \n [5] purrr_1.0.2     readr_2.1.4     tidyr_1.3.0     tibble_3.2.1   \n [9] ggplot2_3.5.0   tidyverse_2.0.0\n\nloaded via a namespace (and not attached):\n [1] gtable_0.3.4      jsonlite_1.8.8    compiler_4.3.1    tidyselect_1.2.0 \n [5] scales_1.3.0      yaml_2.3.8        fastmap_1.1.1     R6_2.5.1         \n [9] generics_0.1.3    knitr_1.45        munsell_0.5.0     pillar_1.9.0     \n[13] tzdb_0.4.0        rlang_1.1.3       utf8_1.2.4        stringi_1.8.3    \n[17] xfun_0.41         timechange_0.2.0  cli_3.6.2         withr_3.0.0      \n[21] magrittr_2.0.3    digest_0.6.34     grid_4.3.1        rstudioapi_0.15.0\n[25] hms_1.1.3         lifecycle_1.0.4   vctrs_0.6.5       evaluate_0.23    \n[29] glue_1.7.0        fansi_1.0.6       colorspace_2.1-0  rmarkdown_2.25   \n[33] tools_4.3.1       pkgconfig_2.0.3   htmltools_0.5.7"
+  },
+  {
+    "objectID": "slides/slide4.html#reproducible-example-with-reprex-live-demo",
+    "href": "slides/slide4.html#reproducible-example-with-reprex-live-demo",
+    "title": "Functions, loops and conditional statements",
+    "section": "🎁 Reproducible Example with reprex LIVE DEMO",
+    "text": "🎁 Reproducible Example with reprex LIVE DEMO\n\nCopy your minimum reproducible example then run\n\n\nOnce you run the above command, your clipboard contains the formatted code and output for you to paste into places like GitHub issues, Stackoverflow and forums powered by Discourse, e.g. RStudio Community.\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+  },
+  {
+    "objectID": "slides/slide2.html#current-learning-objective",
+    "href": "slides/slide2.html#current-learning-objective",
+    "title": "Working with objects",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Install external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nGrasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide2.html#assignment-to-object",
@@ -172,7 +277,7 @@
     "href": "index.html#learning-objectives",
     "title": "Introduction to R programming",
     "section": "Learning objectives",
-    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nConduct elementary arithmetic operations using R\nGrasp the concept of missing values within the R environment\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nInstall external packages in R to extend functionality\nManipulate lists, matrices, and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nImport and export data in R\nComprehend various object types in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
+    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nConduct elementary arithmetic operations using R\nNavigate the RStudio interactive development environment (IDE)\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nInstall external packages in R to extend functionality\nComprehend various object types in R\nManipulate lists, matrices, and vectors in R\nGrasp the concept of missing values within the R environment\nImport and export data in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "index.html#preperation",
@@ -193,14 +298,28 @@
     "href": "slides/slide1.html#teaching-team",
     "title": "Getting Started",
     "section": "Teaching team",
-    "text": "Teaching team\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)\n\n\n\n\n\n\n\nYour turn to introduce yourself!\n\nWhat statistical software, if any, have you used before?\nWhat type of data do you work with or plan to work with?"
+    "text": "Teaching team\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)"
+  },
+  {
+    "objectID": "slides/slide1.html#your-turn-tell-us-about-you",
+    "href": "slides/slide1.html#your-turn-tell-us-about-you",
+    "title": "Getting Started",
+    "section": "Your turn! Tell us about you",
+    "text": "Your turn! Tell us about you"
   },
   {
     "objectID": "slides/slide1.html#learning-objectives",
     "href": "slides/slide1.html#learning-objectives",
     "title": "Getting Started",
     "section": "Learning objectives",
-    "text": "Learning objectives\n The main aim is for you to get started with using R for basic computations.\n\n\nConduct elementary arithmetic operations using R\nGrasp the concept of missing values within the R environment\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nInstall external packages in R to extend functionality\nManipulate lists, matrices, and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nImport and export data in R\nComprehend various object types in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
+    "text": "Learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
+  },
+  {
+    "objectID": "slides/slide1.html#current-learning-objective",
+    "href": "slides/slide1.html#current-learning-objective",
+    "title": "Getting Started",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide1.html#what-is-r",
@@ -326,21 +445,28 @@
     "href": "slides/handout1.html",
     "title": "Getting Started",
     "section": "",
-    "text": "Dr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)\n\n\n\n\n\n\n\nYour turn to introduce yourself!\n\nWhat statistical software, if any, have you used before?\nWhat type of data do you work with or plan to work with?\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "Dr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "slides/handout1.html#teaching-team",
     "href": "slides/handout1.html#teaching-team",
     "title": "Getting Started",
     "section": "",
-    "text": "Dr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)\n\n\n\n\n\n\n\nYour turn to introduce yourself!\n\nWhat statistical software, if any, have you used before?\nWhat type of data do you work with or plan to work with?"
+    "text": "Dr. Emi Tanaka\n\n\n\n\n\n\n\nJeremias Ivan\n\n\n\n\n\n\n\nAudrey Prasetya\n\n\n\n\n\n\n\nNils Kreuter (TBA)"
   },
   {
     "objectID": "slides/handout1.html#learning-objectives",
     "href": "slides/handout1.html#learning-objectives",
     "title": "Getting Started",
     "section": "Learning objectives",
-    "text": "Learning objectives\n The main aim is for you to get started with using R for basic computations.\n\n\nConduct elementary arithmetic operations using R\nGrasp the concept of missing values within the R environment\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nInstall external packages in R to extend functionality\nManipulate lists, matrices, and vectors in R\nNavigate the RStudio interactive development environment (IDE)\nImport and export data in R\nComprehend various object types in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
+    "text": "Learning objectives\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
+  },
+  {
+    "objectID": "slides/handout1.html#current-learning-objective",
+    "href": "slides/handout1.html#current-learning-objective",
+    "title": "Getting Started",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/handout1.html#what-is-r",
@@ -460,6 +586,13 @@
     "title": "Getting Started",
     "section": "How to get better at R?",
     "text": "How to get better at R?\nPRACTICE\n\n\nPractice with a purpose (e.g. using R on your own data).\nTry teaching and helping others with their R problem.\nHave a willingness to continuously learn and adapt.\n\nR is an ever evolving language (check the release news every so often),\nnew features and packages are added very frequently,\nwhether you are a beginner or not, there are always things we do not know about R."
+  },
+  {
+    "objectID": "slides/slide3.html#current-learning-objective",
+    "href": "slides/slide3.html#current-learning-objective",
+    "title": "Reading and writing data",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Install external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide3.html#data-file-formats",
