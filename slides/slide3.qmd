@@ -20,6 +20,26 @@ webr:
   show-startup-message: false  
 ---
 
+
+## {{< fa crosshairs >}} Current learning objective
+
+```{r}
+#| include: false
+library(tidyverse)
+source("setup.R")
+```
+
+::: f2
+
+```{r}
+#| results: asis 
+#| echo: false
+learning_objectives(8)
+```
+
+:::
+
+
 ## Data file formats 
 
 ::: incremental

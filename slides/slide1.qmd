@@ -59,15 +59,34 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 
 ## Learning objectives
 
-{{< fa hand-point-right >}} The main aim is for you to get started with using R for basic computations.
+```{r}
+#| include: false
+library(tidyverse)
+source("setup.R")
+```
+
 
 ::: f2
 
-{{< include _learning-objectives.qmd >}}
-
+```{r}
+#| results: asis 
+#| echo: false
+learning_objectives()
+```
 
 :::
-  
+
+## {{< fa crosshairs >}} Current learning objective
+
+::: f2
+
+```{r}
+#| results: asis 
+#| echo: false
+learning_objectives(1:4)
+```
+
+:::
   
 ## What is R?
 
