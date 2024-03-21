@@ -18,6 +18,8 @@ filters:
   - webr
 webr: 
   show-startup-message: false  
+execute:
+  echo: true
 ---
 
 ## {{< fa crosshairs >}} Current learning objective
@@ -377,7 +379,7 @@ If the **problem is based on data** ...
 
 ## Session Information 
 
-You can easily get the session information in R using `sessionInfo()`. <br>[Scroll to see the packages used to make these slides.]{.f4}
+You can easily get the session information in R using `sessioninfo::session_info()`. <br>[Scroll to see the packages used to make these slides.]{.f4}
 
 ::: {.overflow-scroll .h-70}
 ```{r, include = FALSE}
@@ -385,7 +387,7 @@ options(width = 80)
 ```
 
 ```{r}
-sessionInfo()
+sessioninfo::session_info()
 ```
 :::
 
