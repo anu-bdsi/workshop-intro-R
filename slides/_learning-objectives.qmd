@@ -1,9 +1,9 @@
 - Conduct elementary arithmetic operations using R
 - Navigate the RStudio interactive development environment (IDE)
-- Compute basic summary statistics including mean, median, quartiles, and standard deviation using R
 - Install external packages in R to extend functionality
 - Comprehend various object types in R
 - Manipulate lists, matrices, and vectors in R
+- Compute basic summary statistics including mean, median, quartiles, and standard deviation using R
 - Grasp the concept of missing values within the R environment
 - Import and export data in R
 - Create basic functions, employ conditional statements, and utilize for loops in R

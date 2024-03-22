@@ -5,7 +5,9 @@ engine: knitr
 categories: BDSI Workshop
 format: 
   html:
-    css: assets/webex.css
+    css: 
+      - assets/webex.css
+      - assets/custom.css
     include-after-body: assets/webex.js
 filters:
   - webr2
@@ -25,7 +27,17 @@ slide_title <- function(id) {
          rmarkdown::yaml_front_matter(paste0("slides/slide", id, ".qmd"))$title,
          "](slides/slide", id, ".html){target='_blank'}")
 }
+
+LOs <- readLines("slides/_learning-objectives.qmd")
+LOs <- LOs[LOs!=""]
+LOs <- stringr::str_replace(LOs, "- ", "")
+
+checklist <- function(x) {
+  paste0("<ul class='checkbox'>", paste(paste0("<li><input type='checkbox'> ", x, "</li>"), collapse = "\n\n"), "</ul>")
+}
 ```
+
+
 
 
 ## 🕙 Schedule
@@ -63,6 +75,7 @@ Time | Content
 
 ```
 
+**Using R as a calculator**
 
 Using R either on your laptop or above console, compute the following values and write the answer in the box. 
 
@@ -71,21 +84,33 @@ Using R either on your laptop or above console, compute the following values and
 - What is $\dfrac{e^2 + 1}{2}$ to two decimal places?   `r fitb(round((exp(2) + 1)/2, 2))`
 - What is $\log_2(9)$ to two decimal places?   `r fitb(round(log(9, base = 2), 2))`
 
+
+**Finding new functions**
+
 The following operations were not shown in the slides so you will need to find the relevant functions yourself. How would you find these? Once you find the relevant functions, compute the following values in R and enter the value in the corresponding box.
 
 - What is $10! = 10\times 9 \times 8 \times \cdots \times 2 \times 1$? This operation is referred to as "factorial".   `r fitb(factorial(10))`
 - What is $\cos\left(\frac{2}{3}\pi\right) + \sin(-\pi)$ to two decimal places?  `r fitb(round(cospi(2/3 * pi) + sinpi(-pi), 2))`
 - The $\lfloor x \rfloor$  denotes the floor function (the largest integer such that it is smaller or equal to $x$) and $\lceil x \rceil$ denotes the ceiling function (the smallest integer such that it is larger or equal to $x$). What is $\lfloor \frac{1}{4} \pi \rfloor + \lceil \pi e \rceil$? `r fitb(floor(1/4 * pi) + ceiling(pi * exp(1)))`
 
-On your own laptop, install the following packages: 
 
-- `praise`, 
-- `readr`, 
-- `reprex`,
-- `sessioninfo`.
+**Installing R packages**
 
-What function is in the `praise` package? `r fitb("praise")` Try running this function on your own laptop.
+- Which function installs an R package on CRAN? `r mcq(c(answer = "install.pacakges", "library"))`
+- Which function loads an R package into your system? `r mcq(c("install.pacakges", answer = "library"))`
+-  On your own laptop, install the following packages: 
+  - `praise`, 
+  - `readr`, 
+  - `reprex`,
+  - `sessioninfo`.
 
+- What function is in the `praise` package? `r fitb("praise")` Try running this function on your own laptop.
+
+**Reflect on learning objectives**
+
+You should be able to:
+
+`r checklist(LOs[1:3])`
 
 ## Exercise 2
 
@@ -96,6 +121,8 @@ What function is in the `praise` package? `r fitb("praise")` Try running this fu
 
 
 ```
+
+Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.
 
 ## Exercise 3
 
@@ -116,6 +143,8 @@ What function is in the `praise` package? `r fitb("praise")` Try running this fu
 
 
 ```
+
+Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.
 
 
 :::
