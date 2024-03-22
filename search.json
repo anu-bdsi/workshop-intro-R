@@ -18,14 +18,14 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Time\nContent\n\n\n\n\n10.00-10.30\nGetting Started\n\n\n10.30-10.40\nExercise 1\n\n\n10.40-10.50\nWorking with objects\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nReading and writing data\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nFunctions, loops and conditional statements\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap-up\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "Time\nContent\n\n\n\n\n10:00–10:30\nGetting Started\n\n\n10:30–10:50\nExercise 1\n\n\n10:50–11:20\nWorking with objects\n\n\n11:20–11:40\nExercise 2\n\n\n11:40–12:00\nReading and writing data\n\n\n12:00–12:10\nExercise 3\n\n\n12:10–12:40\nFunctions, loops and conditional statements\n\n\n12:40–12:55\nExercise 4\n\n\n12:55–13:00\nWrap-up\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "materials.html#schedule",
     "href": "materials.html#schedule",
     "title": "Materials",
     "section": "",
-    "text": "Time\nContent\n\n\n\n\n10.00-10.30\nGetting Started\n\n\n10.30-10.40\nExercise 1\n\n\n10.40-10.50\nWorking with objects\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nReading and writing data\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nFunctions, loops and conditional statements\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap-up"
+    "text": "Time\nContent\n\n\n\n\n10:00–10:30\nGetting Started\n\n\n10:30–10:50\nExercise 1\n\n\n10:50–11:20\nWorking with objects\n\n\n11:20–11:40\nExercise 2\n\n\n11:40–12:00\nReading and writing data\n\n\n12:00–12:10\nExercise 3\n\n\n12:10–12:40\nFunctions, loops and conditional statements\n\n\n12:40–12:55\nExercise 4\n\n\n12:55–13:00\nWrap-up"
   },
   {
     "objectID": "materials.html#resources",
@@ -39,14 +39,14 @@
     "href": "materials.html#exercises",
     "title": "Materials",
     "section": "🏋️‍♀️ Exercises",
-    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nUsing R either on your laptop or above console, compute the following values and write the answer in the box.\n\nWhat is \\((40 + 5) \\times 3\\)? \nWhat is \\(\\sqrt{2^4 - 7}\\)? \nWhat is \\(\\dfrac{e^2 + 1}{2}\\) to two decimal places? \nWhat is \\(\\log_2(9)\\) to two decimal places? \n\nThe following operations were not shown in the slides so you will need to find the relevant functions yourself. How would you find these? Once you find the relevant functions, compute the following values in R and enter the value in the corresponding box.\n\nWhat is \\(10! = 10\\times 9 \\times 8 \\times \\cdots \\times 2 \\times 1\\)? This operation is referred to as “factorial”. \nWhat is \\(\\cos\\left(\\frac{2}{3}\\pi\\right) + \\sin(-\\pi)\\) to two decimal places? \nThe \\(\\lfloor x \\rfloor\\) denotes the floor function (the largest integer such that it is smaller or equal to \\(x\\)) and \\(\\lceil x \\rceil\\) denotes the ceiling function (the smallest integer such that it is larger or equal to \\(x\\)). What is \\(\\lfloor \\frac{1}{4} \\pi \\rfloor + \\lceil \\pi e \\rceil\\)? \n\nOn your own laptop, install the following packages:\n\npraise,\nreadr,\nreprex,\nsessioninfo.\n\nWhat function is in the praise package?  Try running this function on your own laptop.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nUsing R as a calculator\nUsing R either on your laptop or above console, compute the following values and write the answer in the box.\n\nWhat is \\((40 + 5) \\times 3\\)? \nWhat is \\(\\sqrt{2^4 - 7}\\)? \nWhat is \\(\\dfrac{e^2 + 1}{2}\\) to two decimal places? \nWhat is \\(\\log_2(9)\\) to two decimal places? \n\nFinding new functions\nThe following operations were not shown in the slides so you will need to find the relevant functions yourself. How would you find these? Once you find the relevant functions, compute the following values in R and enter the value in the corresponding box.\n\nWhat is \\(10! = 10\\times 9 \\times 8 \\times \\cdots \\times 2 \\times 1\\)? This operation is referred to as “factorial”. \nWhat is \\(\\cos\\left(\\frac{2}{3}\\pi\\right) + \\sin(-\\pi)\\) to two decimal places? \nThe \\(\\lfloor x \\rfloor\\) denotes the floor function (the largest integer such that it is smaller or equal to \\(x\\)) and \\(\\lceil x \\rceil\\) denotes the ceiling function (the smallest integer such that it is larger or equal to \\(x\\)). What is \\(\\lfloor \\frac{1}{4} \\pi \\rfloor + \\lceil \\pi e \\rceil\\)? \n\nInstalling R packages\n\nWhich function installs an R package on CRAN? install.pacakgeslibrary\nWhich function loads an R package into your system? install.pacakgeslibrary\nOn your own laptop, install the following packages:\npraise,\nreadr,\nreadxl,\nreprex,\nsessioninfo.\nWhat function is in the praise package?  Try running this function on your own laptop.\n\nReflect on learning objectives\nYou should be able to:\n\n\n Conduct elementary arithmetic operations using R\n\n\n Navigate the RStudio interactive development environment (IDE)\n\n\n Install external packages in R to extend functionality\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nUsing R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.\nObject class\nR has a number of built-in datasets (see data(package = \"datasets\")).\nIdentify the object class for the following variables:\n\n\n\n\n\n\n\n\nDataset\nVariable\nClass\n\n\n\n\nPlantGrowth\nweight\nintegernumericlistcharacterfactormatrix\n\n\nPlantGrowth\ngroup\nintegernumericlistcharacterfactormatrix\n\n\ninfert\neducation\nintegernumericlistcharacterfactormatrix\n\n\ninfert\nage\nintegernumericlistcharacterfactormatrix\n\n\ninfert\nparity\nintegernumericlistcharacterfactormatrix\n\n\ninfert\ninduced\nintegernumericlistcharacterfactormatrix\n\n\ninfert\ncase\nintegernumericlistcharacterfactormatrix\n\n\ninfert\nspontaneous\nintegernumericlistcharacterfactormatrix\n\n\ninfert\nstratum\nintegernumericlistcharacterfactormatrix\n\n\ninfert\npooled.stratum\nintegernumericlistcharacterfactormatrix\n\n\nHarman23.cor\ncov\nintegernumericlistcharacterfactormatrix\n\n\nHarman23.cor\ncenter\nintegernumericlistcharacterfactormatrix\n\n\nHarman23.cor\nn.obs\nintegernumericlistcharacterfactormatrix\n\n\n\nCompute summary statistics\n\nWhat is the median weight of plants in the control group in PlantGrowth data? \nWhat is the total number of cases in infertility after spontaneous and induced abortion in the infert data? \nWhat is the 20th value in the education variable in infert data? \nWhat is the value in the fifth row, fifth column in the cov matrix in Harman23.cor data? \nWhat is the mean ozone value in airquality data to two decimal places? \nWhat is the number of missing values in solar radiation values in airquality data? Hint: what does is.na() do? \n\nReflect on learning objectives\nYou should be able to:\n\n\n Comprehend various object types in R\n\n\n Manipulate lists, matrices, and vectors in R\n\n\n Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n Grasp the concept of missing values within the R environment\n\n\n\n\nDownload the data\n\n\n\nFilename\nDescription\nDownload\nInfo\n\n\n\n\nbranch-water-derived-value.xlsx\nThe effect of salinity on branch water relations and stem hydraulic vulnerability in two co-occurring mangrove species.\n\n\n\n\n\nDownload the above datasets.\n\nRead the sheet “Values for RWC figures” in branch-water-derived-value.xlsx. How many variables does this sheet consist of?  How many observations are there? \nRead the sheet “Key Values” in branch-water-derived-value.xlsx. How many variables does this sheet consist of?  How many observations are there? \n\nReflect on learning objective\nYou should be able to:\n\n\n Import and export data in R\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nUsing R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.\nCreate basic functions\nConditional statements\nFor loops\nReflect on learning objectives\nCreate a reproducible example\nYou should be able to:\n\n\n Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide4.html#current-learning-objective",
     "href": "slides/slide4.html#current-learning-objective",
     "title": "Functions, loops and conditional statements",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Install external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
+    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Install external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide4.html#functions",
@@ -165,14 +165,14 @@
     "href": "slides/slide2.html#current-learning-objective",
     "title": "Working with objects",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Install external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nGrasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Install external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nGrasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide2.html#assignment-to-object",
     "href": "slides/slide2.html#assignment-to-object",
     "title": "Working with objects",
     "section": "Assignment to object",
-    "text": "Assignment to object\n\nAssignments to object:\n\nYou can assign values to objects using &lt;- or =\nThe name of the object can be variable so long as it is syntactically valid (no spaces and most special characters, and the name cannot start with a digit)\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Assignment to object\n\nYou can assign values to objects using &lt;- or = or even -&gt;\nJust be consistent which one you use!\nThe name of the object can be variable so long as it is syntactically valid (no spaces and most special characters, and the name cannot start with a digit)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#vectors",
@@ -182,11 +182,32 @@
     "text": "Vectors\n\nWe can combine scalars to form vectors using c():\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nThis is a vector of length 3\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nThis vector is stored as a double with the class as numeric\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "slides/slide2.html#vectors-types",
-    "href": "slides/slide2.html#vectors-types",
+    "objectID": "slides/slide2.html#vector-types",
+    "href": "slides/slide2.html#vector-types",
     "title": "Working with objects",
-    "section": "Vectors types",
-    "text": "Vectors types\n\nThere are four primary types of atomic vectors: logical, integer, double and character.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nThe integer and double vectors are collectively called numeric vectors.\n\n\n\nA vector can only consist of the same type.\nIf you attempt to combine mismatched types together, it will try to coerce all values to the same type.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "section": "Vector types",
+    "text": "Vector types\n\nThere are four primary types of atomic vectors: logical, integer, double and character.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nThe integer and double vectors are collectively called numeric vectors."
+  },
+  {
+    "objectID": "slides/slide2.html#vector",
+    "href": "slides/slide2.html#vector",
+    "title": "Working with objects",
+    "section": "Vector",
+    "text": "Vector\n\nA vector can only consist of the same type\nIf you attempt to combine mismatched types together, it will try to coerce all values to the same type.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#casting-to-other-types",
+    "href": "slides/slide2.html#casting-to-other-types",
+    "title": "Working with objects",
+    "section": "Casting to other types",
+    "text": "Casting to other types\n\nas.numeric() tries to coerce input to numeric value.\nIf a logical value is coerced to numeric or integer, then\n\nTRUE is 1 and\nFALSE is 0.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#factor",
+    "href": "slides/slide2.html#factor",
+    "title": "Working with objects",
+    "section": "Factor",
+    "text": "Factor\n\nA factor in R is a special type of integer vector used typically to encode categorical variables.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#lists",
@@ -245,11 +266,25 @@
     "text": "Subsetting data frames\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
+    "objectID": "slides/slide2.html#numerical-summaries",
+    "href": "slides/slide2.html#numerical-summaries",
+    "title": "Working with objects",
+    "section": "Numerical summaries",
+    "text": "Numerical summaries\n\nNumerical summaries generally come base or stats package.\nSome common numerical summaries include:\n\nMean: mean()\nMedian: median()\nFive number summary: fivenum()\nMinimum: min()\nMaximum: max()\nQuantile: quantile()\nCorrelation coefficient: cor()"
+  },
+  {
     "objectID": "slides/slide2.html#missing-values",
     "href": "slides/slide2.html#missing-values",
     "title": "Working with objects",
     "section": "Missing values",
-    "text": "Missing values\n\n\nNA in R denotes missing values – there are in fact different types of missing values (NA_character_, NA_integer_, NA_real_, NA_complex_).\n\n\n\n\nWhen there are missing values, it can cause issues in the computation.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nBelow we remove the missing values:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+    "text": "Missing values\n\n\nNA in R denotes missing values – there are in fact different types of missing values (NA_character_, NA_integer_, NA_real_, NA_complex_).\n\n\n\n\nWhen there are missing values, it can cause issues in the computation.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nBelow we remove the missing values:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#summary",
+    "href": "slides/slide2.html#summary",
+    "title": "Working with objects",
+    "section": "Summary",
+    "text": "Summary\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
   },
   {
     "objectID": "next-time.html",
@@ -277,7 +312,7 @@
     "href": "index.html#learning-objectives",
     "title": "Introduction to R programming",
     "section": "Learning objectives",
-    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nConduct elementary arithmetic operations using R\nNavigate the RStudio interactive development environment (IDE)\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nInstall external packages in R to extend functionality\nComprehend various object types in R\nManipulate lists, matrices, and vectors in R\nGrasp the concept of missing values within the R environment\nImport and export data in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
+    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nConduct elementary arithmetic operations using R\nNavigate the RStudio interactive development environment (IDE)\nInstall external packages in R to extend functionality\nComprehend various object types in R\nManipulate lists, matrices, and vectors in R\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nGrasp the concept of missing values within the R environment\nImport and export data in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "index.html#preperation",
@@ -312,14 +347,14 @@
     "href": "slides/slide1.html#learning-objectives",
     "title": "Getting Started",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
+    "text": "Learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide1.html#current-learning-objectives",
     "href": "slides/slide1.html#current-learning-objectives",
     "title": "Getting Started",
     "section": " Current learning objectives",
-    "text": "Current learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+    "text": "Current learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide1.html#what-is-r",
@@ -399,13 +434,6 @@
     "text": "Functions\n\nThere are many functions in R.\nYou can look at the documentation on how to use it:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "slides/slide1.html#numerical-summaries",
-    "href": "slides/slide1.html#numerical-summaries",
-    "title": "Getting Started",
-    "section": "Numerical summaries",
-    "text": "Numerical summaries\n\nNumerical summaries generally come base or stats package.\nSome common numerical summaries include:\n\nMean: mean()\nMedian: median()\nFive number summary: fivenum()\nMinimum: min()\nMaximum: max()\nQuantile: quantile()\nCorrelation coefficient: cor()"
-  },
-  {
     "objectID": "slides/slide1.html#finding-functions",
     "href": "slides/slide1.html#finding-functions",
     "title": "Getting Started",
@@ -459,14 +487,14 @@
     "href": "slides/handout1.html#learning-objectives",
     "title": "Getting Started",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
+    "text": "Learning objectives\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/handout1.html#current-learning-objectives",
     "href": "slides/handout1.html#current-learning-objectives",
     "title": "Getting Started",
     "section": " Current learning objectives",
-    "text": "Current learning objectives\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+    "text": "Current learning objectives\n\nWarning in readLines(\"_learning-objectives.qmd\"): incomplete final line found\non '_learning-objectives.qmd'\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/handout1.html#what-is-r",
@@ -546,13 +574,6 @@
     "text": "Functions\n\nThere are many functions in R.\nYou can look at the documentation on how to use it:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "slides/handout1.html#numerical-summaries",
-    "href": "slides/handout1.html#numerical-summaries",
-    "title": "Getting Started",
-    "section": "Numerical summaries",
-    "text": "Numerical summaries\n\nNumerical summaries generally come base or stats package.\nSome common numerical summaries include:\n\nMean: mean()\nMedian: median()\nFive number summary: fivenum()\nMinimum: min()\nMaximum: max()\nQuantile: quantile()\nCorrelation coefficient: cor()"
-  },
-  {
     "objectID": "slides/handout1.html#finding-functions",
     "href": "slides/handout1.html#finding-functions",
     "title": "Getting Started",
@@ -592,7 +613,7 @@
     "href": "slides/slide3.html#current-learning-objective",
     "title": "Reading and writing data",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Install external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Grasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Install external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Grasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
     "objectID": "slides/slide3.html#data-file-formats",
