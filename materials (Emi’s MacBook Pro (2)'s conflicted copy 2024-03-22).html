@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.545">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Emi Tanaka">
+<meta name="dcterms.date" content="2024-04-03">
 
-<title>ANU BDSIworkshop Introduction to R programming - Getting Started</title>
+<title>ANU BDSIworkshop Introduction to R programming - Materials</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,61 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,16 +69,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="../site_libs/plotly-binding-4.10.4/plotly.js"></script>
-<script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
-<script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
-<link href="../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
-<script src="../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
-<link href="../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
-<script src="../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
-<link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
-<script src="../site_libs/countdown-0.4.0/countdown.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   
@@ -257,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 // Document level settings ----
 
 // Determine if we need to install R packages
-globalThis.qwebrInstallRPackagesList = ['praise'];
+globalThis.qwebrInstallRPackagesList = [''];
 
 // Specify possible locations to search for the repository
 globalThis.qwebrPackageRepoURLS = ['https://repo.r-wasm.org/'];
@@ -279,7 +235,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"code":"1 + 1 \n6 / 2 + 0.5\n(1 - 4) * 3 - 6^2","options":{"autorun":"false","dpi":72,"results":"markup","classes":"","label":"unnamed-chunk-1","message":"true","comment":"","context":"interactive","fig-width":7,"fig-height":5,"output":"true","fig-cap":"","warning":"true","read-only":"false","out-width":"700px","out-height":""}},{"id":2,"code":"sqrt(3)\nabs(-3)\nexp(1)\nlog(4, base = exp(1))\nsum(1:3)","options":{"autorun":"false","dpi":72,"results":"markup","classes":"","label":"unnamed-chunk-2","message":"true","comment":"","context":"interactive","fig-width":7,"fig-height":5,"output":"true","fig-cap":"","warning":"true","read-only":"false","out-width":"700px","out-height":""}},{"id":3,"code":"2:10\nseq(1, 10, by = 0.5)\nc(1, 4, -4, 20.5)","options":{"autorun":"false","dpi":72,"results":"markup","classes":"","label":"unnamed-chunk-3","message":"true","comment":"","context":"interactive","fig-width":7,"fig-height":5,"output":"true","fig-cap":"","warning":"true","read-only":"false","out-width":"700px","out-height":""}},{"id":4,"code":"?seq\nhelp(seq)","options":{"autorun":"false","dpi":72,"results":"markup","classes":"","label":"unnamed-chunk-4","message":"true","comment":"","context":"interactive","fig-width":7,"fig-height":5,"output":"true","fig-cap":"","warning":"true","read-only":"false","out-width":"700px","out-height":""}},{"id":5,"code":"library(help = \"base\")","options":{"autorun":"false","dpi":72,"results":"markup","classes":"","label":"unnamed-chunk-5","message":"true","comment":"","context":"interactive","fig-width":7,"fig-height":5,"output":"true","fig-cap":"","warning":"true","read-only":"false","out-width":"700px","out-height":""}},{"id":6,"code":"library(praise)\npraise()","options":{"autorun":"false","dpi":72,"results":"markup","classes":"","label":"unnamed-chunk-6","message":"true","comment":"","context":"interactive","fig-width":7,"fig-height":5,"output":"true","fig-cap":"","warning":"true","read-only":"false","out-width":"700px","out-height":""}},{"id":7,"code":"praise::praise()","options":{"autorun":"false","dpi":72,"results":"markup","classes":"","label":"unnamed-chunk-7","message":"true","comment":"","context":"interactive","fig-width":7,"fig-height":5,"output":"true","fig-cap":"","warning":"true","read-only":"false","out-width":"700px","out-height":""}},{"id":8,"code":"1 + 5\nmean(c(1, 3, 4))","options":{"autorun":"false","dpi":72,"results":"markup","classes":"","label":"unnamed-chunk-8","message":"true","comment":"","context":"interactive","fig-width":7,"fig-height":5,"output":"true","fig-cap":"","warning":"true","read-only":"false","out-width":"700px","out-height":""}}];
+globalThis.qwebrCellDetails = [{"code":"\n\n","id":1,"options":{"warning":"true","output":"true","results":"markup","out-width":"700px","dpi":72,"autorun":"false","context":"interactive","read-only":"false","label":"unnamed-chunk-1","fig-width":7,"classes":"","fig-height":5,"comment":"","out-height":"","message":"true","fig-cap":""}},{"code":"\n\n","id":2,"options":{"warning":"true","output":"true","results":"markup","out-width":"700px","dpi":72,"autorun":"false","context":"interactive","read-only":"false","label":"unnamed-chunk-2","fig-width":7,"classes":"","fig-height":5,"comment":"","out-height":"","message":"true","fig-cap":""}},{"code":"\n\n","id":3,"options":{"warning":"true","output":"true","results":"markup","out-width":"700px","dpi":72,"autorun":"false","context":"interactive","read-only":"false","label":"unnamed-chunk-3","fig-width":7,"classes":"","fig-height":5,"comment":"","out-height":"","message":"true","fig-cap":""}},{"code":"\n\n","id":4,"options":{"warning":"true","output":"true","results":"markup","out-width":"700px","dpi":72,"autorun":"false","context":"interactive","read-only":"false","label":"unnamed-chunk-4","fig-width":7,"classes":"","fig-height":5,"comment":"","out-height":"","message":"true","fig-cap":""}}];
 
 </script>
 <script type="module">
@@ -997,7 +953,8 @@ globalThis.qwebrExecuteCode = async function (
 </script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/webex.css">
 </head>
 
 <body class="nav-fixed">
@@ -1007,7 +964,7 @@ globalThis.qwebrExecuteCode = async function (
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title"><span class="tag-label">ANU BDSI<br>workshop</span> Introduction to R programming</span>
     </a>
   </div>
@@ -1018,15 +975,15 @@ globalThis.qwebrExecuteCode = async function (
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../materials.html"> 
+    <a class="nav-link active" href="./materials.html" aria-current="page"> 
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../help.html"> 
+    <a class="nav-link" href="./help.html"> 
 <span class="menu-text">Help</span></a>
   </li>  
 </ul>
@@ -1041,45 +998,17 @@ globalThis.qwebrExecuteCode = async function (
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="../images/ANU_Secondary_Horizontal_GoldBlack.png" class="img-fluid"></p>
+<p><img src="./images/ANU_Secondary_Horizontal_GoldBlack.png" class="img-fluid"></p>
 </div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome 👋</a>
-  <ul class="collapse">
-  <li><a href="#teaching-team" id="toc-teaching-team" class="nav-link" data-scroll-target="#teaching-team">Teaching team</a></li>
-  <li><a href="#your-turn-tell-us-about-you" id="toc-your-turn-tell-us-about-you" class="nav-link" data-scroll-target="#your-turn-tell-us-about-you">Your turn! Tell us about you</a></li>
-  </ul></li>
-  <li><a href="#workshop-materials" id="toc-workshop-materials" class="nav-link" data-scroll-target="#workshop-materials">Workshop materials</a>
-  <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  <li><a href="#current-learning-objectives" id="toc-current-learning-objectives" class="nav-link" data-scroll-target="#current-learning-objectives"><i class="fa-solid fa-crosshairs" aria-label="crosshairs"></i> Current learning objectives</a></li>
-  <li><a href="#what-is-r" id="toc-what-is-r" class="nav-link" data-scroll-target="#what-is-r">What is R?</a></li>
-  <li><a href="#why-learn-r" id="toc-why-learn-r" class="nav-link" data-scroll-target="#why-learn-r">Why learn R?</a></li>
-  <li><a href="#rapid-development" id="toc-rapid-development" class="nav-link" data-scroll-target="#rapid-development">Rapid development</a></li>
-  <li><a href="#rich-graphical-outputs" id="toc-rich-graphical-outputs" class="nav-link" data-scroll-target="#rich-graphical-outputs">Rich graphical outputs</a></li>
-  <li><a href="#dynamic-documents" id="toc-dynamic-documents" class="nav-link" data-scroll-target="#dynamic-documents">Dynamic documents</a></li>
-  <li><a href="#interactively-working-with-r" id="toc-interactively-working-with-r" class="nav-link" data-scroll-target="#interactively-working-with-r">Interactively working with R</a></li>
-  <li><a href="#how-do-you-use-r" id="toc-how-do-you-use-r" class="nav-link" data-scroll-target="#how-do-you-use-r">How do you use R?</a></li>
-  </ul></li>
-  <li><a href="#live-demo" id="toc-live-demo" class="nav-link" data-scroll-target="#live-demo">Live demo</a>
-  <ul class="collapse">
-  <li><a href="#customise-global-options" id="toc-customise-global-options" class="nav-link" data-scroll-target="#customise-global-options">Customise Global Options</a></li>
-  <li><a href="#arithmetics" id="toc-arithmetics" class="nav-link" data-scroll-target="#arithmetics">Arithmetics</a></li>
-  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a></li>
-  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
-  <li><a href="#numerical-summaries" id="toc-numerical-summaries" class="nav-link" data-scroll-target="#numerical-summaries">Numerical summaries</a></li>
-  <li><a href="#finding-functions" id="toc-finding-functions" class="nav-link" data-scroll-target="#finding-functions">Finding functions</a></li>
-  <li><a href="#base-r" id="toc-base-r" class="nav-link" data-scroll-target="#base-r">Base R</a></li>
-  <li><a href="#contributed-r-packages" id="toc-contributed-r-packages" class="nav-link" data-scroll-target="#contributed-r-packages">Contributed R Packages</a></li>
-  <li><a href="#using-packages-on-cran" id="toc-using-packages-on-cran" class="nav-link" data-scroll-target="#using-packages-on-cran">Using packages on CRAN</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
-  </ul></li>
-  <li><a href="#exercise-time" id="toc-exercise-time" class="nav-link" data-scroll-target="#exercise-time">Exercise time</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">🕙 Schedule</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">📑 Resources</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">🏋️‍♀️ Exercises</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="slide1.html"><i class="bi bi-file-slides"></i>RevealJS (anu-light)</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -1122,7 +1051,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
       minimap: {
         enabled: false
       },
-      fontSize: '32px',              // Bootstrap is 1 rem
+      fontSize: '18px',              // Bootstrap is 1 rem
       renderLineHighlight: "none",     // Disable current line highlighting
       hideCursorInOverviewRuler: true,  // Remove cursor indictor in right hand side scroll bar
       readOnly: qwebrOptions['read-only'] ?? false
@@ -1260,32 +1189,21 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Getting Started</h1>
-<p class="subtitle lead"><span class="tag-workshop"><span class="tag-label">ANU BDSI<br>workshop</span> Introduction to R programming</span></p>
-</div>
+<h1 class="title">Materials</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">BDSI Workshop</div>
+  </div>
+  </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Emi Tanaka </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Biological Data Science Institute
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
+    
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">3rd April 2024</p>
+      <p class="date">April 3, 2024</p>
     </div>
   </div>
   
@@ -1297,433 +1215,298 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<section id="welcome" class="level1">
-<h1>Welcome 👋</h1>
-<section id="teaching-team" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-team">Teaching team</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" style="text-align:center;" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/team/emi-square.png" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Dr.&nbsp;Emi Tanaka</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/team/jeremias-ivan.jpg" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Jeremias Ivan</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/team/audrey-prasetya.jpeg" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Audrey Prasetya</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/team/avatar3.png" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Ryan O’Donnell</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
+<section id="schedule" class="level2">
+<h2 class="anchored" data-anchor-id="schedule">🕙 Schedule</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">10.00-10.30</td>
+<td style="text-align: left;"><a href="slides/slide1.html" target="_blank">Getting Started</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10.30-10.40</td>
+<td style="text-align: left;"><a href="#tabset-1-1-tab" onclick="document.getElementById('tabset-1-1-tab').click();"><em>Exercise 1</em></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10.40-10.50</td>
+<td style="text-align: left;"><a href="slides/slide2.html" target="_blank">Working with objects</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10.50-11.10</td>
+<td style="text-align: left;"><a href="#tabset-1-2-tab" onclick="document.getElementById('tabset-1-2-tab').click();"><em>Exercise 2</em></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11.10-11.20</td>
+<td style="text-align: left;"><a href="slides/slide3.html" target="_blank">Reading and writing data</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11.20-11.40</td>
+<td style="text-align: left;"><a href="#tabset-1-3-tab" onclick="document.getElementById('tabset-1-3-tab').click();"><em>Exercise 3</em></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11.40-12.00</td>
+<td style="text-align: left;"><a href="slides/slide4.html" target="_blank">Functions, loops and conditional statements</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">12.00-12.20</td>
+<td style="text-align: left;"><a href="#tabset-1-4-tab" onclick="document.getElementById('tabset-1-4-tab').click();"><em>Exercise 4</em></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">12.50-13.00</td>
+<td style="text-align: left;"><a href="slides/slide5.html" target="_blank">Wrap-up</a></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="your-turn-tell-us-about-you" class="level2">
-<h2 class="anchored" data-anchor-id="your-turn-tell-us-about-you">Your turn! Tell us about you</h2>
-<iframe src="https://embed.polleverywhere.com/free_text_polls/Jo8dbOzhFN5sVwqzpUc67?controls=none&amp;short_poll=true" width="100%" height="800px">
-</iframe>
-</section>
-</section>
-<section id="workshop-materials" class="level1">
-<h1>Workshop materials</h1>
-<div class="box">
-<p>All materials will be hosted at<br> <span class="f-subheadline" target="_blank"><a href="https://anu-bdsi.github.io/workshop-intro-R/" class="uri">https://anu-bdsi.github.io/workshop-intro-R/</a></span></p>
-</div>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<div class="f1">
-<pre><code>Warning in readLines("_learning-objectives.qmd"): incomplete final line found
-on '_learning-objectives.qmd'</code></pre>
-<ul class="fa-ul">
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Conduct elementary arithmetic operations using R
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Navigate the RStudio interactive development environment (IDE)
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Compute basic summary statistics including mean, median, quartiles, and standard deviation using R
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Install external packages in R to extend functionality
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Comprehend various object types in R
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Manipulate lists, matrices, and vectors in R
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Grasp the concept of missing values within the R environment
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Import and export data in R
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Create basic functions, employ conditional statements, and utilize for loops in R
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Decipher error messages and do basic troubleshooting
-</li>
-</ul>
-</div>
-</section>
-<section id="current-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="current-learning-objectives"><i class="fa-solid fa-crosshairs" aria-label="crosshairs"></i> Current learning objectives</h2>
-<div class="f1">
-<pre><code>Warning in readLines("_learning-objectives.qmd"): incomplete final line found
-on '_learning-objectives.qmd'</code></pre>
-<ul class="fa-ul">
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Conduct elementary arithmetic operations using R
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Navigate the RStudio interactive development environment (IDE)
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Compute basic summary statistics including mean, median, quartiles, and standard deviation using R
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-arrow-right"></i></span>Install external packages in R to extend functionality
-</li>
-<li style="opacity:0.25;">
-<span class="fa-li">-</span>Comprehend various object types in R
-</li>
-<li style="opacity:0.25;">
-<span class="fa-li">-</span>Manipulate lists, matrices, and vectors in R
-</li>
-<li style="opacity:0.25;">
-<span class="fa-li">-</span>Grasp the concept of missing values within the R environment
-</li>
-<li style="opacity:0.25;">
-<span class="fa-li">-</span>Import and export data in R
-</li>
-<li style="opacity:0.25;">
-<span class="fa-li">-</span>Create basic functions, employ conditional statements, and utilize for loops in R
-</li>
-<li style="opacity:0.25;">
-<span class="fa-li">-</span>Decipher error messages and do basic troubleshooting
-</li>
-</ul>
-</div>
-</section>
-<section id="what-is-r" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-r">What is R?</h2>
-<div class="flex">
-<div class="w-50">
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">📑 Resources</h2>
 <ul>
-<li><strong>R</strong> is a programming language predominately for data analysis.</li>
+<li>Learn R Chapter 1: Getting started with R &amp; RStudio <a href="https://learnr.numbat.space/chapter1" target="_blank"><i class="fa-solid fa-link" aria-label="link"></i></a></li>
+<li>Learn R Chapter 2: R programming basics <a href="https://learnr.numbat.space/chapter2" target="_blank"><i class="fa-solid fa-link" aria-label="link"></i></a></li>
+<li>Learn R Chapter 3: Troubleshooting and asking for help <a href="https://learnr.numbat.space/chapter3" target="_blank"><i class="fa-solid fa-link" aria-label="link"></i></a></li>
 </ul>
-<center>
-<img src="images/R_logo.png" class="img-fluid" style="width:50.0%">
-</center>
-</div>
-<div class="w-50 pl3 fragment">
-<ul>
-<li><strong>RStudio Desktop</strong> is an integrated development environment (<strong>IDE</strong>) that helps you to use R.</li>
-</ul>
-<center>
-<p><img src="images/RStudio-Logo-Flat.png" class="img-fluid" style="width:100.0%"></p>
-</center>
-<div class="fragment">
-<ul>
-<li><strong>Visual Studio Code</strong> is another popular IDE (we don’t use this).</li>
-</ul>
-</div>
-</div>
-</div>
 </section>
-<section id="why-learn-r" class="level2">
-<h2 class="anchored" data-anchor-id="why-learn-r">Why learn R?</h2>
-<div class="incremental f1">
-<ul class="incremental">
-<li><strong>R</strong> is one of the top programming languages for statistics or data science.
-<ul class="incremental">
-<li>Python is also a good alternative language for data science.</li>
-<li><em>Better to have a mastery of at least one language rather than none</em>.</li>
-</ul></li>
-<li>R was initially developed by statisticians for statisticians.
-<ul class="incremental">
-<li><span class="anu-gold"><em>State-of-the-art statistical methods are more readily available in R.</em></span></li>
-</ul></li>
-<li>R has a very active and friendly community.</li>
-<li>R is a free and open source software (FOSS) and is a cross-platform language:
-<ul class="incremental">
-<li><strong>free</strong> = money is not a barrier to use it,</li>
-<li><strong>open source software</strong> = transparency,</li>
-<li><strong>cross-platform</strong> = can be used on Windows, Mac, and Linux.</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="rapid-development" class="level2">
-<h2 class="anchored" data-anchor-id="rapid-development">Rapid development</h2>
-<ul>
-<li>Access to Open AI (known for ChatGPT) API is already available in R!</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openai)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>out <span class="ot">&lt;-</span> <span class="fu">create_image</span>(<span class="st">"A data scientist with a laptop and </span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">                     statistical software in an anime style"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<center>
-<p><img src="images/openai-creation.png" class="fragment img-fluid" style="width:35.0%"></p>
-</center>
-</section>
-<section id="rich-graphical-outputs" class="level2">
-<h2 class="anchored" data-anchor-id="rich-graphical-outputs">Rich graphical outputs</h2>
-<ul>
-<li>R also has a wide range of packages for creating beautiful and interactive graphics.</li>
-</ul>
-<p><span class="grey f2"><i class="fas fa-mouse-pointer"></i> Try clicking on a bar on the left plot.</span></p>
-<div class="flex">
-<div class="w-50">
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 77 Columns: 5
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (4): affiliation, workshop, comment, role
-dbl (1): confidence
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-03b7aebc0bb6da0c900c" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-03b7aebc0bb6da0c900c">{"x":{"data":[{"orientation":"v","width":[0.89999999999999991,0.90000000000000013,0.90000000000000036,0.90000000000000036],"base":[0,0,0,0],"x":[1,2,3,4],"y":[33,30,8,6],"text":["count: 33<br />aff2: RSB","count: 30<br />aff2: JCSMR","count:  8<br />aff2: NCEPH","count:  6<br />aff2: Other"],"key":[["RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB"],["JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR"],["NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH","NCEPH"],["Other","Other","Other","Other","Other","Other"]],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(34,107,167,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"set":"SharedData0911f8ec","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"none","_isNestedKey":true,"frame":null}],"layout":{"margin":{"t":38.316313823163149,"r":15.940224159402243,"b":87.671232876712352,"l":81.295143212951444},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,4.5999999999999996],"tickmode":"array","ticktext":["RSB","JCSMR","NCEPH","Other"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["RSB","JCSMR","NCEPH","Other"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011207,"tickwidth":1.4491112872183856,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183856,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Affiliation","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,38],"tickmode":"array","ticktext":["0","10","20","30"],"tickvals":[0,10,20,30],"categoryorder":"array","categoryarray":["0","10","20","30"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":7.9701120797011216,"tickwidth":1.4491112872183858,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":25.5043586550436},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":1.4491112872183858,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"# of Registrants","font":{"color":"rgba(0,0,0,1)","family":"","size":31.880448318804483}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":4.1231209735146743,"font":{"color":"rgba(0,0,0,1)","family":"","size":25.5043586550436}},"hovermode":"closest","barmode":"relative","dragmode":"zoom"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"1033fd1cefa2":{"x":{},"type":"bar"}},"cur_data":"1033fd1cefa2","visdat":{"1033fd1cefa2":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData0911f8ec"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</div>
-<div class="w-50 pl3">
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-31a3865fb2f9201bb2f8" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-31a3865fb2f9201bb2f8">{"x":{"visdat":{"1033f59addbe0":["function () ","plotlyVisDat"]},"cur_data":"1033f59addbe0","attrs":{"1033f59addbe0":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"type":"histogram","histnorm":"percent","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"group","showlegend":false,"font":{"size":28},"xaxis":{"domain":[0,1],"automargin":true,"dtick":1,"title":{"text":"Confidence in R skills","font":{"size":30}},"ticksuffix":"   "},"yaxis":{"domain":[0,1],"automargin":true,"title":{"text":"Percentage (%)","font":{"size":30}},"ticksuffix":" "},"dragmode":"zoom","hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":[1,3,1,4,5,6,2,4,7,4,4,4,6,1,1,3,3,6,1,10,1,7,3,5,7,5,1,1,2,6,6,1,2,4,8,2,4,3,5,5,2,10,6,1,5,4,5,7,5,3,1,7,3,5,2,1,2,1,1,2,6,8,3,2,4,3,5,5,4,1,1,1,1,6,4,1,2],"type":"histogram","histnorm":"percent","key":["Other","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","RSB","JCSMR","RSB","JCSMR","JCSMR","JCSMR","RSB","JCSMR","JCSMR","RSB","RSB","RSB","RSB","RSB","JCSMR","JCSMR","JCSMR","JCSMR","JCSMR","RSB","JCSMR","RSB","RSB","JCSMR","RSB","RSB","Other","Other","JCSMR","NCEPH","NCEPH","NCEPH","RSB","RSB","RSB","RSB","RSB","NCEPH","RSB","NCEPH","RSB","NCEPH","JCSMR","NCEPH","Other","Other","JCSMR","RSB","NCEPH","JCSMR","Other"],"set":"SharedData0911f8ec","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null,"hoverinfo":"none"}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData0911f8ec"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="dynamic-documents" class="level2">
-<h2 class="anchored" data-anchor-id="dynamic-documents">Dynamic documents</h2>
-<div class="flex">
-<div class="w-50">
-<ul>
-<li>Create beautiful documents with better reproducible practices and workflow!</li>
-<li>This slide and the website is made using a combination of R and Quarto.</li>
-</ul>
-</div>
-<div class="w-50 pl3">
-<iframe src="assets/Report-for-BDSI-Workshops-2024Q1-demo.html" width="100%" height="700px" class="ba">
-</iframe>
-<center class="f2">
-scroll down<br>
-<i class="fas fa-long-arrow-alt-down"></i>
-</center>
-</div>
-</div>
-</section>
-<section id="interactively-working-with-r" class="level2">
-<h2 class="anchored" data-anchor-id="interactively-working-with-r">Interactively working with R</h2>
-<ul>
-<li>You can use R like a calculator:</li>
-</ul>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">🏋️‍♀️ Exercises</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Exercise 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Exercise 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Exercise 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Exercise 4</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-<section id="how-do-you-use-r" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-you-use-r">How do you use R?</h2>
-<ul>
-<li>RStudio Desktop (or RStudio IDE) is the most common way to use R.</li>
-</ul>
-<center>
-<p><img src="images/rstudio-ide.png" class="img-fluid"></p>
-</center>
-</section>
-</section>
-<section id="live-demo" class="level1" data-background-color="#F5EDDE">
-<h1 data-background-color="#F5EDDE">Live demo</h1>
-<section id="customise-global-options" class="level2">
-<h2 class="anchored" data-anchor-id="customise-global-options">Customise Global Options</h2>
-<div class="flex">
-<div class="w-50">
-<ul>
-<li>Go to <strong>RStudio</strong> &gt; <strong>Tools</strong> &gt; <strong>Global Options…</strong></li>
-<li>Under the <strong>General</strong> tab, make sure the “Restore .RData into workspace at startup” is <em>unticked</em>.</li>
-<li>This avoids unexpectedly loading (old) data into your workspace and making your code only work in your workspace, but not for others (which is bad reproducible practice).</li>
-</ul>
+<p>Using R</p>
 </div>
-<div class="w-50 pl3">
-<p><img src="images/RStudio-options.png" class="ba img-fluid"></p>
-</div>
-</div>
-</section>
-<section id="arithmetics" class="level2">
-<h2 class="anchored" data-anchor-id="arithmetics">Arithmetics</h2>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-<section id="vectors" class="level2">
-<h2 class="anchored" data-anchor-id="vectors">Vectors</h2>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-<section id="functions" class="level2">
-<h2 class="anchored" data-anchor-id="functions">Functions</h2>
-<ul>
-<li>There are <em>many</em> functions in R.</li>
-<li>You can look at the documentation on how to use it:</li>
-</ul>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-<section id="numerical-summaries" class="level2">
-<h2 class="anchored" data-anchor-id="numerical-summaries">Numerical summaries</h2>
-<ul>
-<li>Numerical summaries generally come <code>base</code> or <code>stats</code> package.</li>
-<li>Some common numerical summaries include:
-<ul>
-<li>Mean: <code>mean()</code></li>
-<li>Median: <code>median()</code></li>
-<li>Five number summary: <code>fivenum()</code></li>
-<li>Minimum: <code>min()</code></li>
-<li>Maximum: <code>max()</code></li>
-<li>Quantile: <code>quantile()</code></li>
-<li>Correlation coefficient: <code>cor()</code></li>
-</ul></li>
-</ul>
-</section>
-<section id="finding-functions" class="level2">
-<h2 class="anchored" data-anchor-id="finding-functions">Finding functions</h2>
-<ul>
-<li>To find indexed functions for a <em>package</em>:</li>
-</ul>
-<div id="qwebr-insertion-location-5"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<div class="incremental">
-<ul class="incremental">
-<li><span class="f-headline">Google it</span> with a good set of keywords.</li>
-<li>The recent trend is <span class="f-headline">ask generative AI</span>.</li>
-</ul>
-</div>
-</section>
-<section id="base-r" class="level2">
-<h2 class="anchored" data-anchor-id="base-r">Base R</h2>
-<div class="flex">
-<div class="w-60">
-<p><img src="images/base-r.png" class="img-fluid"></p>
-</div>
-<div class="w-40">
-<ul>
-<li>R has <strong>7 packages</strong>, collectively referred to as the “base R”, that are <strong>loaded automatically</strong> when you launch it.</li>
-<li>The functions in the base packages are generally well-tested and trustworthy.</li>
-</ul>
 </div>
 </div>
-</section>
-<section id="contributed-r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="contributed-r-packages">Contributed R Packages</h2>
-<div class="flex">
-<div class="w-70">
-<div class="incremental">
-<ul class="incremental">
-<li><strong>R packages</strong> are community developed extensions to R <span class="grey">(much like <strong>apps</strong> on your mobile)</span></li>
-<li>The Comprehensive R Archive Network (<strong>CRAN</strong>) is a volunteer maintained repository that hosts submitted R packages that are approved <span class="grey">(much like an <strong>app store</strong>)</span></li>
-<li>There are close to 20,000 packages available on CRAN but the qualities of R packages vary.</li>
-<li>There are other repositories that host R packages, e.g.&nbsp;<strong>Bioconductor</strong> for bioinformatics, <strong>R Universe</strong>, <strong>R-Forge</strong>, <strong>GitHub</strong> <span class="grey">(we won’t cover these)</span>.</li>
-</ul>
 </div>
-</div>
-<div class="w-30 pl3 f4">
-<p><img src="images/sara-kurfess-6lcT2kRPvnI-unsplash.jpeg" class="img-fluid"></p>
-<p>Photo by <a href="https://unsplash.com/@stereophototyp?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Sara Kurfeß</a> on <a href="https://unsplash.com/photos/turned-on-gold-iphone-6-6lcT2kRPvnI?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></p>
-</div>
-</div>
-</section>
-<section id="using-packages-on-cran" class="level2">
-<h2 class="anchored" data-anchor-id="using-packages-on-cran">Using packages on CRAN</h2>
-<div class="fragment">
-<ul>
-<li>If the package (say <code>praise</code>) is on CRAN, you can install it by:</li>
-</ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"praise"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><strong>You only need to <code>install.packages()</code> once!</strong></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Loading exported functions from a package:</li>
-</ul>
-<div id="qwebr-insertion-location-6"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</div>
-<div class="fragment">
-<ul>
-<li>Use <code>package::function()</code> for without loading package:</li>
-</ul>
-<div id="qwebr-insertion-location-7"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</div>
-</section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<div class="flex">
-<div class="w-60">
-<p>RStudio Desktop (or RStudio IDE)</p>
-<center>
-<p><img src="images/rstudio-ide.png" class="img-fluid"></p>
-</center>
-</div>
-<div class="w-40 pl3">
-<p>Console or Source</p>
-<div id="qwebr-insertion-location-8"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</div>
-</div>
-<p><br></p>
-<ul>
-<li>Use <code>install.packages()</code> to install a package (only <em>once</em>).</li>
-<li>Use <code>library()</code> to load a package.</li>
-<li>Use <code>package::function()</code> to use a function from a package without loading it.</li>
-</ul>
-</section>
-</section>
-<section id="exercise-time" class="level1" data-background-color="#F5EDDE">
-<h1 data-background-color="#F5EDDE">Exercise time</h1>
-<p><a href="https://anu-bdsi.github.io/workshop-intro-R/materials.html#tabset-1-1-tab" class="f-headline"><i class="fas fa-laptop-code"></i></a></p>
-<p></p><div class="countdown" id="timer_5a73ff4d" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:3em;"> <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div> <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code> </div><p></p>
 
 
 </section>
 
 <p><span class="footer">This website is brought to you by the <a href="https://bdsi.anu.edu.au/">ANU Biological Data Science Institute</a>.</span></p></main> <!-- /main -->
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1803,24 +1586,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/anu-bdsi\.github\.io\/workshop-intro-R\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1855,11 +1620,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
