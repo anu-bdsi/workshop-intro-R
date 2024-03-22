@@ -8,7 +8,9 @@ format:
     css: 
       - assets/webex.css
       - assets/custom.css
-    include-after-body: assets/webex.js
+    include-after-body: 
+      - assets/webex.js
+      - assets/copyonclick.js
 filters:
   - webr2
 webr: 
@@ -34,6 +36,14 @@ LOs <- stringr::str_replace(LOs, "- ", "")
 
 checklist <- function(x) {
   paste0("<ul class='checkbox'>", paste(paste0("<li><input type='checkbox'> ", x, "</li>"), collapse = "\n\n"), "</ul>")
+}
+
+urlid <- 0
+dataurlcopy <- function(url) {
+  urlid <<- urlid + 1
+  id <- paste0("url", urlid)
+  paste0('<button url="', url, '" id="', id, 
+         '" onclick="copyURLtoClipboard(', "'", id, "'", ')">{{< fa copy >}}</button>')
 }
 ```
 
@@ -122,7 +132,23 @@ You should be able to:
 
 ```
 
+**Download the data**
+
+Download the following datasets.
+
+Filename | Link to data | Download | Info
+------ | ---- | ---: | ---:
+`branch-water.xlsx` | `r dataurlcopy("branch-water.xlsx")` | <a href='data/branch-water.xlsx' download>{{< fa file-excel >}}</a> | [{{< fa info-circle >}}](https://datacommons.anu.edu.au/DataCommons/rest/display/anudc:6254?layout=def%3adisplay){target="_blank"}
+
+
 Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.
+
+
+**Reflect on learning objectives**
+
+You should be able to:
+
+`r checklist(LOs[4:7])`
 
 ## Exercise 3
 
@@ -133,6 +159,13 @@ Using R either on your laptop or above console, compute the following values and
 
 
 ```
+
+
+**Reflect on learning objective**
+
+You should be able to:
+
+`r checklist(LOs[8])`
 
 ## Exercise 4
 
@@ -145,6 +178,22 @@ Using R either on your laptop or above console, compute the following values and
 ```
 
 Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.
+
+**Create basic functions**
+
+**Conditional statements**
+
+
+**For loops**
+
+
+**Reflect on learning objectives**
+
+**Create a reproducible example**
+
+You should be able to:
+
+`r checklist(LOs[9:10])`
 
 
 :::

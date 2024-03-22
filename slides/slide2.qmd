@@ -30,7 +30,7 @@ execute:
 source("setup.R")
 ```
 
-::: f2
+::: f1
 
 ```{r}
 #| results: asis 
@@ -42,15 +42,15 @@ learning_objectives(4:7)
 
 ## Assignment to object
 
-
-- Assignments to object:
-  - You can assign values to objects using `<-` or `=`
-  - The name of the object can be variable so long as it is _syntactically valid_ (no spaces and most special characters, and the name cannot start with a digit)
+- You can assign values to objects using `<-` or `=` or even `->` 
+- Just be consistent which one you use!
+- The name of the object can be variable so long as it is _syntactically valid_ (no spaces and most special characters, and the name cannot start with a digit)
 
 ```{webr-r}
-a <- 3
+a <- 3 # recommended style
 b = 2
-2 * a - b 
+4 -> x1 # I don't use this
+a
 ```
 
 ## Vectors
@@ -79,7 +79,7 @@ typeof(a)
 class(a)
 ```
 
-## Vectors types
+## Vector types
 
 - There are four primary types of atomic vectors: **logical**, **integer**, **double** and **character**.
 
@@ -89,18 +89,44 @@ class(a)
 logical_vec <- c(TRUE, FALSE, T, F)
 integer_vec <- c(1L, 2L, 3L, 4L)
 double_vec <- c(1, 2, 3, 4)
-character_vec <- c("A", "B", 'C', 'D')
+character_vec <- c("A", "B", 'C', 'D') # use either a double or single quote 
+integer_vec
 ```
 - The integer and double vectors are collectively called **numeric** vectors.
 
-. . . 
+## Vector
 
-- A vector can only consist of the same type.
+- A vector can only consist of the same type
 - If you attempt to combine mismatched types together, it will try to coerce all values to the same type.
 
 ```{webr-r}
 c(TRUE, F, "3", 10, 'X')
 ```
+
+## Casting to other types
+
+- `as.numeric()` tries to coerce input to numeric value.
+- If a logical value is coerced to numeric or integer, then
+  - `TRUE` is 1 and 
+  - `FALSE` is 0.
+
+```{webr-r}
+as.numeric(c(TRUE, FALSE))
+as.integer(c(1.5, 1))
+as.character(1:3)
+as.numeric(c("A", "B"))
+```
+
+## Factor
+
+- A **factor** in R is a special type of _integer vector_ used typically to encode categorical variables.
+
+```{webr-r}
+factor(c("M", "F", "M", "M", "N"))
+factor(c("M", "F", "M", "M", "N"), levels = c("M", "F"))
+factor(c("M", "F", "M", "M", "N"), levels = c("M", "F"), labels = c("Male", "Female"))
+```
+
 
 ## Lists 
 
@@ -264,6 +290,7 @@ df[["n"]]
   - Maximum: `max()`
   - Quantile: `quantile()`
   - Correlation coefficient: `cor()`
+
 ## Missing values 
 
 ::: incremental
@@ -289,4 +316,6 @@ mean(x)
 mean(x, na.rm = TRUE)
 ```
 
+
+## Summary
 
