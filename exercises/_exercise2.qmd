@@ -1,0 +1,51 @@
+---
+format: 
+  html:
+    self-contained: true
+    css: 
+      - ../assets/webex.css
+    include-after-body: 
+      - ../assets/webex.js
+---
+
+```{r}
+#| include: false
+library(webexercises)
+```
+
+```{webr-r}
+PlantGrowth
+infert
+Harman23.cor
+```
+
+
+Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.
+
+
+**Object class**
+
+R has a number of built-in datasets (see `data(package = "datasets")`). 
+
+Identify the object class for the following variables:
+
+| Dataset | Variable | Class |
+| --- | --- | --- |
+|`PlantGrowth` | `weight` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
+|`PlantGrowth` | `group` | `r mcq(c("integer", "numeric", "list", "character", answer =  "factor", "matrix"))` |
+|`infert` | `education` | `r mcq(c("integer", "numeric", "list", "character", answer =  "factor", "matrix"))` |
+|`infert` | `age` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
+|`infert` | `case` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
+|`Harman23.cor` | `cov` | `r mcq(c("integer", "numeric", "list", "character", "factor",  answer = "matrix"))` |
+|`Harman23.cor` | `center` | `r mcq(c("integer", answer ="numeric", "list", "character", "factor",   "matrix"))` |
+|`Harman23.cor` | `n.obs` | `r mcq(c("integer", answer ="numeric", "list", "character", "factor", "matrix"))` |
+
+
+**Compute summary statistics**
+
+- What is the median weight of plants in the control group in  `PlantGrowth` data? `r fitb(median(PlantGrowth$weight[PlantGrowth$group=="ctrl"]))`
+- What is the total number of cases in infertility after spontaneous and induced abortion in the `infert` data? `r fitb(sum(infert$case))`
+- What is the 20th value in the `education` variable in `infert` data? `r fitb(as.character(infert$education[20]))`
+- What is the value in the fifth row, fifth column in the `cov` matrix in `Harman23.cor` data? `r fitb(Harman23.cor$cov[5, 5])`
+- What is the mean ozone value in `airquality` data to two decimal places? `r fitb(round(mean(airquality$Ozone, na.rm = TRUE), 2))`
+- What is the number of missing values in solar radiation values in `airquality` data? Hint: what does `is.na()` do?  `r fitb(sum(is.na(airquality$Solar.R)))`

@@ -1,0 +1,40 @@
+---
+format: 
+  html:
+    self-contained: true
+    css: 
+      - ../assets/webex.css
+    include-after-body: 
+      - ../assets/webex.js
+---
+
+```{r}
+#| include: false
+library(webexercises)
+```
+
+**Download the data**
+
+
+
+Filename |  Description | Download | Info
+------ | -------------|  ---: | ---:
+`roadside-transects.csv` | Lowland-to-highland Roadside Transects Data, South-East Highlands, Australia, 2017. | <a href='data/roadside-transects.csv' download>{{< fa file-csv >}}</a> | [{{< fa info-circle >}}](https://datacommons.anu.edu.au/DataCommons/rest/display/anudc:5861?layout=def:display){target="_blank"}
+`branch-water-derived-value.xlsx` | The effect of salinity on branch water relations and stem hydraulic vulnerability in two co-occurring mangrove species. | <a href='data/branch-water-derived-value.xlsx' download>{{< fa file-excel >}}</a> | [{{< fa info-circle >}}](https://datacommons.anu.edu.au/DataCommons/rest/display/anudc:6254?layout=def%3adisplay){target="_blank"}
+
+
+
+
+Download the above datasets.
+
+```{r}
+#| include: false
+branch <- readxl::read_excel("data/branch-water-derived-value.xlsx", sheet = "Values for RWC figures")
+branchkey <- readxl::read_excel("data/branch-water-derived-value.xlsx", sheet = "Key Values")
+roadside <- readr::read_csv("data/roadside-transects.csv")
+```
+
+
+- Read the data in `roadside-transects.csv`. How many variables does this sheet consist of? `r fitb(ncol(roadside))` How many observations are there? `r fitb(nrow(roadside))`
+- Read the sheet "Values for RWC figures" in `branch-water-derived-value.xlsx`. How many variables does this sheet consist of? `r fitb(ncol(branch))` How many observations are there? `r fitb(nrow(branch))`
+- Read the sheet "Key Values" in `branch-water-derived-value.xlsx`. How many variables does this sheet consist of? `r fitb(ncol(branchkey))` How many observations are there? `r fitb(nrow(branchkey))`

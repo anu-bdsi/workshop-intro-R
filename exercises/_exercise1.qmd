@@ -1,0 +1,58 @@
+---
+format: 
+  html:
+    self-contained: true
+    css: 
+      - ../assets/webex.css
+    include-after-body: 
+      - ../assets/webex.js
+---
+
+```{r}
+#| include: false
+library(webexercises)
+```
+
+
+```{webr-r}
+
+
+
+
+```
+
+**Using R as a calculator**
+
+Using R either on your laptop or above console, compute the following values and write the answer in the box. 
+
+- What is $(40 + 5) \times 3$?   `r fitb((40 + 5) * 3)`
+- What is $\sqrt{2^4 - 7}$?   `r fitb(sqrt(2^4 - 7))`
+- What is $\dfrac{e^2 + 1}{2}$ to two decimal places?   `r fitb(round((exp(2) + 1)/2, 2))`
+- What is $\log_2(9)$ to two decimal places?   `r fitb(round(log(9, base = 2), 2))`
+
+
+**Finding new functions**
+
+The following operations were not shown in the slides so you will need to find the relevant functions yourself. How would you find these? Once you find the relevant functions, compute the following values in R and enter the value in the corresponding box.
+
+- What is $10! = 10\times 9 \times 8 \times \cdots \times 2 \times 1$? This operation is referred to as "factorial".   `r fitb(factorial(10))`
+- What is $\cos\left(\frac{2}{3}\pi\right) + \sin(-\pi)$ to two decimal places?  `r fitb(round(cospi(2/3 * pi) + sinpi(-pi), 2))`
+- The $\lfloor x \rfloor$  denotes the floor function (the largest integer such that it is smaller or equal to $x$) and $\lceil x \rceil$ denotes the ceiling function (the smallest integer such that it is larger or equal to $x$). What is $\lfloor \frac{1}{4} \pi \rfloor + \lceil \pi e \rceil$? `r fitb(floor(1/4 * pi) + ceiling(pi * exp(1)))`
+
+
+**Installing R packages**
+
+- Which function installs an R package on CRAN? `r mcq(c(answer = "install.pacakges", "library"))`
+- Which function loads an R package into your system? `r mcq(c("install.pacakges", answer = "library"))`
+-  On your own laptop, install the following packages: 
+    - `praise`, 
+    - `readr`, 
+    - `readxl`,
+    - `reprex`,
+    - `sessioninfo`.
+
+- What function is in the `praise` package? `r fitb("praise")` Try running this function on your own laptop.
+
+
+
+

@@ -36,7 +36,11 @@ LOs <- LOs[LOs!=""]
 LOs <- stringr::str_replace(LOs, "- ", "")
 
 checklist <- function(x) {
-  paste0("<ul class='checkbox'>", paste(paste0("<li><input type='checkbox'> ", x, "</li>"), collapse = "\n\n"), "</ul>")
+  paste0("::: {.callout-note}\n\n", 
+         "## Reflect on learning objectives \n\n",
+         "You should be able to:\n",
+         paste0("<ul class='checkbox'>", paste(paste0("<li><input type='checkbox'> ", x, "</li>"), collapse = "\n\n"), "</ul>\n\n:::"))
+
 }
 
 start <- dmy_hms("03/04/2024 10.00.00")
@@ -87,165 +91,27 @@ Time | Content
 
 ## Exercise 1
 
-```{webr-r}
-
-
-
-
-```
-
-**Using R as a calculator**
-
-Using R either on your laptop or above console, compute the following values and write the answer in the box. 
-
-- What is $(40 + 5) \times 3$?   `r fitb((40 + 5) * 3)`
-- What is $\sqrt{2^4 - 7}$?   `r fitb(sqrt(2^4 - 7))`
-- What is $\dfrac{e^2 + 1}{2}$ to two decimal places?   `r fitb(round((exp(2) + 1)/2, 2))`
-- What is $\log_2(9)$ to two decimal places?   `r fitb(round(log(9, base = 2), 2))`
-
-
-**Finding new functions**
-
-The following operations were not shown in the slides so you will need to find the relevant functions yourself. How would you find these? Once you find the relevant functions, compute the following values in R and enter the value in the corresponding box.
-
-- What is $10! = 10\times 9 \times 8 \times \cdots \times 2 \times 1$? This operation is referred to as "factorial".   `r fitb(factorial(10))`
-- What is $\cos\left(\frac{2}{3}\pi\right) + \sin(-\pi)$ to two decimal places?  `r fitb(round(cospi(2/3 * pi) + sinpi(-pi), 2))`
-- The $\lfloor x \rfloor$  denotes the floor function (the largest integer such that it is smaller or equal to $x$) and $\lceil x \rceil$ denotes the ceiling function (the smallest integer such that it is larger or equal to $x$). What is $\lfloor \frac{1}{4} \pi \rfloor + \lceil \pi e \rceil$? `r fitb(floor(1/4 * pi) + ceiling(pi * exp(1)))`
-
-
-**Installing R packages**
-
-- Which function installs an R package on CRAN? `r mcq(c(answer = "install.pacakges", "library"))`
-- Which function loads an R package into your system? `r mcq(c("install.pacakges", answer = "library"))`
--  On your own laptop, install the following packages: 
-  - `praise`, 
-  - `readr`, 
-  - `readxl`,
-  - `reprex`,
-  - `sessioninfo`.
-
-- What function is in the `praise` package? `r fitb("praise")` Try running this function on your own laptop.
-
-**Reflect on learning objectives**
-
-You should be able to:
+{{< include "exercises/_exercise1.qmd" >}}
 
 `r checklist(LOs[1:3])`
 
 ## Exercise 2
 
 
-```{webr-r}
-PlantGrowth
-infert
-Harman23.cor
-```
+{{< include "exercises/_exercise2.qmd" >}}
 
-
-Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.
-
-
-**Object class**
-
-R has a number of built-in datasets (see `data(package = "datasets")`). 
-
-Identify the object class for the following variables:
-
-| Dataset | Variable | Class |
-| --- | --- | --- |
-|`PlantGrowth` | `weight` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
-|`PlantGrowth` | `group` | `r mcq(c("integer", "numeric", "list", "character", answer =  "factor", "matrix"))` |
-|`infert` | `education` | `r mcq(c("integer", "numeric", "list", "character", answer =  "factor", "matrix"))` |
-|`infert` | `age` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
-|`infert` | `parity` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
-|`infert` | `induced` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
-|`infert` | `case` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
-|`infert` | `spontaneous` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
-|`infert` | `stratum` | `r mcq(c(answer = "integer", "numeric", "list", "character", "factor", "matrix"))` |
-|`infert` | `pooled.stratum` | `r mcq(c("integer", answer = "numeric", "list", "character", "factor", "matrix"))` |
-|`Harman23.cor` | `cov` | `r mcq(c("integer", "numeric", "list", "character", "factor",  answer = "matrix"))` |
-|`Harman23.cor` | `center` | `r mcq(c("integer", answer ="numeric", "list", "character", "factor",   "matrix"))` |
-|`Harman23.cor` | `n.obs` | `r mcq(c("integer", answer ="numeric", "list", "character", "factor", "matrix"))` |
-
-
-**Compute summary statistics**
-
-- What is the median weight of plants in the control group in  `PlantGrowth` data? `r fitb(median(PlantGrowth$weight[PlantGrowth$group=="ctrl"]))`
-- What is the total number of cases in infertility after spontaneous and induced abortion in the `infert` data? `r fitb(sum(infert$case))`
-- What is the 20th value in the `education` variable in `infert` data? `r fitb(as.character(infert$education[20]))`
-- What is the value in the fifth row, fifth column in the `cov` matrix in `Harman23.cor` data? `r fitb(Harman23.cor$cov[5, 5])`
-- What is the mean ozone value in `airquality` data to two decimal places? `r fitb(round(mean(airquality$Ozone, na.rm = TRUE), 2))`
-- What is the number of missing values in solar radiation values in `airquality` data? Hint: what does `is.na()` do?  `r fitb(sum(is.na(airquality$Solar.R)))`
-
-
-
-**Reflect on learning objectives**
-
-You should be able to:
 
 `r checklist(LOs[4:7])`
 
 ## Exercise 3
 
-
-
-**Download the data**
-
-
-
-Filename |  Description | Download | Info
------- | -------------|  ---: | ---:
-`roadside-transects.csv` | Lowland-to-highland Roadside Transects Data, South-East Highlands, Australia, 2017. | <a href='data/roadside-transects.csv' download>{{< fa file-csv >}}</a> | [{{< fa info-circle >}}](https://datacommons.anu.edu.au/DataCommons/rest/display/anudc:5861?layout=def:display){target="_blank"}
-`branch-water-derived-value.xlsx` | The effect of salinity on branch water relations and stem hydraulic vulnerability in two co-occurring mangrove species. | <a href='data/branch-water-derived-value.xlsx' download>{{< fa file-excel >}}</a> | [{{< fa info-circle >}}](https://datacommons.anu.edu.au/DataCommons/rest/display/anudc:6254?layout=def%3adisplay){target="_blank"}
-
-
-
-
-Download the above datasets.
-
-```{r}
-#| include: false
-branch <- readxl::read_excel("data/branch-water-derived-value.xlsx", sheet = "Values for RWC figures")
-branchkey <- readxl::read_excel("data/branch-water-derived-value.xlsx", sheet = "Key Values")
-roadside <- readr::read_csv("data/roadside-transects.csv")
-```
-
-
-- Read the data in `roadside-transects.csv`. How many variables does this sheet consist of? `r fitb(ncol(roadside))` How many observations are there? `r fitb(nrow(roadside))`
-- Read the sheet "Values for RWC figures" in `branch-water-derived-value.xlsx`. How many variables does this sheet consist of? `r fitb(ncol(branch))` How many observations are there? `r fitb(nrow(branch))`
-- Read the sheet "Key Values" in `branch-water-derived-value.xlsx`. How many variables does this sheet consist of? `r fitb(ncol(branchkey))` How many observations are there? `r fitb(nrow(branchkey))`
-
-**Reflect on learning objective**
-
-You should be able to:
+{{< include "exercises/_exercise3.qmd" >}}
 
 `r checklist(LOs[8])`
 
 ## Exercise 4
 
-
-```{webr-r}
-
-
-
-
-```
-
-Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.
-
-**Create basic functions**
-
-**Conditional statements**
-
-
-**For loops**
-
-
-**Reflect on learning objectives**
-
-**Create a reproducible example**
-
-You should be able to:
+{{< include "exercises/_exercise4.qmd" >}}
 
 `r checklist(LOs[9:10])`
 
