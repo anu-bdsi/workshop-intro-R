@@ -1,6 +1,6 @@
 learning_objectives <- function(highlight = NULL) {
   lines <- readLines("_learning-objectives.qmd") |> 
-    str_replace("^- ", "")
+    stringr::str_replace("^- ", "")
   
   lines <- lines[lines!=""]
   

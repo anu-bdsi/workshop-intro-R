@@ -27,7 +27,6 @@ execute:
 
 ```{r}
 #| include: false
-library(tidyverse)
 source("setup.R")
 ```
 
@@ -36,7 +35,7 @@ source("setup.R")
 ```{r}
 #| results: asis 
 #| echo: false
-learning_objectives(5:7)
+learning_objectives(4:7)
 ```
 
 :::
@@ -254,7 +253,17 @@ df[["n"]]
 
 :::
 
+## Numerical summaries 
 
+- Numerical summaries generally come `base` or `stats` package.
+- Some common numerical summaries include:
+  - Mean: `mean()`
+  - Median: `median()`
+  - Five number summary: `fivenum()`
+  - Minimum: `min()`
+  - Maximum: `max()`
+  - Quantile: `quantile()`
+  - Correlation coefficient: `cor()`
 ## Missing values 
 
 ::: incremental
