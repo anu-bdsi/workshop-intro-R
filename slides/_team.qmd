@@ -1,14 +1,31 @@
-::: {layout-ncol=4 style="text-align:center;"}
+::: {.panel-tabset}
+
+## ![Dr. Emi Tanaka](`r photo_path`images/team/emi-square.png){.circle-image-120}<br>Dr. Emi Tanaka
+
+::: f2
+
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "Academic statistician passionate about data science and open source software",
+                    "fas fa-user-circle" = "Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal",
+                  "fas fa-graduation-cap" = "PhD in Statistical Bioinformatics",
+                "fas fa-user-graduate" = "BSci (Adv Maths) with major in Mathematics and Statistics",
+                "fas fa-heart fa-beat" = "Loves data and coding")))
+```
 
 
-![Dr. Emi Tanaka](`r photo_path`images/team/emi-square.png){.circle-image-120}
-
-![Jeremias Ivan](`r photo_path`images/team/jeremias-ivan.jpg){.circle-image-120}
-
-![Audrey Prasetya](`r photo_path`images/team/audrey-prasetya.jpeg){.circle-image-120}
+&nbsp; &nbsp; &nbsp; &nbsp; {{< fa globe >}} https://emitanaka.org &nbsp; &nbsp; <i class="fab fa-twitter"></i> @statsgen &nbsp; &nbsp; <i class="fab fa-mastodon"></i> fosstodon.org/@emitanaka
 
 
-![Ryan O'Donnell](`r photo_path`images/team/ryan-odonnell.jpg){.circle-image-120}
+:::
+
+## ![Jeremias Ivan](`r photo_path`images/team/jeremias-ivan.jpg){.circle-image-120}<br>Jeremias Ivan
+
+## ![Audrey Prasetya](`r photo_path`images/team/audrey-prasetya.jpeg){.circle-image-120}<br>Audrey Prasetya
+
+## ![Ryan O'Donnell](`r photo_path`images/team/ryan-odonnell.jpg){.circle-image-120}<br>Ryan O'Donnell
+
 
 
 :::
