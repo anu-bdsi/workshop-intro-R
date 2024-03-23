@@ -8,7 +8,7 @@
 ![Audrey Prasetya](`r photo_path`images/team/audrey-prasetya.jpeg){.circle-image-120}
 
 
-![Ryan O'Donnell](`r photo_path`images/team/avatar3.png){.circle-image-120}
+![Ryan O'Donnell](`r photo_path`images/team/ryan-odonnell.jpg){.circle-image-120}
 
 
 :::
