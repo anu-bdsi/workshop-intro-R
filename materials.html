@@ -235,7 +235,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"\n\n","options":{"comment":"","read-only":"false","out-height":"","warning":"true","out-width":"700px","results":"markup","output":"true","label":"unnamed-chunk-1","fig-cap":"","classes":"","message":"true","context":"interactive","fig-width":7,"fig-height":5,"autorun":"false","dpi":72},"id":1},{"code":"PlantGrowth\ninfert\nHarman23.cor","options":{"comment":"","read-only":"false","out-height":"","warning":"true","out-width":"700px","results":"markup","output":"true","label":"unnamed-chunk-2","fig-cap":"","classes":"","message":"true","context":"interactive","fig-width":7,"fig-height":5,"autorun":"false","dpi":72},"id":2},{"code":"\n\n","options":{"comment":"","read-only":"false","out-height":"","warning":"true","out-width":"700px","results":"markup","output":"true","label":"unnamed-chunk-3","fig-cap":"","classes":"","message":"true","context":"interactive","fig-width":7,"fig-height":5,"autorun":"false","dpi":72},"id":3}];
+globalThis.qwebrCellDetails = [{"id":1,"options":{"comment":"","classes":"","results":"markup","message":"true","fig-height":5,"output":"true","warning":"true","fig-width":7,"out-height":"","autorun":"false","dpi":72,"context":"interactive","out-width":"700px","label":"unnamed-chunk-1","fig-cap":"","read-only":"false"},"code":"\n\n"},{"id":2,"options":{"comment":"","classes":"","results":"markup","message":"true","fig-height":5,"output":"true","warning":"true","fig-width":7,"out-height":"","autorun":"false","dpi":72,"context":"interactive","out-width":"700px","label":"unnamed-chunk-2","fig-cap":"","read-only":"false"},"code":"PlantGrowth\ninfert\nHarman23.cor"},{"id":3,"options":{"comment":"","classes":"","results":"markup","message":"true","fig-height":5,"output":"true","warning":"true","fig-width":7,"out-height":"","autorun":"false","dpi":72,"context":"interactive","out-width":"700px","label":"unnamed-chunk-3","fig-cap":"","read-only":"false"},"code":"\n\n"}];
 
 </script>
 <script type="module">
@@ -1327,18 +1327,29 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </ul>
 <p><strong>Installing R packages</strong></p>
 <ul>
-<li><p>Which function installs an R package on CRAN? <select class="webex-select"><option value="blank"></option><option value="answer">install.pacakges</option><option value="">library</option></select></p></li>
-<li><p>Which function loads an R package into your system? <select class="webex-select"><option value="blank"></option><option value="">install.pacakges</option><option value="answer">library</option></select></p></li>
-<li><p>On your own laptop, install the following packages:</p></li>
-<li><p><code>praise</code>,</p></li>
-<li><p><code>readr</code>,</p></li>
-<li><p><code>readxl</code>,</p></li>
-<li><p><code>reprex</code>,</p></li>
-<li><p><code>sessioninfo</code>.</p></li>
-<li><p>What function is in the <code>praise</code> package? <input class="webex-solveme nospaces" size="6" data-answer="[&quot;praise&quot;]"> Try running this function on your own laptop.</p></li>
+<li>Which function installs an R package on CRAN? <select class="webex-select"><option value="blank"></option><option value="answer">install.pacakges</option><option value="">library</option></select></li>
+<li>Which function loads an R package into your system? <select class="webex-select"><option value="blank"></option><option value="">install.pacakges</option><option value="answer">library</option></select></li>
+<li>On your own laptop, install the following packages:
+<ul>
+<li><code>praise</code>,</li>
+<li><code>readr</code>,</li>
+<li><code>readxl</code>,</li>
+<li><code>reprex</code>,</li>
+<li><code>sessioninfo</code>.</li>
+</ul></li>
+<li>What function is in the <code>praise</code> package? <input class="webex-solveme nospaces" size="6" data-answer="[&quot;praise&quot;]"> Try running this function on your own laptop.</li>
 </ul>
-<p><strong>Reflect on learning objectives</strong></p>
-<p>You should be able to:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Reflect on learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+You should be able to:
 <ul class="checkbox">
 <li>
 <input type="checkbox"> Conduct elementary arithmetic operations using R
@@ -1350,6 +1361,8 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <input type="checkbox"> Install external packages in R to extend functionality
 </li>
 </ul>
+</div>
+</div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div id="qwebr-insertion-location-2"></div>
@@ -1394,45 +1407,20 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </tr>
 <tr class="odd">
 <td><code>infert</code></td>
-<td><code>parity</code></td>
-<td><select class="webex-select"><option value="blank"></option><option value="">integer</option><option value="answer">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="">matrix</option></select></td>
-</tr>
-<tr class="even">
-<td><code>infert</code></td>
-<td><code>induced</code></td>
-<td><select class="webex-select"><option value="blank"></option><option value="">integer</option><option value="answer">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="">matrix</option></select></td>
-</tr>
-<tr class="odd">
-<td><code>infert</code></td>
 <td><code>case</code></td>
 <td><select class="webex-select"><option value="blank"></option><option value="">integer</option><option value="answer">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="">matrix</option></select></td>
 </tr>
 <tr class="even">
-<td><code>infert</code></td>
-<td><code>spontaneous</code></td>
-<td><select class="webex-select"><option value="blank"></option><option value="">integer</option><option value="answer">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="">matrix</option></select></td>
-</tr>
-<tr class="odd">
-<td><code>infert</code></td>
-<td><code>stratum</code></td>
-<td><select class="webex-select"><option value="blank"></option><option value="answer">integer</option><option value="">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="">matrix</option></select></td>
-</tr>
-<tr class="even">
-<td><code>infert</code></td>
-<td><code>pooled.stratum</code></td>
-<td><select class="webex-select"><option value="blank"></option><option value="">integer</option><option value="answer">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="">matrix</option></select></td>
-</tr>
-<tr class="odd">
 <td><code>Harman23.cor</code></td>
 <td><code>cov</code></td>
 <td><select class="webex-select"><option value="blank"></option><option value="">integer</option><option value="">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="answer">matrix</option></select></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>Harman23.cor</code></td>
 <td><code>center</code></td>
 <td><select class="webex-select"><option value="blank"></option><option value="">integer</option><option value="answer">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="">matrix</option></select></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>Harman23.cor</code></td>
 <td><code>n.obs</code></td>
 <td><select class="webex-select"><option value="blank"></option><option value="">integer</option><option value="answer">numeric</option><option value="">list</option><option value="">character</option><option value="">factor</option><option value="">matrix</option></select></td>
@@ -1448,8 +1436,17 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <li>What is the mean ozone value in <code>airquality</code> data to two decimal places? <input class="webex-solveme nospaces" size="5" data-answer="[&quot;42.13&quot;]"></li>
 <li>What is the number of missing values in solar radiation values in <code>airquality</code> data? Hint: what does <code>is.na()</code> do? <input class="webex-solveme nospaces" size="1" data-answer="[&quot;7&quot;]"></li>
 </ul>
-<p><strong>Reflect on learning objectives</strong></p>
-<p>You should be able to:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Reflect on learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+You should be able to:
 <ul class="checkbox">
 <li>
 <input type="checkbox"> Comprehend various object types in R
@@ -1465,6 +1462,8 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </li>
 </ul>
 </div>
+</div>
+</div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p><strong>Download the data</strong></p>
 <table class="table">
@@ -1478,6 +1477,12 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </thead>
 <tbody>
 <tr class="odd">
+<td><code>roadside-transects.csv</code></td>
+<td>Lowland-to-highland Roadside Transects Data, South-East Highlands, Australia, 2017.</td>
+<td style="text-align: right;"><a href="data/roadside-transects.csv" download=""><i class="fa-solid fa-file-csv" aria-label="file-csv"></i></a></td>
+<td style="text-align: right;"><a href="https://datacommons.anu.edu.au/DataCommons/rest/display/anudc:5861?layout=def:display" target="_blank"><i class="fa-solid fa-info-circle" aria-label="info-circle"></i></a></td>
+</tr>
+<tr class="even">
 <td><code>branch-water-derived-value.xlsx</code></td>
 <td>The effect of salinity on branch water relations and stem hydraulic vulnerability in two co-occurring mangrove species.</td>
 <td style="text-align: right;"><a href="data/branch-water-derived-value.xlsx" download=""><i class="fa-solid fa-file-excel" aria-label="file-excel"></i></a></td>
@@ -1487,16 +1492,28 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </table>
 <p>Download the above datasets.</p>
 <ul>
+<li>Read the data in <code>roadside-transects.csv</code>. How many variables does this sheet consist of? <input class="webex-solveme nospaces" size="1" data-answer="[&quot;4&quot;]"> How many observations are there? <input class="webex-solveme nospaces" size="5" data-answer="[&quot;22644&quot;]"></li>
 <li>Read the sheet “Values for RWC figures” in <code>branch-water-derived-value.xlsx</code>. How many variables does this sheet consist of? <input class="webex-solveme nospaces" size="1" data-answer="[&quot;7&quot;]"> How many observations are there? <input class="webex-solveme nospaces" size="3" data-answer="[&quot;906&quot;]"></li>
 <li>Read the sheet “Key Values” in <code>branch-water-derived-value.xlsx</code>. How many variables does this sheet consist of? <input class="webex-solveme nospaces" size="2" data-answer="[&quot;20&quot;]"> How many observations are there? <input class="webex-solveme nospaces" size="2" data-answer="[&quot;82&quot;]"></li>
 </ul>
-<p><strong>Reflect on learning objective</strong></p>
-<p>You should be able to:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Reflect on learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+You should be able to:
 <ul class="checkbox">
 <li>
 <input type="checkbox"> Import and export data in R
 </li>
 </ul>
+</div>
+</div>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <div id="qwebr-insertion-location-3"></div>
@@ -1507,7 +1524,17 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p><strong>For loops</strong></p>
 <p><strong>Reflect on learning objectives</strong></p>
 <p><strong>Create a reproducible example</strong></p>
-<p>You should be able to:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Reflect on learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+You should be able to:
 <ul class="checkbox">
 <li>
 <input type="checkbox"> Create basic functions, employ conditional statements, and utilize for loops in R
@@ -1516,6 +1543,8 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <input type="checkbox"> Decipher error messages and do basic troubleshooting
 </li>
 </ul>
+</div>
+</div>
 </div>
 </div>
 </div>
