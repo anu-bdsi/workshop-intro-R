@@ -104,6 +104,10 @@ switch("HD"
        "Undetermined value")
 ```
 
+## Equalty statements
+
+- `==`
+- `%in%`
 
 ## Example
 
