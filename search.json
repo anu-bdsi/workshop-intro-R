@@ -77,6 +77,13 @@
     "text": "Conditional statements\n\nThe condition in the if statement needs to evaluate to a single TRUE or FALSE\nifelse() is the vectorised\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
+    "objectID": "slides/slide4.html#equalty-statements",
+    "href": "slides/slide4.html#equalty-statements",
+    "title": "Functions, loops and conditional statements",
+    "section": "Equalty statements",
+    "text": "Equalty statements\n\n==\n%in%"
+  },
+  {
     "objectID": "slides/slide4.html#example",
     "href": "slides/slide4.html#example",
     "title": "Functions, loops and conditional statements",
@@ -326,14 +333,14 @@
     "href": "index.html#teaching-team",
     "title": "Introduction to R programming",
     "section": "Teaching team",
-    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’Donnell\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka"
+    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’Donnell\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan"
   },
   {
     "objectID": "slides/slide1.html#teaching-team",
     "href": "slides/slide1.html#teaching-team",
     "title": "Getting Started",
     "section": "Teaching team",
-    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’Donnell\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka"
+    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’Donnell\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan"
   },
   {
     "objectID": "slides/slide1.html#your-turn-tell-us-about-you",
@@ -473,14 +480,14 @@
     "href": "slides/handout1.html",
     "title": "Getting Started",
     "section": "",
-    "text": "Dr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’Donnell\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "Dr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’Donnell\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "slides/handout1.html#teaching-team",
     "href": "slides/handout1.html#teaching-team",
     "title": "Getting Started",
     "section": "",
-    "text": "Dr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’Donnell\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka"
+    "text": "Dr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’Donnell\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan"
   },
   {
     "objectID": "slides/handout1.html#learning-objectives",
