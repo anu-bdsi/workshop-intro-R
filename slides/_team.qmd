@@ -40,6 +40,24 @@ cat(emix::fa_list(c("fas fa-user-circle" = "2nd year of PhD student at ANU, work
 
 ## ![Audrey Prasetya](`r photo_path`images/team/audrey-prasetya.jpeg){.circle-image-120}<br>Audrey Prasetya
 
+
+::: f2
+
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "(Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU",
+                    "fas fa-dove" = "Working on historical biogeography of Indo-Australian birds",
+                "fas fa-user-graduate" = "BSc (Hons) with major in Zoology and Ecology & Conservation",
+                "fas fa-heart fa-beat" = "Loves games, art markets, and FOOD",
+                "fab fa-twitter" = "@goaudreymp",
+                "fas fa-link" = "https://linktr.ee/goaudreymp")))
+```
+
+
+
+:::
+
 ## ![Ryan O'Donnell](`r photo_path`images/team/ryan-odonnell.jpg){.circle-image-120}<br>Ryan O'Donnell
 
 
