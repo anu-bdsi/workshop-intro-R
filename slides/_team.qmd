@@ -1,4 +1,6 @@
-::: {.panel-tabset}
+
+
+::: {.panel-tabset .f1}
 
 ## ![Dr. Emi Tanaka](`r photo_path`images/team/emi-square.png){.circle-image-120}<br>Dr. Emi Tanaka
 
@@ -60,6 +62,41 @@ cat(emix::fa_list(c("fas fa-user-circle" = "(Almost finishing) PhD student @Mori
 
 ## ![Ryan O'Donnell](`r photo_path`images/team/ryan-odonnell.jpg){.circle-image-120}<br>Ryan O'Donnell
 
+::: f2
 
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU",
+                    "fab fa-pagelines" = "Investigating the evolution of the Australian orchid flora and associated funga",
+                "fas fa-user-graduate" = "MScSt (Biodiversity Science)",
+                "fas fa-heart fa-beat" = "Loves playing music, reading, nature",
+                "fab fa-twitter" = "@rpodonnell",
+                "fas fa-link" = "rpodonnell.github.io")))
+```
+
+
+
+:::
+
+
+## ![Nils Kreuter](`r photo_path`images/team/nils-kreuter.jpeg){.circle-image-120}<br>Nils Kreuter
+
+::: f2
+
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU",
+                    "fas fa-fish" = "Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data",
+                "fas fa-user-graduate" = "MSc (Marine Biology), BSc (Biology)",
+                "fas fa-heart fa-beat" = "Loves triathlon, hiking and the ocean",
+                "fab fa-twitter" = "@nilskreuter",
+                "fas fa-link" = "https://linktr.ee/nilskreuter")))
+```
+
+
+
+:::
 
 :::

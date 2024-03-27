@@ -38,6 +38,7 @@ theme_set(theme_classic(base_size = 24))
 
 ## Teaching team 
 
+
 `r photo_path <- ""`
 
 {{< include _team.qmd >}}

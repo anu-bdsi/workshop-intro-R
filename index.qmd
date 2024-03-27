@@ -47,7 +47,23 @@ Please ensure that you download and install
 
 ## Teaching team 
 
+```{css}
+#| echo: false
+.nav-link.active {
+  background-color: #F5EDDE!important;
+  border-bottom-color: #F5EDDE!important;
+}
+
+.tab-content {
+  background-color: #F5EDDE!important;
+}
+```
+
+
+
 `r photo_path <- "slides/"`
+
+
 
 {{< include slides/_team.qmd >}}
 
