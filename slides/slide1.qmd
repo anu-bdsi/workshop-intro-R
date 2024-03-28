@@ -44,9 +44,19 @@ theme_set(theme_classic(base_size = 24))
 {{< include _team.qmd >}}
 
 
-## Your turn! Tell us about you
+## Your turn! Tell us about yourself 👋
 
-<iframe src="https://embed.polleverywhere.com/free_text_polls/Jo8dbOzhFN5sVwqzpUc67?controls=none&short_poll=true" width="100%" height="800px"></iframe>
+<br><br>
+
+
+<center class='f-headline'>
+
+
+[pollev.com/emitanaka](https://pollev.com/emitanaka)
+
+![](images/polleverywhere.png)
+
+</center>
 
 
 # Workshop materials
@@ -179,10 +189,10 @@ download.file(out$data$url, destfile = "images/openai-creation.png")
 
 ```{r}
 #| echo: false
-regdata <- read_csv(here::here("data/2024-04-Registration-Cohort(Form1).csv"), locale=locale(encoding="latin1"),
-         col_names = c("affiliation", "workshop", "confidence", "comment", "role"),
+regdata <- read_csv(here::here("data/2024-04-Registration.csv"), locale=locale(encoding="latin1"),
+         col_names = c("affiliation", "workshop", "confidence", "role"),
          skip = 1) |> 
-  mutate(aff2 = fct_lump(affiliation, 3)) |> 
+  mutate(aff2 = fct_lump(affiliation, 2)) |> 
   mutate(n = n(), .by = aff2) |> 
   mutate(aff2 = fct_reorder(aff2, -n)) |> 
   mutate(aff2 = fct_relevel(aff2, "Other", after = Inf))
@@ -396,8 +406,8 @@ library(help = "base")
 
 ::: incremental
 
-- **R packages** are community developed extensions to R [(much like **apps** on your mobile)]{.grey}
-- The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an **app store**)]{.grey}
+- **R packages** are community developed extensions to R [(much like **apps** on your mobile).]{.grey}
+- The Comprehensive R Archive Network (**CRAN**) is a volunteer maintained repository that hosts submitted R packages that are approved [(much like an **app store**).]{.grey}
 - There are close to 20,000 packages available on CRAN but the qualities of R packages vary.
 - There are other repositories that host R packages, e.g. **Bioconductor** for bioinformatics, **R Universe**, **R-Forge**, **GitHub** [(we won't cover these)]{.grey}.
 :::
@@ -493,6 +503,7 @@ mean(c(1, 3, 4))
 
 
 # Exercise time {background-color="#F5EDDE"}
+
 
 [<i class='fas fa-laptop-code'></i>](https://anu-bdsi.github.io/workshop-intro-R/materials.html#tabset-1-1-tab){.f-headline}
 
