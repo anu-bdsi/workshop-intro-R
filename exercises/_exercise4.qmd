@@ -35,6 +35,4 @@ Using R either on your laptop or above console, compute the following values and
 **For loops**
 
 
-**Reflect on learning objectives**
-
 **Create a reproducible example**
