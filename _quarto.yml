@@ -14,7 +14,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - materials.qmd
+      #- materials.qmd
       - help.qmd
   body-footer: | 
     [This website is brought to you by the [ANU Biological Data Science Institute](https://bdsi.anu.edu.au/).]{.footer}

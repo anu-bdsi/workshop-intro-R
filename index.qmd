@@ -24,7 +24,7 @@ Please ensure that you download and install
 
 - the latest version of [R](https://cran.csiro.au/),
 - the latest version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/), 
-- [Slack](https://slack.com/intl/en-au) (alternatively you can use the web version), and 
+- (Optional) [Slack](https://slack.com/intl/en-au) (alternatively you can use the web version), and 
 
 {{< fa hand-holding-medical >}} If you are having issues, ask in the slack channel or talk to the teaching team.
 
@@ -39,7 +39,7 @@ Please ensure that you download and install
 :::
 
 - You must use your ANU email to sign up. 
-- Use your full name. 
+- Use your _full_ name. 
 - By joining, you agree to abide by this [**code of conduct**](/slack.html).
 - **Please don't direct message the teaching team in Slack**. Your questions are more likely to be answered in the Slack channels rather than in direct messages.
 
@@ -67,3 +67,7 @@ Please ensure that you download and install
 
 {{< include slides/_team.qmd >}}
 
+## Materials 
+
+
+To be available soon.
