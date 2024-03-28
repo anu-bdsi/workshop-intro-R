@@ -21,7 +21,8 @@ Filename |  Description | Download | Info
 ------ | -------------|  ---: | ---:
 `roadside-transects.csv` | Lowland-to-highland Roadside Transects Data, South-East Highlands, Australia, 2017. | <a href='data/roadside-transects.csv' download>{{< fa file-csv >}}</a> | [{{< fa info-circle >}}](https://datacommons.anu.edu.au/DataCommons/rest/display/anudc:5861?layout=def:display){target="_blank"}
 `branch-water-derived-value.xlsx` | The effect of salinity on branch water relations and stem hydraulic vulnerability in two co-occurring mangrove species. | <a href='data/branch-water-derived-value.xlsx' download>{{< fa file-excel >}}</a> | [{{< fa info-circle >}}](https://datacommons.anu.edu.au/DataCommons/rest/display/anudc:6254?layout=def%3adisplay){target="_blank"}
-
+`GRRData.csv` | | <a href='data/GRRData.csv' download>here</a> | [{{< fa info-circle >}}](https://zenodo.org/records/8140726){target="_blank"} |
+`template_Morris.xlsx` | | <a href='data/template_Morris.xlsx' download>here</a> | [{{< fa info-circle >}}](https://zenodo.org/records/1237733){target="_blank"} |
 
 
 
@@ -33,6 +34,8 @@ branch <- readxl::read_excel(here::here("data/branch-water-derived-value.xlsx"),
 branchkey <- readxl::read_excel(here::here("data/branch-water-derived-value.xlsx"), sheet = "Key Values")
 roadside <- readr::read_csv(here::here("data/roadside-transects.csv"))
 ```
+
+
 
 
 - Read the data in `roadside-transects.csv`. How many variables does this sheet consist of? `r fitb(ncol(roadside))` How many observations are there? `r fitb(nrow(roadside))`

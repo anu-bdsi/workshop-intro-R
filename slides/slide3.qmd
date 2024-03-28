@@ -68,12 +68,43 @@ len, supp, dose
 :::
 
 
+## Reading CSV files
+
+```{webr-r}
+#| context: setup
+download.file("https://coatless.github.io/raw-data/Salaries.csv", "data.csv")
+dir.create("data")
+```
+
+```{webr-r}
+dir()
+```
+
+- `GRRData.csv` 
+
+::: aside 
+
+Asefa et al. (2023). Data from: Human activities modulate reciprocal effects of a subterranean ecological engineer rodent, Tachyoryctes macrocephalus, on Afroalpine vegetation cover [Data set]. Zenodo. https://doi.org/10.5061/dryad.cc2fqz6bx
+
+
+:::
+
+
 ## Binary or propriety file formats 
 
 ::: incremental 
 
 - Data can also be stored as a binary format [(in R, these include `.RData` and `.rda` but we won't cover this)]{.grey}.
 - Data can also come in a propriety format (e.g. xls and xlsx) -- these require special ways to open/view/read it.
+
+:::
+
+`template_Morris.xlsx`
+
+
+::: aside
+
+Morris & Ewers (2018). Whitehead's rat morphometrics [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1237733
 
 :::
 
