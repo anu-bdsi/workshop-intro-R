@@ -20,17 +20,19 @@ Upon completion of the workshop, participants should be able to:
 
 ## Preperation 
 
-Please ensure that you download and install 
+You will need a laptop that can connect to the internet during the workshop. Please ensure that you download and install 
 
 - the latest version of [R](https://cran.csiro.au/),
 - the latest version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/), 
 - (Optional) [Slack](https://slack.com/intl/en-au) (alternatively you can use the web version), and 
 
-{{< fa hand-holding-medical >}} If you are having issues, ask in the slack channel or talk to the teaching team.
+{{< fa hand-holding-medical >}} If you are having issues, ask in the slack channel or talk to the teaching team during the workshop.
 
 ::: {.callout-note icon=false style="width:100%"}
 
-## <i class='fab fa-slack'></i> [Slack workspace]{#slack}
+## <i class='fab fa-slack'></i> [Slack workspace (Optional)]{#slack}
+
+We use Slack to facilitate communication between workshop participants and the teaching team. 
 
 ::: w-100
 
@@ -41,7 +43,9 @@ Please ensure that you download and install
 - You must use your ANU email to sign up. 
 - Use your _full_ name. 
 - By joining, you agree to abide by this [**code of conduct**](/slack.html).
-- **Please don't direct message the teaching team in Slack**. Your questions are more likely to be answered in the Slack channels rather than in direct messages.
+- Please **don't direct message the teaching team** in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.
+
+Please note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop.
 
 :::
 
