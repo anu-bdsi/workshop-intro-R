@@ -30,10 +30,8 @@ date-format: "D[rd] MMMM YYYY"
   - whether you are a beginner or not, there are always things we do not know about R.
 
 
-## Joining the R community 
 
 ## Resources
-
 
 - [R for Data Science](https://r4ds.hadley.nz/)
 - [R4DS Online Learning Community](https://rfordatasci.com/)
@@ -41,6 +39,7 @@ date-format: "D[rd] MMMM YYYY"
 
 ## Local Resources
 
+- [R-Ladies Canberra Meetup](https://www.meetup.com/rladies-canberra/)
 - Ask the local experts such as at the 
   - [BDSI Drop-In Sessions](https://bdsi.anu.edu.au/news-events/event-series/bdsi-bioinformatics-and-statistics-drop-sessions) and 
   - [ANU Statistical Support Network](https://services.anu.edu.au/business-units/research-initiatives-and-infrastructure/statistical-support-network).
@@ -52,4 +51,4 @@ date-format: "D[rd] MMMM YYYY"
 
 - What worked or didn't work for you?
 - What other workshops?
-
+- Tell us at {{< fa envelope >}} **workshop.bdsi@anu.edu.au**

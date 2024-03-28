@@ -40,7 +40,23 @@ learning_objectives(4:7)
 
 :::
 
-## Assignment to object
+## Using R as a calculator 
+
+```{webr-r}
+exp(3 + 4)
+exp(3 + 4) + mean(c(1, 3, 5)) 
+```
+
+::: incremental
+
+- But we want to save results to reuse later!
+
+:::
+
+
+## Assignment
+
+::: incremental
 
 - You can assign values to objects using `<-` or `=` or even `->` 
 - Just be consistent which one you use!
@@ -52,6 +68,8 @@ b = 2
 4 -> x1 # I don't use this
 a
 ```
+
+:::
 
 ## Vectors
 
@@ -105,7 +123,7 @@ c(TRUE, F, "3", 10, 'X')
 
 ## Casting to other types
 
-- `as.numeric()` tries to coerce input to numeric value.
+- E.g., `as.numeric()` tries to coerce input to numeric value.
 - If a logical value is coerced to numeric or integer, then
   - `TRUE` is 1 and 
   - `FALSE` is 0.
@@ -213,6 +231,10 @@ y[c("c", "a", "a", "f")]
 ::: {.w-50}
 
 ```{webr-r}
+l <- list(c(1, 2, 3), 
+          c(2.5, 3.0),
+          c(TRUE, FALSE),
+          c("a", "b"))
 str(l)
 ```
 
@@ -254,16 +276,19 @@ l2[["A"]]
 
 ::: flex
 
-::: {.w-20}
+::: {.w-50}
 
 ```{webr-r}
+df <- data.frame(grade = c("A", "B", "C"),
+                     n = c(10, 14, 30))
+
 df
 ```
 
 
 :::
 
-::: {.w-80 .pl3}
+::: {.w-50 .pl3}
 
 
 ```{webr-r}
@@ -281,15 +306,19 @@ df[["n"]]
 
 ## Numerical summaries 
 
-- Numerical summaries generally come `base` or `stats` package.
-- Some common numerical summaries include:
-  - Mean: `mean()`
-  - Median: `median()`
-  - Five number summary: `fivenum()`
-  - Minimum: `min()`
-  - Maximum: `max()`
-  - Quantile: `quantile()`
-  - Correlation coefficient: `cor()`
+
+```{webr-r}
+cars # built-in data
+
+mean(cars$speed) # Mean
+median(cars$speed) # Median
+sd(cars$speed) # Sample standard deviation
+fivenum(cars$speed) # Five number summary
+min(cars$speed) # Minimum
+max(cars$speed) # Maximum
+quantile(cars$speed, 0.25) # first quartile
+cor(cars$speed, cars$dist) # Correlation coefficient
+```
 
 ## Missing values 
 
@@ -319,3 +348,17 @@ mean(x, na.rm = TRUE)
 
 ## Summary
 
+- Four primary types of atomic vectors: **logical**, **integer**, **double** and **character**.
+- A vector can only consist of the same type.
+- Other objects types: **factor**, **list**, and **data.frame**.
+- There were several ways of _subsetting vectors and lists_.
+- Calculating some basic _numerical summaries_.
+- Missing values represented as `NA` and may need to be handled specially.
+
+
+# Exercise time {background-color="#F5EDDE"}
+
+
+[<i class='fas fa-laptop-code'></i>](https://anu-bdsi.github.io/workshop-intro-R/materials.html#tabset-1-2-tab){.f-headline}
+
+`r countdown::countdown(20, font_size = "3em", color_bakcground = "white", color_text = "black")`

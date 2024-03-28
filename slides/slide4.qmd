@@ -409,8 +409,13 @@ reprex::reprex(session_info = TRUE)
 * Once you run the above command, your clipboard contains the formatted code and output for you to paste into places like [GitHub issues](https://docs.github.com/en/enterprise/2.15/user/articles/creating-an-issue), [Stackoverflow](https://stackoverflow.com/) and forums powered by [Discourse](https://www.discourse.org/), e.g. [RStudio Community](https://community.rstudio.com/).
 
 
+## Summary
 
 
+# Exercise time {background-color="#F5EDDE"}
 
 
+[<i class='fas fa-laptop-code'></i>](https://anu-bdsi.github.io/workshop-intro-R/materials.html#tabset-1-4-tab){.f-headline}
+
+`r countdown::countdown(15, font_size = "3em", color_bakcground = "white", color_text = "black")`
 

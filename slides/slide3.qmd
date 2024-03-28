@@ -162,3 +162,9 @@ kingston <- readxl::read_xlsx("kingston-data.xlsx", sheet = "A")
 :::
 
 
+# Exercise time {background-color="#F5EDDE"}
+
+
+[<i class='fas fa-laptop-code'></i>](https://anu-bdsi.github.io/workshop-intro-R/materials.html#tabset-1-3-tab){.f-headline}
+
+`r countdown::countdown(10, font_size = "3em", color_bakcground = "white", color_text = "black")`
