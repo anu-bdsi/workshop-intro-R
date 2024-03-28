@@ -361,4 +361,4 @@ mean(x, na.rm = TRUE)
 
 [<i class='fas fa-laptop-code'></i>](https://anu-bdsi.github.io/workshop-intro-R/materials.html#tabset-1-2-tab){.f-headline}
 
-`r countdown::countdown(20, font_size = "3em", color_bakcground = "white", color_text = "black")`
+`r countdown::countdown(15, font_size = "3em", color_bakcground = "white", color_text = "black")`

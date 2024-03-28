@@ -69,9 +69,10 @@ timedisplay <- function(duration) {
 Time | Content 
 :-----------|:-----------------|
 `r timedisplay(30)` | `r slide_title(1)` |     
-`r timedisplay(20)` | `r ex_tabset(1)` |     
+`r timedisplay(15)` | `r ex_tabset(1)` |     
 `r timedisplay(30)` | `r slide_title(2)`  |     
-`r timedisplay(20)` | `r ex_tabset(2)` |      
+`r timedisplay(15)` | `r ex_tabset(2)` |    
+`r timedisplay(10)` | _Break_ | 
 `r timedisplay(20)` | `r slide_title(3)`  |     
 `r timedisplay(10)` | `r ex_tabset(3)` |     
 `r timedisplay(30)` | `r slide_title(4)`  |     
