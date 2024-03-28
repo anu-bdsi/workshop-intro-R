@@ -326,7 +326,7 @@
     "href": "index.html#preperation",
     "title": "Introduction to R programming",
     "section": "Preperation",
-    "text": "Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\nSlack (alternatively you can use the web version), and\n\n If you are having issues, ask in the slack channel or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace\n\n\n\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages."
+    "text": "Preperation\nPlease ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\n\n If you are having issues, ask in the slack channel or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace\n\n\n\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages."
   },
   {
     "objectID": "index.html#teaching-team",
@@ -732,13 +732,13 @@
     "href": "help.html#reporting-mistakes",
     "title": "Help",
     "section": "Reporting mistakes",
-    "text": "Reporting mistakes\nDid you find mistakes in the workshop? Please let us know by emailing (workshop.bdsi@anu.edu.au)."
+    "text": "Reporting mistakes\nDid you find mistakes in the workshop? Please let us know by emailing workshop.bdsi@anu.edu.au."
   },
   {
     "objectID": "help.html#providing-feedback",
     "href": "help.html#providing-feedback",
     "title": "Help",
     "section": "Providing feedback",
-    "text": "Providing feedback\nWe want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email (workshop.bdsi@anu.edu.au) or use the survey link that was/will be provided to you (if you are a workshop participants)."
+    "text": "Providing feedback\nWe want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email workshop.bdsi@anu.edu.au or use the survey link that was/will be provided to you (if you are a workshop participants)."
   }
 ]
