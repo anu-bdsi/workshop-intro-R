@@ -165,7 +165,14 @@
     "href": "slides/slide4.html#reproducible-example-with-reprex-live-demo",
     "title": "Functions, loops and conditional statements",
     "section": "🎁 Reproducible Example with reprex LIVE DEMO",
-    "text": "🎁 Reproducible Example with reprex LIVE DEMO\n\nCopy your minimum reproducible example then run\n\n\nreprex::reprex(session_info = TRUE)\n\n\nOnce you run the above command, your clipboard contains the formatted code and output for you to paste into places like GitHub issues, Stackoverflow and forums powered by Discourse, e.g. RStudio Community.\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+    "text": "🎁 Reproducible Example with reprex LIVE DEMO\n\nCopy your minimum reproducible example then run\n\n\nreprex::reprex(session_info = TRUE)\n\n\nOnce you run the above command, your clipboard contains the formatted code and output for you to paste into places like GitHub issues, Stackoverflow and forums powered by Discourse, e.g. RStudio Community."
+  },
+  {
+    "objectID": "slides/slide4.html#summary",
+    "href": "slides/slide4.html#summary",
+    "title": "Functions, loops and conditional statements",
+    "section": "Summary",
+    "text": "Summary"
   },
   {
     "objectID": "slides/slide2.html#current-learning-objective",
@@ -175,11 +182,18 @@
     "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Install external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nGrasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
-    "objectID": "slides/slide2.html#assignment-to-object",
-    "href": "slides/slide2.html#assignment-to-object",
+    "objectID": "slides/slide2.html#using-r-as-a-calculator",
+    "href": "slides/slide2.html#using-r-as-a-calculator",
     "title": "Working with objects",
-    "section": "Assignment to object",
-    "text": "Assignment to object\n\nYou can assign values to objects using &lt;- or = or even -&gt;\nJust be consistent which one you use!\nThe name of the object can be variable so long as it is syntactically valid (no spaces and most special characters, and the name cannot start with a digit)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "section": "Using R as a calculator",
+    "text": "Using R as a calculator\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nBut we want to save results to reuse later!"
+  },
+  {
+    "objectID": "slides/slide2.html#assignment",
+    "href": "slides/slide2.html#assignment",
+    "title": "Working with objects",
+    "section": "Assignment",
+    "text": "Assignment\n\n\nYou can assign values to objects using &lt;- or = or even -&gt;\nJust be consistent which one you use!\nThe name of the object can be variable so long as it is syntactically valid (no spaces and most special characters, and the name cannot start with a digit)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#vectors",
@@ -207,7 +221,7 @@
     "href": "slides/slide2.html#casting-to-other-types",
     "title": "Working with objects",
     "section": "Casting to other types",
-    "text": "Casting to other types\n\nas.numeric() tries to coerce input to numeric value.\nIf a logical value is coerced to numeric or integer, then\n\nTRUE is 1 and\nFALSE is 0.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Casting to other types\n\nE.g., as.numeric() tries to coerce input to numeric value.\nIf a logical value is coerced to numeric or integer, then\n\nTRUE is 1 and\nFALSE is 0.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#factor",
@@ -277,7 +291,7 @@
     "href": "slides/slide2.html#numerical-summaries",
     "title": "Working with objects",
     "section": "Numerical summaries",
-    "text": "Numerical summaries\n\nNumerical summaries generally come base or stats package.\nSome common numerical summaries include:\n\nMean: mean()\nMedian: median()\nFive number summary: fivenum()\nMinimum: min()\nMaximum: max()\nQuantile: quantile()\nCorrelation coefficient: cor()"
+    "text": "Numerical summaries\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#missing-values",
@@ -291,7 +305,7 @@
     "href": "slides/slide2.html#summary",
     "title": "Working with objects",
     "section": "Summary",
-    "text": "Summary\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+    "text": "Summary\n\nFour primary types of atomic vectors: logical, integer, double and character.\nA vector can only consist of the same type.\nOther objects types: factor, list, and data.frame.\nThere were several ways of subsetting vectors and lists.\nCalculating some basic numerical summaries.\nMissing values represented as NA and may need to be handled specially."
   },
   {
     "objectID": "next-time.html",
@@ -350,11 +364,11 @@
     "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
   },
   {
-    "objectID": "slides/slide1.html#your-turn-tell-us-about-you",
-    "href": "slides/slide1.html#your-turn-tell-us-about-you",
+    "objectID": "slides/slide1.html#your-turn-tell-us-about-yourself",
+    "href": "slides/slide1.html#your-turn-tell-us-about-yourself",
     "title": "Getting Started",
-    "section": "Your turn! Tell us about you",
-    "text": "Your turn! Tell us about you"
+    "section": "Your turn! Tell us about yourself 👋",
+    "text": "Your turn! Tell us about yourself 👋\n\n\npollev.com/emitanaka"
   },
   {
     "objectID": "slides/slide1.html#learning-objectives",
@@ -466,7 +480,7 @@
     "href": "slides/slide1.html#contributed-r-packages",
     "title": "Getting Started",
     "section": "Contributed R Packages",
-    "text": "Contributed R Packages\n\n\n\n\nR packages are community developed extensions to R (much like apps on your mobile)\nThe Comprehensive R Archive Network (CRAN) is a volunteer maintained repository that hosts submitted R packages that are approved (much like an app store)\nThere are close to 20,000 packages available on CRAN but the qualities of R packages vary.\nThere are other repositories that host R packages, e.g. Bioconductor for bioinformatics, R Universe, R-Forge, GitHub (we won’t cover these).\n\n\n\n\n\nPhoto by Sara Kurfeß on Unsplash"
+    "text": "Contributed R Packages\n\n\n\n\nR packages are community developed extensions to R (much like apps on your mobile).\nThe Comprehensive R Archive Network (CRAN) is a volunteer maintained repository that hosts submitted R packages that are approved (much like an app store).\nThere are close to 20,000 packages available on CRAN but the qualities of R packages vary.\nThere are other repositories that host R packages, e.g. Bioconductor for bioinformatics, R Universe, R-Forge, GitHub (we won’t cover these).\n\n\n\n\n\nPhoto by Sara Kurfeß on Unsplash"
   },
   {
     "objectID": "slides/slide1.html#using-packages-on-cran",
@@ -487,7 +501,7 @@
     "href": "slides/handout1.html",
     "title": "Getting Started",
     "section": "",
-    "text": "Dr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "Dr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter\n\n\n\n\n\n\n\n\n\n\n\npollev.com/emitanaka\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "slides/handout1.html#teaching-team",
@@ -495,6 +509,13 @@
     "title": "Getting Started",
     "section": "",
     "text": "Dr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+  },
+  {
+    "objectID": "slides/handout1.html#your-turn-tell-us-about-yourself",
+    "href": "slides/handout1.html#your-turn-tell-us-about-yourself",
+    "title": "Getting Started",
+    "section": "",
+    "text": "pollev.com/emitanaka"
   },
   {
     "objectID": "slides/handout1.html#learning-objectives",
@@ -536,7 +557,7 @@
     "href": "slides/handout1.html#rich-graphical-outputs",
     "title": "Getting Started",
     "section": "Rich graphical outputs",
-    "text": "Rich graphical outputs\n\nR also has a wide range of packages for creating beautiful and interactive graphics.\n\n Try clicking on a bar on the left plot.\n\n\n\n\nRows: 77 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): affiliation, workshop, comment, role\ndbl (1): confidence\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+    "text": "Rich graphical outputs\n\nR also has a wide range of packages for creating beautiful and interactive graphics.\n\n Try clicking on a bar on the left plot.\n\n\n\n\nRows: 97 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (3): affiliation, workshop, role\ndbl (1): confidence\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
   },
   {
     "objectID": "slides/handout1.html#dynamic-documents",
@@ -606,7 +627,7 @@
     "href": "slides/handout1.html#contributed-r-packages",
     "title": "Getting Started",
     "section": "Contributed R Packages",
-    "text": "Contributed R Packages\n\n\n\n\nR packages are community developed extensions to R (much like apps on your mobile)\nThe Comprehensive R Archive Network (CRAN) is a volunteer maintained repository that hosts submitted R packages that are approved (much like an app store)\nThere are close to 20,000 packages available on CRAN but the qualities of R packages vary.\nThere are other repositories that host R packages, e.g. Bioconductor for bioinformatics, R Universe, R-Forge, GitHub (we won’t cover these).\n\n\n\n\n\nPhoto by Sara Kurfeß on Unsplash"
+    "text": "Contributed R Packages\n\n\n\n\nR packages are community developed extensions to R (much like apps on your mobile).\nThe Comprehensive R Archive Network (CRAN) is a volunteer maintained repository that hosts submitted R packages that are approved (much like an app store).\nThere are close to 20,000 packages available on CRAN but the qualities of R packages vary.\nThere are other repositories that host R packages, e.g. Bioconductor for bioinformatics, R Universe, R-Forge, GitHub (we won’t cover these).\n\n\n\n\n\nPhoto by Sara Kurfeß on Unsplash"
   },
   {
     "objectID": "slides/handout1.html#using-packages-on-cran",
@@ -676,7 +697,7 @@
     "href": "slides/slide3.html#r-project",
     "title": "Reading and writing data",
     "section": "R project",
-    "text": "R project\n\n\nWithin RStudio, you can create a project file (with an .Rproj extension).\nDouble clicking on this project file launches RStudio Desktop with the current working directory set to the location of the project file.\nYou can create this project file by going to RStudio &gt; File &gt; New Project …\n\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+    "text": "R project\n\n\nWithin RStudio, you can create a project file (with an .Rproj extension).\nDouble clicking on this project file launches RStudio Desktop with the current working directory set to the location of the project file.\nYou can create this project file by going to RStudio &gt; File &gt; New Project …"
   },
   {
     "objectID": "slides/slide5.html#how-to-get-better-at-r",
@@ -684,13 +705,6 @@
     "title": "Wrap-up",
     "section": "How to get better at R?",
     "text": "How to get better at R?\nPRACTICE\n\nPractice with a purpose (e.g. using R on your own data).\nTry teaching and helping others with their R problem.\nHave a willingness to continuously learn and adapt.\n\nR is an ever evolving language (check the release news every so often),\nnew features and packages are added very frequently,\nwhether you are a beginner or not, there are always things we do not know about R."
-  },
-  {
-    "objectID": "slides/slide5.html#joining-the-r-community",
-    "href": "slides/slide5.html#joining-the-r-community",
-    "title": "Wrap-up",
-    "section": "Joining the R community",
-    "text": "Joining the R community"
   },
   {
     "objectID": "slides/slide5.html#resources",
@@ -704,14 +718,14 @@
     "href": "slides/slide5.html#local-resources",
     "title": "Wrap-up",
     "section": "Local Resources",
-    "text": "Local Resources\n\nAsk the local experts such as at the\n\nBDSI Drop-In Sessions and\nANU Statistical Support Network.\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
+    "text": "Local Resources\n\nR-Ladies Canberra Meetup\nAsk the local experts such as at the\n\nBDSI Drop-In Sessions and\nANU Statistical Support Network.\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
   },
   {
     "objectID": "slides/slide5.html#feedback",
     "href": "slides/slide5.html#feedback",
     "title": "Wrap-up",
     "section": "Feedback",
-    "text": "Feedback\n\nWhat worked or didn’t work for you?\nWhat other workshops?\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
+    "text": "Feedback\n\nWhat worked or didn’t work for you?\nWhat other workshops?\nTell us at  workshop.bdsi@anu.edu.au\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
   },
   {
     "objectID": "help.html",
