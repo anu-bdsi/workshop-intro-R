@@ -29,12 +29,14 @@ Download the above datasets.
 
 ```{r}
 #| include: false
-branch <- readxl::read_excel("data/branch-water-derived-value.xlsx", sheet = "Values for RWC figures")
-branchkey <- readxl::read_excel("data/branch-water-derived-value.xlsx", sheet = "Key Values")
-roadside <- readr::read_csv("data/roadside-transects.csv")
+branch <- readxl::read_excel(here::here("data/branch-water-derived-value.xlsx"), sheet = "Values for RWC figures")
+branchkey <- readxl::read_excel(here::here("data/branch-water-derived-value.xlsx"), sheet = "Key Values")
+roadside <- readr::read_csv(here::here("data/roadside-transects.csv"))
 ```
 
 
 - Read the data in `roadside-transects.csv`. How many variables does this sheet consist of? `r fitb(ncol(roadside))` How many observations are there? `r fitb(nrow(roadside))`
 - Read the sheet "Values for RWC figures" in `branch-water-derived-value.xlsx`. How many variables does this sheet consist of? `r fitb(ncol(branch))` How many observations are there? `r fitb(nrow(branch))`
 - Read the sheet "Key Values" in `branch-water-derived-value.xlsx`. How many variables does this sheet consist of? `r fitb(ncol(branchkey))` How many observations are there? `r fitb(nrow(branchkey))`
+
+For more practice, see [here](https://coatless.github.io/raw-data/) for more datasets to try reading into R.
