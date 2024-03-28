@@ -20,6 +20,7 @@ webr:
 ```{r setup, include = FALSE}
 library(webexercises)
 library(lubridate)
+library(tidyverse)
 ex_tabset <- function(id) {
   paste0("[_Exercise ", id, "_](#tabset-1-", id, "-tab){onclick=",
          'document.getElementById(', "'tabset-1-", id, "-tab').click();",
@@ -58,6 +59,8 @@ timedisplay <- function(duration) {
 #   paste0('<button url="', url, '" id="', id, 
 #          '" onclick="copyURLtoClipboard(', "'", id, "'", ')">{{< fa copy >}}</button>')
 # }
+
+content <- read_csv("slides/data/content.csv")
 ```
 
 
@@ -65,19 +68,19 @@ timedisplay <- function(duration) {
 
 ## 🕙 Schedule
 
+```{r}
+#| echo: false
+content |> 
+  rowwise() |> 
+  mutate(Time = timedisplay(time)) |> 
+  mutate(Content = switch(type,
+                              "exercise" = ex_tabset(content_id),
+                              "slide" = slide_title(content_id),
+                              "break" = "_Break_")) |>
+  select(Time, Content) |> 
+  knitr::kable()
+```
 
-Time | Content 
-:-----------|:-----------------|
-`r timedisplay(30)` | `r slide_title(1)` |     
-`r timedisplay(15)` | `r ex_tabset(1)` |     
-`r timedisplay(30)` | `r slide_title(2)`  |     
-`r timedisplay(15)` | `r ex_tabset(2)` |    
-`r timedisplay(10)` | _Break_ | 
-`r timedisplay(20)` | `r slide_title(3)`  |     
-`r timedisplay(10)` | `r ex_tabset(3)` |     
-`r timedisplay(30)` | `r slide_title(4)`  |     
-`r timedisplay(15)` | `r ex_tabset(4)` |     
-`r timedisplay(5)` | `r slide_title(5)`  |     
 
 
 ## 📑 Resources

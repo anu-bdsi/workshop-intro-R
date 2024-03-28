@@ -14,3 +14,12 @@ learning_objectives <- function(highlight = NULL) {
          lines,
          '</ul>'), sep = "\n")
 }
+
+content <- readr::read_csv("data/content.csv")
+
+exercise_countdown <- function(id) {
+  content |> 
+    dplyr::filter(type=="exercise", content_id==id) |> 
+    dplyr::pull(time) |> 
+    countdown::countdown(font_size = "3em", color_background = "white", color_text = "black")
+}
