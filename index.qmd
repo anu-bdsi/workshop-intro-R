@@ -75,3 +75,7 @@ Please note that the teaching team does not necessarily actively monitor or atte
 
 
 The materials can be found [here](/materials.html).
+
+![](images/cc.svg) ![](images/by.svg) ![](images/nc.svg) ![](images/sa.svg)
+
+These materials are shared under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).

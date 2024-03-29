@@ -17,6 +17,8 @@ webr:
   show-startup-message: false    
 ---
 
+[![](images/by-nc-sa.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
+
 ```{r setup, include = FALSE}
 library(webexercises)
 library(lubridate)
