@@ -235,7 +235,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"code":"\n\n","options":{"message":"true","fig-width":7,"results":"markup","label":"unnamed-chunk-1","warning":"true","out-width":"700px","dpi":72,"autorun":"false","read-only":"false","fig-cap":"","context":"interactive","comment":"","output":"true","out-height":"","fig-height":5,"classes":""}},{"id":2,"code":"PlantGrowth\ninfert\nHarman23.cor","options":{"message":"true","fig-width":7,"results":"markup","label":"unnamed-chunk-2","warning":"true","out-width":"700px","dpi":72,"autorun":"false","read-only":"false","fig-cap":"","context":"interactive","comment":"","output":"true","out-height":"","fig-height":5,"classes":""}},{"id":3,"code":"\n\n","options":{"message":"true","fig-width":7,"results":"markup","label":"unnamed-chunk-3","warning":"true","out-width":"700px","dpi":72,"autorun":"false","read-only":"false","fig-cap":"","context":"interactive","comment":"","output":"true","out-height":"","fig-height":5,"classes":""}}];
+globalThis.qwebrCellDetails = [{"id":1,"code":"\n\n","options":{"fig-width":7,"results":"markup","classes":"","autorun":"false","read-only":"false","out-height":"","message":"true","warning":"true","context":"interactive","out-width":"700px","comment":"","output":"true","label":"unnamed-chunk-1","fig-cap":"","fig-height":5,"dpi":72}},{"id":2,"code":"PlantGrowth\ninfert\nHarman23.cor","options":{"fig-width":7,"results":"markup","classes":"","autorun":"false","read-only":"false","out-height":"","message":"true","warning":"true","context":"interactive","out-width":"700px","comment":"","output":"true","label":"unnamed-chunk-2","fig-cap":"","fig-height":5,"dpi":72}},{"id":3,"code":"cor.test(cars$speed, cars$dist)\ncor.test(cars$speed, cars$dist)$p.value # to get the p-value","options":{"fig-width":7,"results":"markup","classes":"","autorun":"false","read-only":"false","out-height":"","message":"true","warning":"true","context":"interactive","out-width":"700px","comment":"","output":"true","label":"unnamed-chunk-3","fig-cap":"","fig-height":5,"dpi":72}},{"id":4,"code":"num_distinct <- function(x) {\n  length(unique(x))\n}\n","options":{"fig-width":7,"results":"markup","classes":"","autorun":"false","read-only":"false","out-height":"","message":"true","warning":"true","context":"interactive","out-width":"700px","comment":"","output":"true","label":"unnamed-chunk-4","fig-cap":"","fig-height":5,"dpi":72}},{"id":5,"code":"pairs_df <- expand.grid(var1 = names(mtcars), var2 = names(mtcars))\npairs_df$p_value <- NA_real_\n\nfor(i in 1:nrow(pairs_df)) {\n  x1 <- mtcars[[pairs_df$var1[i]]]\n  x2 <- mtcars[[pairs_df$var2[i]]]\n  \n  if(num_distinct(x1) > 3 & num_distinct(x2) > 3) {\n    pairs_df$p_value[i] <- cor.test(x1, x2)$p.value\n  }\n}\n\npairs_df","options":{"fig-width":7,"results":"markup","classes":"","autorun":"false","read-only":"false","out-height":"","message":"true","warning":"true","context":"interactive","out-width":"700px","comment":"","output":"true","label":"unnamed-chunk-5","fig-cap":"","fig-height":5,"dpi":72}}];
 
 </script>
 <script type="module">
@@ -1009,6 +1009,10 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link active" href="./materials.html" aria-current="page"> 
+<span class="menu-text">Materials</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./help.html"> 
 <span class="menu-text">Help</span></a>
   </li>  
@@ -1494,13 +1498,13 @@ You should be able to:
 </tr>
 <tr class="odd">
 <td><code>GRRData.csv</code></td>
-<td></td>
+<td>Human activities modulate reciprocal effects of a subterranean ecological engineer rodent, Tachyoryctes macrocephalus, on Afroalpine vegetation cover</td>
 <td style="text-align: right;"><a href="data/GRRData.csv" download="">here</a></td>
 <td style="text-align: right;"><a href="https://zenodo.org/records/8140726" target="_blank"><i class="fa-solid fa-info-circle" aria-label="info-circle"></i></a></td>
 </tr>
 <tr class="even">
 <td><code>template_Morris.xlsx</code></td>
-<td></td>
+<td>Whitehead’s rat morphometrics</td>
 <td style="text-align: right;"><a href="data/template_Morris.xlsx" download="">here</a></td>
 <td style="text-align: right;"><a href="https://zenodo.org/records/1237733" target="_blank"><i class="fa-solid fa-info-circle" aria-label="info-circle"></i></a></td>
 </tr>
@@ -1533,13 +1537,23 @@ You should be able to:
 </div>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>Using R either on your laptop or the consoles below, compute the following values and enter your answer in the corresponding box.</p>
+<ul>
+<li><code>cor.test()</code> is a function that test for association between paired samples. E.g. <code>cor.test(cars$speed, cars$dist)</code> tests the association for the two variables <code>speed</code> and <code>dist</code> in the <code>cars</code> dataset. The <span class="math inline">\(p\)</span>-value of the test can be accessed by <code>cor.test(cars$speed, cars$dist)$p.value</code>. What is the <span class="math inline">\(p\)</span>-value of the test of association for the <code>speed</code> and <code>dist</code> variables in the <code>cars</code> dataset? <select class="webex-select"><option value="blank"></option><option value="answer">Less than 0.01</option><option value="">Between 0.01 and 0.05</option><option value="">Between 0.05 and 0.1</option><option value="">Greater than 0.1</option></select></li>
+</ul>
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.</p>
-<p><strong>Create basic functions</strong></p>
-<p><strong>Conditional statements</strong></p>
-<p><strong>For loops</strong></p>
-<p><strong>Create a reproducible example</strong></p>
+<ul>
+<li>Write a function that computes the number of distinct values in a vector. Use this to find the number of distinct values in <code>mtcars$vs</code>. What is the result? <input class="webex-solveme nospaces" size="1" data-answer="[&quot;2&quot;]"></li>
+</ul>
+<div id="qwebr-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<ul>
+<li>Compute a pairwise correlation test for all pair of variables in <code>mtcars</code> dataset if the number of distinct values are greater than 3.</li>
+</ul>
+<div id="qwebr-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Which pair of variables has the highest <span class="math inline">\(p\)</span>-value? (Enter it alphabetical order) <code>var1</code>: <input class="webex-solveme nospaces" size="4" data-answer="[&quot;carb&quot;]"> and <code>var2</code>: <input class="webex-solveme nospaces" size="4" data-answer="[&quot;drat&quot;]"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
