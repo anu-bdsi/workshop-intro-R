@@ -40,6 +40,19 @@ learning_objectives(9:10)
 
 :::
 
+. . . 
+
+<br>
+
+<i class='fas fa-exclamation-circle'></i> The content in this slide will be hard for those new to programming!
+
+. . . 
+
+<center>
+
+_Don't give up!_
+
+</center>
 
 ## Functions 
 
@@ -70,44 +83,20 @@ add(1, 2)
 fivenum
 ```
 
-
-
-## Loops
-
-
-```{webr-r}
-for(i in 1:3) {
-  print(paste("Item", i))
-  next 
-  break
-}
-
-while(condition)
-repeat(action)
-```
-
-
-
-
 ## Conditional statements
 
-- The condition in the `if` statement needs to evaluate to a single `TRUE` or `FALSE`
-- `ifelse()` is the vectorised 
+- The condition in the `if` statement needs to evaluate to a **_single_** `TRUE` or `FALSE`
+- `ifelse()` is the vectorised version of `if()` and `else` statement.
 
 ```{webr-r}
-if(TRUE) print("It's true!")
-if(TRUE) "Hi" else "Bye"
-ifelse(TRUE, "Hi", "Bye")
-switch("HD"
-       HD = "Great!",
-       D = "Superb",
-       "Undetermined value")
+if(mean(cars$speed > 10)) {
+  print("The speed is higher than 10!")
+} else {
+  print("The speed is lower than 10!")
+}
+
+ifelse(c(TRUE, FALSE, TRUE), "Hi", "Bye")
 ```
-
-## Equalty statements
-
-- `==`
-- `%in%`
 
 ## Example
 
@@ -131,150 +120,120 @@ grade(80)
 grade(c(80, 83, 70, 48))
 ```
 
+
+## Loops
+
+
+::: flex
+
+::: {.w-50}
+
+```{webr-r}
+grade <- function(mark) {
+  if(mark >= 80) {
+    "HD"
+  } else if(mark >= 70) {
+    "D"
+  } else if(mark >= 60) {
+    "CR"
+  } else if(mark >= 50) {
+    "P"
+  } else {
+    "N"
+  }
+}
+```
+
+
+:::
+
+::: {.w-50 .pl3}
+
+```{webr-r}
+marks <- c(80, 83, 70, 48)
+# initialise result vector
+final_grades <- character(length(marks))
+
+for(i in seq_along(marks)) {
+  final_grades[i] <- grade(marks[i])
+}
+
+final_grades
+```
+
+
+:::
+
+:::
+
+
+
+
+
+
+
+
+
+
 ## Basic troubleshooting 
 
-If you encounter an error,
+::: incremental
 
-1. Read the error message!
-2. Google the error message
-3. Ask for help [_with a reproducible example_]{.fragment}
+- Whether you are good at programming or not, you will inevitably encounter errors.
+- If you encounter an error,
 
-## 🆘 Asking for help 
+  1. Read the error message!
+  2. Google the error message or ask generative AI (like chatGPT)
+  3. Ask for help [_with a reproducible example_]{.fragment}
 
-* What do you think about the question below?
+
+:::
+
+## Reproducible Example with `reprex` [LIVE DEMO]{.f4}
+
+* Copy your **minimum reproducible example** then run
+
+```{r, eval = FALSE}
+reprex::reprex(session_info = TRUE)
+```
+
+
+* Once you run the above command, your clipboard contains the formatted code and output for you to paste into places like [GitHub issues](https://docs.github.com/en/enterprise/2.15/user/articles/creating-an-issue), [Stackoverflow](https://stackoverflow.com/) and forums powered by [Discourse](https://www.discourse.org/), e.g. [RStudio Community](https://community.rstudio.com/).
+
+
+
+
+## Asking for help 
+
+::: flex
+::: w-30
+* How about the question on the right?
+* What makes it *hard* or *easy* for people to answer this question?
+
+
+
+:::
+::: w-70
+
 <center>
-<img class="border-box" width = "900px" style="padding:0px" src="images/stackoverflow-1.png">
+<img class="ba" width = "100%" style="padding:0px" src="images/stackoverflow-2-1.png">
+<img class="ba" width = "100%" style="padding:0px" src="images/stackoverflow-2-2.png">
+
 </center>
-
-
-## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Part 2]{.f4}
-
-
-* What do you think now?
-
-
-
-::: {.ba .pa3}
-
-I am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn't work. Does anyone have any ideas? My code is below.
-````md
-`r ''````{r, fig.height = 3, fig.width = 3}
-ggplot(df, aes(weight, height)) +
-  geom_point()
-
-ggplot(df, aes(height, volume)) +
-  geom_point()
-```
-````
-
 :::
-
-::: notes
-
-* could not find function "ggplot"
-* the package needs to be loaded
-
-:::
-
-
-
-## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Part 3]{.f4}
-
-
-* Is this better?
-
-
-::: {.ba .pa3}
-I am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn't work. Does anyone have any ideas? My code is below.
-````md
-`r ''````{r, fig.height = 3, fig.width = 3}
-library(ggplot2)
-ggplot(df, aes(weight, height)) +
-  geom_point()
-
-ggplot(df, aes(height, volume)) +
-  geom_point()
-```
-````
-
-:::
-
-::: notes
-
-* Data `df` is not defined!
-
-:::
-
-
-## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Part 4]{.f4}
-
-
-* Okay better now?
-
-
-::: {.ba .pa3}
-
-I am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn't work. Does anyone have any ideas? My code is below.
-````md
-`r ''````{r, fig.height = 3, fig.width = 3}
-library(ggplot2)
-df <- read.csv("mydata.csv")
-ggplot(df, aes(weight, height)) +
-  geom_point()
-
-ggplot(df, aes(height, volume)) +
-  geom_point()
-```
-````
-
-:::
-
-::: notes
-
-* Is the data used in this question necessarily for the question?
-* Do we even have a copy of `mydata.csv`??
-
-:::
-
-
-
-
-## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Part 5]{.f4}
-
-
-* Are we done now?
-
-::: {.ba .pa3}
-
-I am looking to adjust the size of two separate ggplots within the same R chunk in Rmarkdown. These plots must be different when outputted as a pdf, so defining the dimensions at the beginning of the chunk doesn't work. Does anyone have any ideas? My code is below.
-````md
-`r ''````{r, fig.height = 3, fig.width = 3}
-library(ggplot2)
-ggplot(trees, aes(Girth, Height)) +
-  geom_point()
-
-ggplot(trees, aes(Height, Volume)) +
-  geom_point()
-```
-````
-
 :::
 
 
 ::: notes
 
-* Author is using the built-in dataset `trees` here
+* In this example, the author provides the data but it requires work for others to read this data in.
 
 :::
-
-
-
-# ❓ How to ask questions?
-
 
 
 ## Checklist [(note: not an exhaustive checklist)]{.f3}
 
+::: f1
 
 <label class="checkbox-container">Is the problem clearly and succinctly described?
 <input type="checkbox"><span class="checkmark"></span>
@@ -312,104 +271,22 @@ If the **problem is based on data** ...
 <input type="checkbox"><span class="checkmark"></span>
 </label>
 
-
-
-
-## 🆘 Asking for help [1]{.circle .monash-bg-red2 .monash-white} [Check]{.f4} 
-::: flex
-::: w-60
-<img class="border-box" width = "100%" style="padding:0px" src="images/stackoverflow-1.png">
-:::
-::: {.w-40 .pl3 .f2}
-<label class="checkbox-container">Is the problem clearly and succintly defined?
-<input type="checkbox"><span class="checkmark"></span>
-</label>
-<label class="checkbox-container">Is the expected solution or behaviour outlined?
-<input type="checkbox"><span class="checkmark"></span>
-</label>
-<label class="checkbox-container">Is the problem asked at the right place or person?
-<input type="checkbox"><span class="checkmark"></span>
-</label>
-
-<label class="checkbox-container">Can people who can answer your question find your question?
-<input type="checkbox"><span class="checkmark"></span>
-</label>
-
-<label class="checkbox-container">Can the problem be easily reproduced on other people's system?
-<input type="checkbox"><span class="checkmark"></span>
-</label>
-<label class="checkbox-container">Is the minimum reproducible code or steps supplied?
-<input type="checkbox"><span class="checkmark"></span>
-</label>
-
-<label class="checkbox-container">Is the data supplied?
-<input type="checkbox"><span class="checkmark"></span>
-</label>
-<label class="checkbox-container">If the data is big, could you cull your data further to communicate or reproduce the problem?
-<input type="checkbox"><span class="checkmark"></span>
-</label>
-
-:::
-:::
-
-
-## 🆘 Asking for help [2]{.circle .monash-bg-red2 .monash-white}
-
-::: flex
-::: w-30
-* How about the question on the right?
-* What makes it *hard* or *easy* for people to answer this question?
-
-
-
-:::
-::: w-70
-
-<center>
-<img class="ba" width = "100%" style="padding:0px" src="images/stackoverflow-2-1.png">
-<img class="ba" width = "100%" style="padding:0px" src="images/stackoverflow-2-2.png">
-
-</center>
-:::
-:::
-
-
-::: notes
-
-* In this example, the author provides the data but it requires work for others to read this data in.
-
-:::
-
-
-## Session Information 
-
-You can easily get the session information in R using `sessioninfo::session_info()`. <br>[Scroll to see the packages used to make these slides.]{.f4}
-
-::: {.overflow-scroll .h-70}
-```{r, include = FALSE}
-options(width = 80)
-```
-
-```{r}
-sessioninfo::session_info()
-```
 :::
 
 
 
-## 🎁 Reproducible Example with `reprex` [LIVE DEMO]{.f4}
-
-* Copy your **minimum reproducible example** then run
-
-```{r, eval = FALSE}
-reprex::reprex(session_info = TRUE)
-```
 
 
-* Once you run the above command, your clipboard contains the formatted code and output for you to paste into places like [GitHub issues](https://docs.github.com/en/enterprise/2.15/user/articles/creating-an-issue), [Stackoverflow](https://stackoverflow.com/) and forums powered by [Discourse](https://www.discourse.org/), e.g. [RStudio Community](https://community.rstudio.com/).
 
 
 ## Summary
+
+
+- Write new functions using `function()`.
+- Use `if`, `else`, and `ifelse` for conditional statements.
+- Use `for` loops for repetitive tasks.
+- Troubleshoot errors by reading the error message and asking for help with a _reproducible example_.
+- Reproducible examples can be generated using `reprex` package.
 
 
 # Exercise time {background-color="#F5EDDE"}
