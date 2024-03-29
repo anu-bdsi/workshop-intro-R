@@ -18,21 +18,66 @@ format:
 library(webexercises)
 ```
 
+
+Using R either on your laptop or the consoles below, compute the following values and enter your answer in the corresponding box.
+
+- `cor.test()` is a function that test for association  between paired samples. E.g. `cor.test(cars$speed, cars$dist)` tests the association for the two variables `speed` and `dist` in the `cars` dataset. The $p$-value of the test can be accessed by `cor.test(cars$speed, cars$dist)$p.value`. What is the $p$-value of the test of association for the `speed` and `dist` variables in the `cars` dataset? `r mcq(c("answer" = "Less than 0.01", "Between 0.01 and 0.05", "Between 0.05 and 0.1", "Greater than 0.1"))`
+
 ```{webr-r}
+cor.test(cars$speed, cars$dist)
+cor.test(cars$speed, cars$dist)$p.value # to get the p-value
 
+```
 
+- Write a function that computes the number of distinct values in a vector. Use this to find the number of distinct values in `mtcars$vs`. What is the result? `r fitb(length(unique(mtcars$vs)))`
+
+```{webr-r}
+num_distinct <- function(x) {
+  length(unique(x))
+}
 
 
 ```
 
-Using R either on your laptop or above console, compute the following values and enter your answer in the corresponding box.
+- Compute a pairwise correlation test for all pair of variables in `mtcars` dataset if the number of distinct values are greater than 3. 
 
-**Create basic functions**
+```{webr-r}
+pairs_df <- expand.grid(var1 = names(mtcars), var2 = names(mtcars))
+pairs_df$p_value <- NA_real_
 
-**Conditional statements**
+for(i in 1:nrow(pairs_df)) {
+  x1 <- mtcars[[pairs_df$var1[i]]]
+  x2 <- mtcars[[pairs_df$var2[i]]]
+  
+  if(num_distinct(x1) > 3 & num_distinct(x2) > 3) {
+    pairs_df$p_value[i] <- cor.test(x1, x2)$p.value
+  }
+}
+
+pairs_df
+```
+
+```{r}
+#| echo: false
+
+num_distinct <- function(x) {
+  length(unique(x))
+}
+
+pairs_df <- expand.grid(var1 = names(mtcars), var2 = names(mtcars))
+pairs_df$p_value <- NA_real_
+
+for(i in 1:nrow(pairs_df)) {
+  x1 <- mtcars[[pairs_df$var1[i]]]
+  x2 <- mtcars[[pairs_df$var2[i]]]
+  
+  if(num_distinct(x1) > 3 & num_distinct(x2) > 3) {
+    pairs_df$p_value[i] <- cor.test(x1, x2)$p.value
+  }
+}
+
+```
+Which pair of variables has the highest $p$-value? (Enter it alphabetical order) `var1`: `r fitb(as.character(pairs_df$var1[which.max(pairs_df$p_value)]))` and `var2`: `r fitb(as.character(pairs_df$var2[which.max(pairs_df$p_value)]))`
 
 
-**For loops**
 
-
-**Create a reproducible example**
