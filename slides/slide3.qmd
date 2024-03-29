@@ -68,99 +68,57 @@ len, supp, dose
 :::
 
 
-## Reading CSV files
+## Reading and Writing CSV files
 
 ```{webr-r}
 #| context: setup
-download.file("https://coatless.github.io/raw-data/Salaries.csv", "data.csv")
+download.file("https://anu-bdsi.github.io/workshop-intro-R/data/GRRData.csv", "GRRData.csv")
 dir.create("data")
+dir.create("data/data-raw")
+write.csv(cars, "data/data-raw/cars.csv")
+download.file("https://anu-bdsi.github.io/workshop-intro-R/data/template_Morris.xlsx", "data/template_Morris.xlsx")
 ```
 
 ```{webr-r}
 dir()
-```
+read.csv("GRRData.csv") # Using Base R
 
-- `GRRData.csv` 
+library(readr)
+read_csv("GRRData.csv") # alternatively use readr
+
+write_csv(mtcars, "mtcars.csv") # saving data as CSV file
+```
 
 ::: aside 
 
-Asefa et al. (2023). Data from: Human activities modulate reciprocal effects of a subterranean ecological engineer rodent, Tachyoryctes macrocephalus, on Afroalpine vegetation cover [Data set]. Zenodo. https://doi.org/10.5061/dryad.cc2fqz6bx
+`GRRData.csv` from Asefa et al. (2023). Data from: Human activities modulate reciprocal effects of a subterranean ecological engineer rodent, Tachyoryctes macrocephalus, on Afroalpine vegetation cover [Data set]. Zenodo. https://doi.org/10.5061/dryad.cc2fqz6bx
 
 
 :::
-
-
-## Binary or propriety file formats 
-
-::: incremental 
-
-- Data can also be stored as a binary format [(in R, these include `.RData` and `.rda` but we won't cover this)]{.grey}.
-- Data can also come in a propriety format (e.g. xls and xlsx) -- these require special ways to open/view/read it.
-
-:::
-
-`template_Morris.xlsx`
-
-
-::: aside
-
-Morris & Ewers (2018). Whitehead's rat morphometrics [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1237733
-
-:::
-
-## Formatting data
-
-::: incremental
-
-- Unless you are responsible for entering the data, you should never modify the original, stored data [(note: exceptions do apply)]{.grey}.
-- For scientific integrity, any modification to the original data should be recorded in a reproducible manner (e.g. by programming in R!) so that you can trace the exact modifications.
-
-:::
-
-## Importing data
-
-- Reading data into R requires using the function that matches with the right file format.
-
-. . . 
-
-- For reading csv file, you can use `readr::read_csv()` (note: `readr` is part of `tidyverse`)
-
-```r
-cfdata <- readr::read_csv("complex-formation.csv")
-```
-
-. . . 
-
-- For reading excel files, you can use `readxl::read_xlsx`:
-
-```{r}
-#| echo: true
-#| error: true
-#| output-location: fragment
-kingston <- readxl::read_xlsx("kingston-data.xlsx", sheet = "A")
-```
-
-. . . 
-
-- But why the error?!
 
 
 ## File paths
 
 ::: flex
 
-::: {.w-60 .pr3}
+::: {.w-70 .pr3}
 
 - Your file has to be in the right location to be read!
-- You may use a **relative path** (e.g. `data/data.csv`) or an **absolute path** (e.g. `C:\\user/myproject/data/data.csv`) to point to the right location of the data 
+- You may use a **relative path** (e.g. `data/data.csv`) or an **absolute path** (e.g. `C:\\user/myproject/data.csv`) to point to the right location of the data 
 - {{< fa exclamation-triangle >}} You should avoid using absolute path! Why?
 - You can get and set the current path using `getwd()` and `setwd()`, respectively.
 
 :::
 
-::: {.w-40 .pl3}
+::: {.w-30 .pl3}
 
-![](images/rstudio-desktop-wd.png){.ba width="100%"}
+![](images/rstudio-desktop-wd.png){.ba}
+```{webr-r}
+getwd()
+
+
+
+```
 
 
 :::
@@ -191,6 +149,124 @@ kingston <- readxl::read_xlsx("kingston-data.xlsx", sheet = "A")
 - You can create this project file by going to RStudio > File > New Project ...
 
 :::
+
+
+## Binary formats 
+
+
+
+- Data can also be stored as a binary format (e.g. `.RData`, `.rda` or `rds`).
+- `.RData`, `.rda` or `rds` saves R objects so you don't need the data to be in a data.frame.
+
+```{webr-r}
+# Saving R objects
+saveRDS(mtcars, "mtcars.rds") # single object - recommended
+save(mtcars, file = "mtcars.RData") # multiple objects
+
+# Reading R objects
+readRDS("mtcars.rds") 
+load("mtcars.RData") 
+```
+
+. . . 
+
+
+
+
+
+
+## Reading Excel sheets
+
+- Data can also come in a propriety format (e.g. xls and xlsx) -- these require special ways to open/view/read it.
+
+
+
+::: flex
+
+::: {.w-45}
+
+![](images/morrison-data-snapshot.png)
+
+:::
+
+::: {.w-55 .pl3}
+
+```{webr-r}
+library(readxl)
+read_xlsx("data/template_Morris.xlsx", 
+          sheet = "Whiteheads_occurrences", 
+          skip = 9) 
+```
+
+
+:::
+
+:::
+
+
+
+
+
+
+
+
+::: aside
+
+`template_Morris.xlsx` from Morris & Ewers (2018). Whitehead's rat morphometrics [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1237733
+
+:::
+
+
+## Importing through the GUI
+
+
+In RStudio Desktop, you can click on the file for importing via GUI.
+
+<br>
+
+::: flex
+
+::: {.w-20}
+
+![](images/import-screen.png){.ba}
+
+:::
+
+::: {.w-80 .pl3}
+
+![](images/import-sign.png){.ba}
+
+:::
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+## Formatting data
+
+::: incremental
+
+- Unless you are responsible for entering the data, you should never modify the original, stored data [(note: exceptions do apply)]{.grey}.
+- For scientific integrity, any modification to the original data should be recorded in a reproducible manner (e.g. by programming in R!) so that you can trace the exact modifications.
+
+:::
+
+
+## Summary 
+
+- You can use `readr::read_csv()` to read CSV files. 
+- You can use `readxl::read_xlsx()` to read Excel files.
+- Save a single R object using `saveRDS()` (recommended) and multiple objects using `save()`.
+- In RStudio Desktop, you can click on the file for importing via GUI.
+- Set up R Projects and use relative path to data files. 
 
 
 # Exercise time {background-color="#F5EDDE"}
