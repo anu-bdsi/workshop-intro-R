@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - "*.pdf"
   # render:
   #  - index.qmd
   #  - materials.qmd

@@ -502,6 +502,29 @@ mean(c(1, 3, 4))
 - Use `package::function()` to use a function from a package without loading it.
 
 
+## RStudio Desktop Cheatsheet
+
+::: flex
+
+::: {.w-50}
+
+![](assets/rstudio-ide_Page_1.png){.ba}
+
+:::
+
+::: {.w-50}
+
+![](assets/rstudio-ide_Page_2.png){.ba}
+
+
+:::
+
+:::
+
+
+[<i class='fas fa-file-pdf'></i> RStudio Desktop Cheatsheet](assets/rstudio-ide.pdf)
+
+
 # Exercise time {background-color="#F5EDDE"}
 
 
