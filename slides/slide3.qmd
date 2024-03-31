@@ -269,6 +269,30 @@ In RStudio Desktop, you can click on the file for importing via GUI.
 - Set up R Projects and use relative path to data files. 
 
 
+## Data Import Cheatsheet
+
+::: flex
+
+::: {.w-50}
+
+![](assets/data-import_Page_1.png){.ba}
+
+:::
+
+::: {.w-50}
+
+![](assets/data-import_Page_2.png){.ba}
+
+
+:::
+
+:::
+
+
+[<i class='fas fa-file-pdf'></i> Data Import Cheatsheet](assets/data-import.pdf)
+
+
+
 # Exercise time {background-color="#F5EDDE"}
 
 
