@@ -355,6 +355,30 @@ mean(x, na.rm = TRUE)
 - Calculating some basic _numerical summaries_.
 - Missing values represented as `NA` and may need to be handled specially.
 
+## Base R Cheatsheet
+
+::: flex
+
+::: {.w-50}
+
+![](assets/base-r_Page_1.png){.ba}
+
+:::
+
+::: {.w-50}
+
+![](assets/base-r_Page_2.png){.ba}
+
+
+:::
+
+:::
+
+
+[<i class='fas fa-file-pdf'></i> Base R Cheatsheet](assets/base-r.pdf)
+
+
+
 
 # Exercise time {background-color="#F5EDDE"}
 
