@@ -252,6 +252,13 @@
     "text": "Summary\n\nFour primary types of atomic vectors: logical, integer, double and character.\nA vector can only consist of the same type.\nOther objects types: factor, list, and data.frame.\nThere were several ways of subsetting vectors and lists.\nCalculating some basic numerical summaries.\nMissing values represented as NA and may need to be handled specially."
   },
   {
+    "objectID": "slides/slide2.html#base-r-cheatsheet",
+    "href": "slides/slide2.html#base-r-cheatsheet",
+    "title": "Working with objects",
+    "section": "Base R Cheatsheet",
+    "text": "Base R Cheatsheet\n\n\n\n\n\n\n\n\n Base R Cheatsheet"
+  },
+  {
     "objectID": "next-time.html",
     "href": "next-time.html",
     "title": "[ANU BDSI<br>workshop]{.tag-label} Introduction to R programming",
@@ -441,6 +448,13 @@
     "text": "Summary\n\n\nRStudio Desktop (or RStudio IDE)\n\n\n\n\n\nConsole or Source\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nUse install.packages() to install a package (only once).\nUse library() to load a package.\nUse package::function() to use a function from a package without loading it."
   },
   {
+    "objectID": "slides/slide1.html#rstudio-desktop-cheatsheet",
+    "href": "slides/slide1.html#rstudio-desktop-cheatsheet",
+    "title": "Getting Started",
+    "section": "RStudio Desktop Cheatsheet",
+    "text": "RStudio Desktop Cheatsheet\n\n\n\n\n\n\n\n\n RStudio Desktop Cheatsheet"
+  },
+  {
     "objectID": "slides/handout1.html",
     "href": "slides/handout1.html",
     "title": "Getting Started",
@@ -588,6 +602,13 @@
     "text": "Summary\n\n\nRStudio Desktop (or RStudio IDE)\n\n\n\n\n\nConsole or Source\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nUse install.packages() to install a package (only once).\nUse library() to load a package.\nUse package::function() to use a function from a package without loading it."
   },
   {
+    "objectID": "slides/handout1.html#rstudio-desktop-cheatsheet",
+    "href": "slides/handout1.html#rstudio-desktop-cheatsheet",
+    "title": "Getting Started",
+    "section": "RStudio Desktop Cheatsheet",
+    "text": "RStudio Desktop Cheatsheet\n\n\n\n\n\n\n\n\n RStudio Desktop Cheatsheet"
+  },
+  {
     "objectID": "slides/slide3.html#current-learning-objective",
     "href": "slides/slide3.html#current-learning-objective",
     "title": "Reading and writing data",
@@ -663,6 +684,13 @@
     "title": "Reading and writing data",
     "section": "Summary",
     "text": "Summary\n\nYou can use readr::read_csv() to read CSV files.\nYou can use readxl::read_xlsx() to read Excel files.\nSave a single R object using saveRDS() (recommended) and multiple objects using save().\nIn RStudio Desktop, you can click on the file for importing via GUI.\nSet up R Projects and use relative path to data files."
+  },
+  {
+    "objectID": "slides/slide3.html#data-import-cheatsheet",
+    "href": "slides/slide3.html#data-import-cheatsheet",
+    "title": "Reading and writing data",
+    "section": "Data Import Cheatsheet",
+    "text": "Data Import Cheatsheet\n\n\n\n\n\n\n\n\n Data Import Cheatsheet"
   },
   {
     "objectID": "slides/slide5.html#how-to-get-better-at-r",
