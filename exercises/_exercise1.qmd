@@ -25,7 +25,7 @@ library(webexercises)
 
 - Introduce yourself to those on your table. 
 - Ask what their favorite number is and record this. 
-- Using R, calculate the mean of the favorite number of all the participants on your table.
+- Using R, calculate the mean and standard deviation of the favorite numbers of all the participants on your table.
 
 
 **Using R as a calculator**
