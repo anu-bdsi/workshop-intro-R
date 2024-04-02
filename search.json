@@ -95,7 +95,7 @@
     "href": "slides/slide4.html#reproducible-example-with-reprex-live-demo",
     "title": "Functions, loops and conditional statements",
     "section": "Reproducible Example with reprex LIVE DEMO",
-    "text": "Reproducible Example with reprex LIVE DEMO\n\nCopy your minimum reproducible example then run\n\n\nreprex::reprex(session_info = TRUE)\n\n\nOnce you run the above command, your clipboard contains the formatted code and output for you to paste into places like GitHub issues, Stackoverflow and forums powered by Discourse, e.g. RStudio Community."
+    "text": "Reproducible Example with reprex LIVE DEMO\n\nCopy your minimum reproducible example then run\n\n\nreprex::reprex(venue = \"slack\")\n\n\nOnce you run the above command, your clipboard contains the formatted code and output for you to paste into places like GitHub issues, Stackoverflow and forums powered by Discourse, e.g. RStudio Community."
   },
   {
     "objectID": "slides/slide4.html#asking-for-help",
