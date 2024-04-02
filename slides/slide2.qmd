@@ -110,7 +110,7 @@ double_vec <- c(1, 2, 3, 4)
 character_vec <- c("A", "B", 'C', 'D') # use either a double or single quote 
 integer_vec
 ```
-- The integer and double vectors are collectively called **numeric** vectors.
+
 
 ## Vector
 
