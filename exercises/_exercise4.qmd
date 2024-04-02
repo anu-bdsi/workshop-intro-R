@@ -21,11 +21,11 @@ library(webexercises)
 
 Using R either on your laptop or the consoles below, compute the following values and enter your answer in the corresponding box.
 
-- `cor.test()` is a function that test for association  between paired samples. E.g. `cor.test(cars$speed, cars$dist)` tests the association for the two variables `speed` and `dist` in the `cars` dataset. The $p$-value of the test can be accessed by `cor.test(cars$speed, cars$dist)$p.value`. What is the $p$-value of the test of association for the `speed` and `dist` variables in the `cars` dataset? `r mcq(c("answer" = "Less than 0.01", "Between 0.01 and 0.05", "Between 0.05 and 0.1", "Greater than 0.1"))`
+- `cor.test()` is a function that test for association  between paired samples. E.g. `cor.test(mtcars$mpg, mtcars$disp)` tests the association for the two variables `mpg` (miles per gallon) and `disp` (displacement) in the `mtcars` dataset. The $p$-value of the test can be accessed by `cor.test(mtcars$mpg, mtcars$disp)$p.value`. What is the $p$-value of the test of association for the `speed` and `dist` variables in the `cars` dataset? `r mcq(c("answer" = "Less than 0.01", "Between 0.01 and 0.05", "Between 0.05 and 0.1", "Greater than 0.1"))`
 
 ```{webr-r}
-cor.test(cars$speed, cars$dist)
-cor.test(cars$speed, cars$dist)$p.value # to get the p-value
+cor.test(___, ___)
+cor.test(cars$speed, ___)$p.value 
 
 ```
 
@@ -50,7 +50,7 @@ for(i in 1:nrow(pairs_df)) {
   x2 <- mtcars[[pairs_df$var2[i]]]
   
   if(num_distinct(x1) > 3 & num_distinct(x2) > 3) {
-    pairs_df$p_value[i] <- cor.test(x1, x2)$p.value
+    pairs_df$p_value[i] <- cor.test(x1, x2)$____
   }
 }
 
