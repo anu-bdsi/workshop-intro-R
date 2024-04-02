@@ -31,7 +31,7 @@ Download the above datasets.
 ```{r}
 #| include: false
 branch <- readxl::read_excel(here::here("data/branch-water-derived-value.xlsx"), sheet = "Values for RWC figures")
-branchkey <- readxl::read_excel(here::here("data/branch-water-derived-value.xlsx"), sheet = "Key Values")
+branchkey <- readxl::read_excel(here::here("data/branch-water-derived-value.xlsx"), sheet = "Key Values", skip = 1)
 roadside <- readr::read_csv(here::here("data/roadside-transects.csv"))
 ```
 
