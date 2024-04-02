@@ -67,6 +67,11 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 
 :::
 
+<center>
+
+![](/images/qrcode-intro-r-programming.png)
+</center>
+
 
 ## Learning objectives
 
