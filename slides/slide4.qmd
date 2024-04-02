@@ -194,7 +194,7 @@ final_grades
 * Copy your **minimum reproducible example** then run
 
 ```{r, eval = FALSE}
-reprex::reprex(session_info = TRUE)
+reprex::reprex(venue = "slack")
 ```
 
 
