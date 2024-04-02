@@ -79,6 +79,10 @@ write.csv(cars, "data/data-raw/cars.csv")
 download.file("https://anu-bdsi.github.io/workshop-intro-R/data/template_Morris.xlsx", "data/template_Morris.xlsx")
 ```
 
+::: flex
+
+::: {.w-70}
+
 ```{webr-r}
 dir()
 read.csv("GRRData.csv") # Using Base R
@@ -88,6 +92,30 @@ read_csv("GRRData.csv") # alternatively use readr
 
 write_csv(mtcars, "mtcars.csv") # saving data as CSV file
 ```
+
+:::
+
+::: {.w-30 .pl3}
+
+```{css}
+.directory {
+ font-size: 0.5em!important;
+}
+```
+
+
+```{r}
+#| echo: false
+dir::listing("home/web_user/")
+```
+
+
+:::
+
+:::
+
+
+
 
 ::: aside 
 
