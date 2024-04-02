@@ -177,7 +177,7 @@ download.file(out$data$url, destfile = "images/openai-creation.png")
 
 <center>
 
-![](images/openai-creation.png){.fragment width="35%"}
+![](images/openai-creation-saved.png){.fragment width="35%"}
 
 </center>
 
