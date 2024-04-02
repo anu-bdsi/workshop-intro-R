@@ -599,7 +599,7 @@
     "href": "slides/slide2.html#vector-types",
     "title": "Working with objects",
     "section": "Vector types",
-    "text": "Vector types\n\nThere are four primary types of atomic vectors: logical, integer, double and character.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nThe integer and double vectors are collectively called numeric vectors."
+    "text": "Vector types\n\nThere are four primary types of atomic vectors: logical, integer, double and character.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "slides/slide2.html#vector",
