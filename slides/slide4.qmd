@@ -286,7 +286,7 @@ If the **problem is based on data** ...
 - Use `if`, `else`, and `ifelse` for conditional statements.
 - Use `for` loops for repetitive tasks.
 - Troubleshoot errors by reading the error message and asking for help with a _reproducible example_.
-- Reproducible examples can be generated using `reprex` package.
+- Reproducible examples can be generated using the `reprex` package.
 
 
 # Exercise time {background-color="#F5EDDE"}
