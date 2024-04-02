@@ -116,7 +116,7 @@
     "href": "slides/slide4.html#summary",
     "title": "Functions, loops and conditional statements",
     "section": "Summary",
-    "text": "Summary\n\nWrite new functions using function().\nUse if, else, and ifelse for conditional statements.\nUse for loops for repetitive tasks.\nTroubleshoot errors by reading the error message and asking for help with a reproducible example.\nReproducible examples can be generated using reprex package."
+    "text": "Summary\n\nWrite new functions using function().\nUse if, else, and ifelse for conditional statements.\nUse for loops for repetitive tasks.\nTroubleshoot errors by reading the error message and asking for help with a reproducible example.\nReproducible examples can be generated using the reprex package."
   },
   {
     "objectID": "slides/slide3.html#current-learning-objective",
