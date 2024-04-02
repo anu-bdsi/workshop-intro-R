@@ -119,340 +119,88 @@
     "text": "Summary\n\nWrite new functions using function().\nUse if, else, and ifelse for conditional statements.\nUse for loops for repetitive tasks.\nTroubleshoot errors by reading the error message and asking for help with a reproducible example.\nReproducible examples can be generated using reprex package."
   },
   {
-    "objectID": "slides/slide2.html#current-learning-objective",
-    "href": "slides/slide2.html#current-learning-objective",
-    "title": "Working with objects",
+    "objectID": "slides/slide3.html#current-learning-objective",
+    "href": "slides/slide3.html#current-learning-objective",
+    "title": "Reading and writing data",
     "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Install external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nGrasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Install external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Grasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
-    "objectID": "slides/slide2.html#using-r-as-a-calculator",
-    "href": "slides/slide2.html#using-r-as-a-calculator",
-    "title": "Working with objects",
-    "section": "Using R as a calculator",
-    "text": "Using R as a calculator\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nBut we want to save results to reuse later!"
+    "objectID": "slides/slide3.html#data-file-formats",
+    "href": "slides/slide3.html#data-file-formats",
+    "title": "Reading and writing data",
+    "section": "Data file formats",
+    "text": "Data file formats\n\n\nData are stored as a file, which points to a block of computer memory.\nA file format signals a way to interpret the information stored in the computer memory.\nA file with the extension “csv” (comma-separated values) uses a comma as a delimiter while “tsv” uses tabs as a delimiter.\n\n\n\n\ndata.csv\n\nlen, supp, dose\n4.2, VC, 0.5\n11.5, VC, 0.5\n...\n\n\n\nA common approach is to have as a text file format where\n\na delimiter (e.g. “,” and tabs) separate columns,\nthe first row (header) corresponds to the names of the variables, and\nsubsequent rows correspond to the values."
   },
   {
-    "objectID": "slides/slide2.html#assignment",
-    "href": "slides/slide2.html#assignment",
-    "title": "Working with objects",
-    "section": "Assignment",
-    "text": "Assignment\n\n\nYou can assign values to objects using &lt;- or = or even -&gt;\nJust be consistent which one you use!\nThe name of the object can be variable so long as it is syntactically valid (no spaces and most special characters, and the name cannot start with a digit)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide3.html#reading-and-writing-csv-files",
+    "href": "slides/slide3.html#reading-and-writing-csv-files",
+    "title": "Reading and writing data",
+    "section": "Reading and Writing CSV files",
+    "text": "Reading and Writing CSV files\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nGRRData.csv from Asefa et al. (2023). Data from: Human activities modulate reciprocal effects of a subterranean ecological engineer rodent, Tachyoryctes macrocephalus, on Afroalpine vegetation cover [Data set]. Zenodo. https://doi.org/10.5061/dryad.cc2fqz6bx"
   },
   {
-    "objectID": "slides/slide2.html#vectors",
-    "href": "slides/slide2.html#vectors",
-    "title": "Working with objects",
-    "section": "Vectors",
-    "text": "Vectors\n\nWe can combine scalars to form vectors using c():\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nThis is a vector of length 3\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nThis vector is stored as a double with the class as numeric\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide3.html#file-paths",
+    "href": "slides/slide3.html#file-paths",
+    "title": "Reading and writing data",
+    "section": "File paths",
+    "text": "File paths\n\n\n\nYour file has to be in the right location to be read!\nYou may use a relative path (e.g. data/data.csv) or an absolute path (e.g. C:\\\\user/myproject/data.csv) to point to the right location of the data\n You should avoid using absolute path! Why?\nYou can get and set the current path using getwd() and setwd(), respectively.\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "slides/slide2.html#vector-types",
-    "href": "slides/slide2.html#vector-types",
-    "title": "Working with objects",
-    "section": "Vector types",
-    "text": "Vector types\n\nThere are four primary types of atomic vectors: logical, integer, double and character.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nThe integer and double vectors are collectively called numeric vectors."
+    "objectID": "slides/slide3.html#folder-structure",
+    "href": "slides/slide3.html#folder-structure",
+    "title": "Reading and writing data",
+    "section": "Folder structure",
+    "text": "Folder structure\n\nYour folder structure depends on the project, but it is generally a good idea to have a folder on its own for each project.\n\n\n\nWithin the project, it is also good to have a separate folder for:\n\ndata\nscript/analysis\nreport/paper\nfigures/images."
   },
   {
-    "objectID": "slides/slide2.html#vector",
-    "href": "slides/slide2.html#vector",
-    "title": "Working with objects",
-    "section": "Vector",
-    "text": "Vector\n\nA vector can only consist of the same type\nIf you attempt to combine mismatched types together, it will try to coerce all values to the same type.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide3.html#r-project",
+    "href": "slides/slide3.html#r-project",
+    "title": "Reading and writing data",
+    "section": "R project",
+    "text": "R project\n\n\nWithin RStudio, you can create a project file (with an .Rproj extension).\nDouble clicking on this project file launches RStudio Desktop with the current working directory set to the location of the project file.\nYou can create this project file by going to RStudio &gt; File &gt; New Project …"
   },
   {
-    "objectID": "slides/slide2.html#casting-to-other-types",
-    "href": "slides/slide2.html#casting-to-other-types",
-    "title": "Working with objects",
-    "section": "Casting to other types",
-    "text": "Casting to other types\n\nE.g., as.numeric() tries to coerce input to numeric value.\nIf a logical value is coerced to numeric or integer, then\n\nTRUE is 1 and\nFALSE is 0.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide3.html#binary-formats",
+    "href": "slides/slide3.html#binary-formats",
+    "title": "Reading and writing data",
+    "section": "Binary formats",
+    "text": "Binary formats\n\nData can also be stored as a binary format (e.g. .RData, .rda or rds).\n.RData, .rda or rds saves R objects so you don’t need the data to be in a data.frame.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "slides/slide2.html#factor",
-    "href": "slides/slide2.html#factor",
-    "title": "Working with objects",
-    "section": "Factor",
-    "text": "Factor\n\nA factor in R is a special type of integer vector used typically to encode categorical variables.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide3.html#reading-excel-sheets",
+    "href": "slides/slide3.html#reading-excel-sheets",
+    "title": "Reading and writing data",
+    "section": "Reading Excel sheets",
+    "text": "Reading Excel sheets\n\nData can also come in a propriety format (e.g. xls and xlsx) – these require special ways to open/view/read it.\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\ntemplate_Morris.xlsx from Morris & Ewers (2018). Whitehead’s rat morphometrics [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1237733"
   },
   {
-    "objectID": "slides/slide2.html#lists",
-    "href": "slides/slide2.html#lists",
-    "title": "Working with objects",
-    "section": "Lists",
-    "text": "Lists\n\nLists allow to combine elements of different types.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nYou can use str() to see the internal structure of an object in R.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide3.html#importing-through-the-gui",
+    "href": "slides/slide3.html#importing-through-the-gui",
+    "title": "Reading and writing data",
+    "section": "Importing through the GUI",
+    "text": "Importing through the GUI\nIn RStudio Desktop, you can click on the file for importing via GUI."
   },
   {
-    "objectID": "slides/slide2.html#data-frames",
-    "href": "slides/slide2.html#data-frames",
-    "title": "Working with objects",
-    "section": "Data frames",
-    "text": "Data frames\n\ndata.frame is a special type of a named list where each element of the vector is the same length.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide3.html#formatting-data",
+    "href": "slides/slide3.html#formatting-data",
+    "title": "Reading and writing data",
+    "section": "Formatting data",
+    "text": "Formatting data\n\n\nUnless you are responsible for entering the data, you should never modify the original, stored data (note: exceptions do apply).\nFor scientific integrity, any modification to the original data should be recorded in a reproducible manner (e.g. by programming in R!) so that you can trace the exact modifications."
   },
   {
-    "objectID": "slides/slide2.html#subsetting-vectors-part-1",
-    "href": "slides/slide2.html#subsetting-vectors-part-1",
-    "title": "Working with objects",
-    "section": "Subsetting vectors Part 1",
-    "text": "Subsetting vectors Part 1\n\nPositive integers select elements at the specified positions:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nNegative integers exclude elements at the specified positions:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide2.html#subsetting-vectors-part-2",
-    "href": "slides/slide2.html#subsetting-vectors-part-2",
-    "title": "Working with objects",
-    "section": "Subsetting vectors Part 2",
-    "text": "Subsetting vectors Part 2\n\nLogical vectors select elements where logical value is TRUE.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nIf the logical vector used for subsetting a vector is shorter than it then the logical vector is recycled to match the length of the vector.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide2.html#subsetting-named-vectors",
-    "href": "slides/slide2.html#subsetting-named-vectors",
-    "title": "Working with objects",
-    "section": "Subsetting named vectors",
-    "text": "Subsetting named vectors\n\nCharacter vectors select elements based on the name of the vector (if any):\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide2.html#subsetting-lists",
-    "href": "slides/slide2.html#subsetting-lists",
-    "title": "Working with objects",
-    "section": "Subsetting lists",
-    "text": "Subsetting lists\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide2.html#subsetting-named-lists",
-    "href": "slides/slide2.html#subsetting-named-lists",
-    "title": "Working with objects",
-    "section": "Subsetting named lists",
-    "text": "Subsetting named lists\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide2.html#subsetting-data-frames",
-    "href": "slides/slide2.html#subsetting-data-frames",
-    "title": "Working with objects",
-    "section": "Subsetting data frames",
-    "text": "Subsetting data frames\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide2.html#numerical-summaries",
-    "href": "slides/slide2.html#numerical-summaries",
-    "title": "Working with objects",
-    "section": "Numerical summaries",
-    "text": "Numerical summaries\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide2.html#missing-values",
-    "href": "slides/slide2.html#missing-values",
-    "title": "Working with objects",
-    "section": "Missing values",
-    "text": "Missing values\n\n\nNA in R denotes missing values – there are in fact different types of missing values (NA_character_, NA_integer_, NA_real_, NA_complex_).\n\n\n\n\nWhen there are missing values, it can cause issues in the computation.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nBelow we remove the missing values:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide2.html#summary",
-    "href": "slides/slide2.html#summary",
-    "title": "Working with objects",
+    "objectID": "slides/slide3.html#summary",
+    "href": "slides/slide3.html#summary",
+    "title": "Reading and writing data",
     "section": "Summary",
-    "text": "Summary\n\nFour primary types of atomic vectors: logical, integer, double and character.\nA vector can only consist of the same type.\nOther objects types: factor, list, and data.frame.\nThere were several ways of subsetting vectors and lists.\nCalculating some basic numerical summaries.\nMissing values represented as NA and may need to be handled specially."
+    "text": "Summary\n\nYou can use readr::read_csv() to read CSV files.\nYou can use readxl::read_xlsx() to read Excel files.\nSave a single R object using saveRDS() (recommended) and multiple objects using save().\nIn RStudio Desktop, you can click on the file for importing via GUI.\nSet up R Projects and use relative path to data files."
   },
   {
-    "objectID": "slides/slide2.html#base-r-cheatsheet",
-    "href": "slides/slide2.html#base-r-cheatsheet",
-    "title": "Working with objects",
-    "section": "Base R Cheatsheet",
-    "text": "Base R Cheatsheet\n\n\n\n\n\n\n\n\n Base R Cheatsheet"
-  },
-  {
-    "objectID": "next-time.html",
-    "href": "next-time.html",
-    "title": "[ANU BDSI<br>workshop]{.tag-label} Introduction to R programming",
-    "section": "",
-    "text": "This website is brought to you by the ANU Biological Data Science Institute."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction to R programming",
-    "section": "",
-    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop is designed to introduce participants to the fundamentals of using R for basic computations. It is suitable for individuals with no prior experience in R or those seeking a refresher in R. Familiarity with basic summary statistics (mean, median, standard deviation, quartiles, etc.) is assumed. It’s important to note that this workshop alone is not sufficient to practice data analysis. Attendees are encouraged to also participate in the Data Wrangling with R (Part 1) and Data Visualization with R (Part 1) workshops to acquire essential skills for contemporary data wrangling and visualization practices.\nThis website is brought to you by the ANU Biological Data Science Institute."
-  },
-  {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Introduction to R programming",
-    "section": "",
-    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop is designed to introduce participants to the fundamentals of using R for basic computations. It is suitable for individuals with no prior experience in R or those seeking a refresher in R. Familiarity with basic summary statistics (mean, median, standard deviation, quartiles, etc.) is assumed. It’s important to note that this workshop alone is not sufficient to practice data analysis. Attendees are encouraged to also participate in the Data Wrangling with R (Part 1) and Data Visualization with R (Part 1) workshops to acquire essential skills for contemporary data wrangling and visualization practices."
-  },
-  {
-    "objectID": "index.html#learning-objectives",
-    "href": "index.html#learning-objectives",
-    "title": "Introduction to R programming",
-    "section": "Learning objectives",
-    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nConduct elementary arithmetic operations using R\nNavigate the RStudio interactive development environment (IDE)\nInstall external packages in R to extend functionality\nComprehend various object types in R\nManipulate lists, matrices, and vectors in R\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nGrasp the concept of missing values within the R environment\nImport and export data in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
-  },
-  {
-    "objectID": "index.html#preperation",
-    "href": "index.html#preperation",
-    "title": "Introduction to R programming",
-    "section": "Preperation",
-    "text": "Preperation\nYou will need a laptop that can connect to the internet during the workshop. Please ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\n\n If you are having issues, ask in the slack channel or talk to the teaching team during the workshop.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
-  },
-  {
-    "objectID": "index.html#teaching-team",
-    "href": "index.html#teaching-team",
-    "title": "Introduction to R programming",
-    "section": "Teaching team",
-    "text": "Teaching team\n\n\n\n\nDr. Emi TanakaJeremias IvanRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
-  },
-  {
-    "objectID": "index.html#materials",
-    "href": "index.html#materials",
-    "title": "Introduction to R programming",
-    "section": "Materials",
-    "text": "Materials\nThe materials can be found here.\n   \nThese materials are shared under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
-  },
-  {
-    "objectID": "slides/slide1.html#teaching-team",
-    "href": "slides/slide1.html#teaching-team",
-    "title": "Getting Started",
-    "section": "Teaching team",
-    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
-  },
-  {
-    "objectID": "slides/slide1.html#your-turn-tell-us-about-yourself",
-    "href": "slides/slide1.html#your-turn-tell-us-about-yourself",
-    "title": "Getting Started",
-    "section": "Your turn! Tell us about yourself 👋",
-    "text": "Your turn! Tell us about yourself 👋\n\n\npollev.com/emitanaka"
-  },
-  {
-    "objectID": "slides/slide1.html#learning-objectives",
-    "href": "slides/slide1.html#learning-objectives",
-    "title": "Getting Started",
-    "section": "Learning objectives",
-    "text": "Learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
-  },
-  {
-    "objectID": "slides/slide1.html#current-learning-objectives",
-    "href": "slides/slide1.html#current-learning-objectives",
-    "title": "Getting Started",
-    "section": " Current learning objectives",
-    "text": "Current learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
-  },
-  {
-    "objectID": "slides/slide1.html#what-is-r",
-    "href": "slides/slide1.html#what-is-r",
-    "title": "Getting Started",
-    "section": "What is R?",
-    "text": "What is R?\n\n\n\nR is a programming language predominately for data analysis.\n\n\n\n\n\n\n\nRStudio Desktop is an integrated development environment (IDE) that helps you to use R.\n\n\n\n\n\n\nVisual Studio Code is another popular IDE (we don’t use this)."
-  },
-  {
-    "objectID": "slides/slide1.html#why-learn-r",
-    "href": "slides/slide1.html#why-learn-r",
-    "title": "Getting Started",
-    "section": "Why learn R?",
-    "text": "Why learn R?\n\n\nR is one of the top programming languages for statistics or data science.\n\nPython is also a good alternative language for data science.\nBetter to have a mastery of at least one language rather than none.\n\nR was initially developed by statisticians for statisticians.\n\nState-of-the-art statistical methods are more readily available in R.\n\nR has a very active and friendly community.\nR is a free and open source software (FOSS) and is a cross-platform language:\n\nfree = money is not a barrier to use it,\nopen source software = transparency,\ncross-platform = can be used on Windows, Mac, and Linux."
-  },
-  {
-    "objectID": "slides/slide1.html#rapid-development",
-    "href": "slides/slide1.html#rapid-development",
-    "title": "Getting Started",
-    "section": "Rapid development",
-    "text": "Rapid development\n\nAccess to Open AI (known for ChatGPT) API is already available in R!\n\n\nlibrary(openai)\nout &lt;- create_image(\"A data scientist with a laptop and \n                     statistical software in an anime style\")"
-  },
-  {
-    "objectID": "slides/slide1.html#rich-graphical-outputs",
-    "href": "slides/slide1.html#rich-graphical-outputs",
-    "title": "Getting Started",
-    "section": "Rich graphical outputs",
-    "text": "Rich graphical outputs\n\nR also has a wide range of packages for creating beautiful and interactive graphics.\n\n Try clicking on a bar on the left plot."
-  },
-  {
-    "objectID": "slides/slide1.html#dynamic-documents",
-    "href": "slides/slide1.html#dynamic-documents",
-    "title": "Getting Started",
-    "section": "Dynamic documents",
-    "text": "Dynamic documents\n\n\n\nCreate beautiful documents with better reproducible practices and workflow!\nThis slide and the website is made using a combination of R and Quarto.\n\n\n\n\n\n\nscroll down"
-  },
-  {
-    "objectID": "slides/slide1.html#interactively-working-with-r",
-    "href": "slides/slide1.html#interactively-working-with-r",
-    "title": "Getting Started",
-    "section": "Interactively working with R",
-    "text": "Interactively working with R\n\nYou can use R like a calculator:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide1.html#how-do-you-use-r",
-    "href": "slides/slide1.html#how-do-you-use-r",
-    "title": "Getting Started",
-    "section": "How do you use R?",
-    "text": "How do you use R?\n\nRStudio Desktop (or RStudio IDE) is the most common way to use R."
-  },
-  {
-    "objectID": "slides/slide1.html#customise-global-options",
-    "href": "slides/slide1.html#customise-global-options",
-    "title": "Getting Started",
-    "section": "Customise Global Options",
-    "text": "Customise Global Options\n\n\n\nGo to RStudio &gt; Tools &gt; Global Options…\nUnder the General tab, make sure the “Restore .RData into workspace at startup” is unticked.\nThis avoids unexpectedly loading (old) data into your workspace and making your code only work in your workspace, but not for others (which is bad reproducible practice)."
-  },
-  {
-    "objectID": "slides/slide1.html#arithmetics",
-    "href": "slides/slide1.html#arithmetics",
-    "title": "Getting Started",
-    "section": "Arithmetics",
-    "text": "Arithmetics\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide1.html#vectors",
-    "href": "slides/slide1.html#vectors",
-    "title": "Getting Started",
-    "section": "Vectors",
-    "text": "Vectors\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide1.html#functions",
-    "href": "slides/slide1.html#functions",
-    "title": "Getting Started",
-    "section": "Functions",
-    "text": "Functions\n\nThere are many functions in R.\nYou can look at the documentation on how to use it:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide1.html#finding-functions",
-    "href": "slides/slide1.html#finding-functions",
-    "title": "Getting Started",
-    "section": "Finding functions",
-    "text": "Finding functions\n\nTo find indexed functions for a package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nGoogle it with a good set of keywords.\nThe recent trend is ask generative AI."
-  },
-  {
-    "objectID": "slides/slide1.html#base-r",
-    "href": "slides/slide1.html#base-r",
-    "title": "Getting Started",
-    "section": "Base R",
-    "text": "Base R\n\n\n\n\n\n\nR has 7 packages, collectively referred to as the “base R”, that are loaded automatically when you launch it.\nThe functions in the base packages are generally well-tested and trustworthy."
-  },
-  {
-    "objectID": "slides/slide1.html#contributed-r-packages",
-    "href": "slides/slide1.html#contributed-r-packages",
-    "title": "Getting Started",
-    "section": "Contributed R Packages",
-    "text": "Contributed R Packages\n\n\n\n\nR packages are community developed extensions to R (much like apps on your mobile).\nThe Comprehensive R Archive Network (CRAN) is a volunteer maintained repository that hosts submitted R packages that are approved (much like an app store).\nThere are close to 20,000 packages available on CRAN but the qualities of R packages vary.\nThere are other repositories that host R packages, e.g. Bioconductor for bioinformatics, R Universe, R-Forge, GitHub (we won’t cover these).\n\n\n\n\n\nPhoto by Sara Kurfeß on Unsplash"
-  },
-  {
-    "objectID": "slides/slide1.html#using-packages-on-cran",
-    "href": "slides/slide1.html#using-packages-on-cran",
-    "title": "Getting Started",
-    "section": "Using packages on CRAN",
-    "text": "Using packages on CRAN\n\n\nIf the package (say praise) is on CRAN, you can install it by:\n\ninstall.packages(\"praise\")\n\nYou only need to install.packages() once!\n\n\n\n\nLoading exported functions from a package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nUse package::function() for without loading package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "slides/slide1.html#summary",
-    "href": "slides/slide1.html#summary",
-    "title": "Getting Started",
-    "section": "Summary",
-    "text": "Summary\n\n\nRStudio Desktop (or RStudio IDE)\n\n\n\n\n\nConsole or Source\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nUse install.packages() to install a package (only once).\nUse library() to load a package.\nUse package::function() to use a function from a package without loading it."
-  },
-  {
-    "objectID": "slides/slide1.html#rstudio-desktop-cheatsheet",
-    "href": "slides/slide1.html#rstudio-desktop-cheatsheet",
-    "title": "Getting Started",
-    "section": "RStudio Desktop Cheatsheet",
-    "text": "RStudio Desktop Cheatsheet\n\n\n\n\n\n\n\n\n RStudio Desktop Cheatsheet"
+    "objectID": "slides/slide3.html#data-import-cheatsheet",
+    "href": "slides/slide3.html#data-import-cheatsheet",
+    "title": "Reading and writing data",
+    "section": "Data Import Cheatsheet",
+    "text": "Data Import Cheatsheet\n\n\n\n\n\n\n\n\n Data Import Cheatsheet"
   },
   {
     "objectID": "slides/handout1.html",
@@ -609,88 +357,368 @@
     "text": "RStudio Desktop Cheatsheet\n\n\n\n\n\n\n\n\n RStudio Desktop Cheatsheet"
   },
   {
-    "objectID": "slides/slide3.html#current-learning-objective",
-    "href": "slides/slide3.html#current-learning-objective",
-    "title": "Reading and writing data",
-    "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Install external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Grasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+    "objectID": "slides/slide1.html#teaching-team",
+    "href": "slides/slide1.html#teaching-team",
+    "title": "Getting Started",
+    "section": "Teaching team",
+    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
   },
   {
-    "objectID": "slides/slide3.html#data-file-formats",
-    "href": "slides/slide3.html#data-file-formats",
-    "title": "Reading and writing data",
-    "section": "Data file formats",
-    "text": "Data file formats\n\n\nData are stored as a file, which points to a block of computer memory.\nA file format signals a way to interpret the information stored in the computer memory.\nA file with the extension “csv” (comma-separated values) uses a comma as a delimiter while “tsv” uses tabs as a delimiter.\n\n\n\n\ndata.csv\n\nlen, supp, dose\n4.2, VC, 0.5\n11.5, VC, 0.5\n...\n\n\n\nA common approach is to have as a text file format where\n\na delimiter (e.g. “,” and tabs) separate columns,\nthe first row (header) corresponds to the names of the variables, and\nsubsequent rows correspond to the values."
+    "objectID": "slides/slide1.html#your-turn-tell-us-about-yourself",
+    "href": "slides/slide1.html#your-turn-tell-us-about-yourself",
+    "title": "Getting Started",
+    "section": "Your turn! Tell us about yourself 👋",
+    "text": "Your turn! Tell us about yourself 👋\n\n\npollev.com/emitanaka"
   },
   {
-    "objectID": "slides/slide3.html#reading-and-writing-csv-files",
-    "href": "slides/slide3.html#reading-and-writing-csv-files",
-    "title": "Reading and writing data",
-    "section": "Reading and Writing CSV files",
-    "text": "Reading and Writing CSV files\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nGRRData.csv from Asefa et al. (2023). Data from: Human activities modulate reciprocal effects of a subterranean ecological engineer rodent, Tachyoryctes macrocephalus, on Afroalpine vegetation cover [Data set]. Zenodo. https://doi.org/10.5061/dryad.cc2fqz6bx"
+    "objectID": "slides/slide1.html#learning-objectives",
+    "href": "slides/slide1.html#learning-objectives",
+    "title": "Getting Started",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nInstall external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nGrasp the concept of missing values within the R environment\n\n\nImport and export data in R\n\n\nCreate basic functions, employ conditional statements, and utilize for loops in R\n\n\nDecipher error messages and do basic troubleshooting"
   },
   {
-    "objectID": "slides/slide3.html#file-paths",
-    "href": "slides/slide3.html#file-paths",
-    "title": "Reading and writing data",
-    "section": "File paths",
-    "text": "File paths\n\n\n\nYour file has to be in the right location to be read!\nYou may use a relative path (e.g. data/data.csv) or an absolute path (e.g. C:\\\\user/myproject/data.csv) to point to the right location of the data\n You should avoid using absolute path! Why?\nYou can get and set the current path using getwd() and setwd(), respectively.\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide1.html#current-learning-objectives",
+    "href": "slides/slide1.html#current-learning-objectives",
+    "title": "Getting Started",
+    "section": " Current learning objectives",
+    "text": "Current learning objectives\n\n\n\nConduct elementary arithmetic operations using R\n\n\nNavigate the RStudio interactive development environment (IDE)\n\n\nInstall external packages in R to extend functionality\n\n\n-Comprehend various object types in R\n\n\n-Manipulate lists, matrices, and vectors in R\n\n\n-Compute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\n-Grasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
   },
   {
-    "objectID": "slides/slide3.html#folder-structure",
-    "href": "slides/slide3.html#folder-structure",
-    "title": "Reading and writing data",
-    "section": "Folder structure",
-    "text": "Folder structure\n\nYour folder structure depends on the project, but it is generally a good idea to have a folder on its own for each project.\n\n\n\nWithin the project, it is also good to have a separate folder for:\n\ndata\nscript/analysis\nreport/paper\nfigures/images."
+    "objectID": "slides/slide1.html#what-is-r",
+    "href": "slides/slide1.html#what-is-r",
+    "title": "Getting Started",
+    "section": "What is R?",
+    "text": "What is R?\n\n\n\nR is a programming language predominately for data analysis.\n\n\n\n\n\n\n\nRStudio Desktop is an integrated development environment (IDE) that helps you to use R.\n\n\n\n\n\n\nVisual Studio Code is another popular IDE (we don’t use this)."
   },
   {
-    "objectID": "slides/slide3.html#r-project",
-    "href": "slides/slide3.html#r-project",
-    "title": "Reading and writing data",
-    "section": "R project",
-    "text": "R project\n\n\nWithin RStudio, you can create a project file (with an .Rproj extension).\nDouble clicking on this project file launches RStudio Desktop with the current working directory set to the location of the project file.\nYou can create this project file by going to RStudio &gt; File &gt; New Project …"
+    "objectID": "slides/slide1.html#why-learn-r",
+    "href": "slides/slide1.html#why-learn-r",
+    "title": "Getting Started",
+    "section": "Why learn R?",
+    "text": "Why learn R?\n\n\nR is one of the top programming languages for statistics or data science.\n\nPython is also a good alternative language for data science.\nBetter to have a mastery of at least one language rather than none.\n\nR was initially developed by statisticians for statisticians.\n\nState-of-the-art statistical methods are more readily available in R.\n\nR has a very active and friendly community.\nR is a free and open source software (FOSS) and is a cross-platform language:\n\nfree = money is not a barrier to use it,\nopen source software = transparency,\ncross-platform = can be used on Windows, Mac, and Linux."
   },
   {
-    "objectID": "slides/slide3.html#binary-formats",
-    "href": "slides/slide3.html#binary-formats",
-    "title": "Reading and writing data",
-    "section": "Binary formats",
-    "text": "Binary formats\n\nData can also be stored as a binary format (e.g. .RData, .rda or rds).\n.RData, .rda or rds saves R objects so you don’t need the data to be in a data.frame.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "slides/slide1.html#rapid-development",
+    "href": "slides/slide1.html#rapid-development",
+    "title": "Getting Started",
+    "section": "Rapid development",
+    "text": "Rapid development\n\nAccess to Open AI (known for ChatGPT) API is already available in R!\n\n\nlibrary(openai)\nout &lt;- create_image(\"A data scientist with a laptop and \n                     statistical software in an anime style\")"
   },
   {
-    "objectID": "slides/slide3.html#reading-excel-sheets",
-    "href": "slides/slide3.html#reading-excel-sheets",
-    "title": "Reading and writing data",
-    "section": "Reading Excel sheets",
-    "text": "Reading Excel sheets\n\nData can also come in a propriety format (e.g. xls and xlsx) – these require special ways to open/view/read it.\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\ntemplate_Morris.xlsx from Morris & Ewers (2018). Whitehead’s rat morphometrics [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1237733"
+    "objectID": "slides/slide1.html#rich-graphical-outputs",
+    "href": "slides/slide1.html#rich-graphical-outputs",
+    "title": "Getting Started",
+    "section": "Rich graphical outputs",
+    "text": "Rich graphical outputs\n\nR also has a wide range of packages for creating beautiful and interactive graphics.\n\n Try clicking on a bar on the left plot."
   },
   {
-    "objectID": "slides/slide3.html#importing-through-the-gui",
-    "href": "slides/slide3.html#importing-through-the-gui",
-    "title": "Reading and writing data",
-    "section": "Importing through the GUI",
-    "text": "Importing through the GUI\nIn RStudio Desktop, you can click on the file for importing via GUI."
+    "objectID": "slides/slide1.html#dynamic-documents",
+    "href": "slides/slide1.html#dynamic-documents",
+    "title": "Getting Started",
+    "section": "Dynamic documents",
+    "text": "Dynamic documents\n\n\n\nCreate beautiful documents with better reproducible practices and workflow!\nThis slide and the website is made using a combination of R and Quarto.\n\n\n\n\n\n\nscroll down"
   },
   {
-    "objectID": "slides/slide3.html#formatting-data",
-    "href": "slides/slide3.html#formatting-data",
-    "title": "Reading and writing data",
-    "section": "Formatting data",
-    "text": "Formatting data\n\n\nUnless you are responsible for entering the data, you should never modify the original, stored data (note: exceptions do apply).\nFor scientific integrity, any modification to the original data should be recorded in a reproducible manner (e.g. by programming in R!) so that you can trace the exact modifications."
+    "objectID": "slides/slide1.html#interactively-working-with-r",
+    "href": "slides/slide1.html#interactively-working-with-r",
+    "title": "Getting Started",
+    "section": "Interactively working with R",
+    "text": "Interactively working with R\n\nYou can use R like a calculator:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "slides/slide3.html#summary",
-    "href": "slides/slide3.html#summary",
-    "title": "Reading and writing data",
+    "objectID": "slides/slide1.html#how-do-you-use-r",
+    "href": "slides/slide1.html#how-do-you-use-r",
+    "title": "Getting Started",
+    "section": "How do you use R?",
+    "text": "How do you use R?\n\nRStudio Desktop (or RStudio IDE) is the most common way to use R."
+  },
+  {
+    "objectID": "slides/slide1.html#customise-global-options",
+    "href": "slides/slide1.html#customise-global-options",
+    "title": "Getting Started",
+    "section": "Customise Global Options",
+    "text": "Customise Global Options\n\n\n\nGo to RStudio &gt; Tools &gt; Global Options…\nUnder the General tab, make sure the “Restore .RData into workspace at startup” is unticked.\nThis avoids unexpectedly loading (old) data into your workspace and making your code only work in your workspace, but not for others (which is bad reproducible practice)."
+  },
+  {
+    "objectID": "slides/slide1.html#arithmetics",
+    "href": "slides/slide1.html#arithmetics",
+    "title": "Getting Started",
+    "section": "Arithmetics",
+    "text": "Arithmetics\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide1.html#vectors",
+    "href": "slides/slide1.html#vectors",
+    "title": "Getting Started",
+    "section": "Vectors",
+    "text": "Vectors\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide1.html#functions",
+    "href": "slides/slide1.html#functions",
+    "title": "Getting Started",
+    "section": "Functions",
+    "text": "Functions\n\nThere are many functions in R.\nYou can look at the documentation on how to use it:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide1.html#finding-functions",
+    "href": "slides/slide1.html#finding-functions",
+    "title": "Getting Started",
+    "section": "Finding functions",
+    "text": "Finding functions\n\nTo find indexed functions for a package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nGoogle it with a good set of keywords.\nThe recent trend is ask generative AI."
+  },
+  {
+    "objectID": "slides/slide1.html#base-r",
+    "href": "slides/slide1.html#base-r",
+    "title": "Getting Started",
+    "section": "Base R",
+    "text": "Base R\n\n\n\n\n\n\nR has 7 packages, collectively referred to as the “base R”, that are loaded automatically when you launch it.\nThe functions in the base packages are generally well-tested and trustworthy."
+  },
+  {
+    "objectID": "slides/slide1.html#contributed-r-packages",
+    "href": "slides/slide1.html#contributed-r-packages",
+    "title": "Getting Started",
+    "section": "Contributed R Packages",
+    "text": "Contributed R Packages\n\n\n\n\nR packages are community developed extensions to R (much like apps on your mobile).\nThe Comprehensive R Archive Network (CRAN) is a volunteer maintained repository that hosts submitted R packages that are approved (much like an app store).\nThere are close to 20,000 packages available on CRAN but the qualities of R packages vary.\nThere are other repositories that host R packages, e.g. Bioconductor for bioinformatics, R Universe, R-Forge, GitHub (we won’t cover these).\n\n\n\n\n\nPhoto by Sara Kurfeß on Unsplash"
+  },
+  {
+    "objectID": "slides/slide1.html#using-packages-on-cran",
+    "href": "slides/slide1.html#using-packages-on-cran",
+    "title": "Getting Started",
+    "section": "Using packages on CRAN",
+    "text": "Using packages on CRAN\n\n\nIf the package (say praise) is on CRAN, you can install it by:\n\ninstall.packages(\"praise\")\n\nYou only need to install.packages() once!\n\n\n\n\nLoading exported functions from a package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nUse package::function() for without loading package:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide1.html#summary",
+    "href": "slides/slide1.html#summary",
+    "title": "Getting Started",
     "section": "Summary",
-    "text": "Summary\n\nYou can use readr::read_csv() to read CSV files.\nYou can use readxl::read_xlsx() to read Excel files.\nSave a single R object using saveRDS() (recommended) and multiple objects using save().\nIn RStudio Desktop, you can click on the file for importing via GUI.\nSet up R Projects and use relative path to data files."
+    "text": "Summary\n\n\nRStudio Desktop (or RStudio IDE)\n\n\n\n\n\nConsole or Source\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nUse install.packages() to install a package (only once).\nUse library() to load a package.\nUse package::function() to use a function from a package without loading it."
   },
   {
-    "objectID": "slides/slide3.html#data-import-cheatsheet",
-    "href": "slides/slide3.html#data-import-cheatsheet",
-    "title": "Reading and writing data",
-    "section": "Data Import Cheatsheet",
-    "text": "Data Import Cheatsheet\n\n\n\n\n\n\n\n\n Data Import Cheatsheet"
+    "objectID": "slides/slide1.html#rstudio-desktop-cheatsheet",
+    "href": "slides/slide1.html#rstudio-desktop-cheatsheet",
+    "title": "Getting Started",
+    "section": "RStudio Desktop Cheatsheet",
+    "text": "RStudio Desktop Cheatsheet\n\n\n\n\n\n\n\n\n RStudio Desktop Cheatsheet"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to R programming",
+    "section": "",
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop is designed to introduce participants to the fundamentals of using R for basic computations. It is suitable for individuals with no prior experience in R or those seeking a refresher in R. Familiarity with basic summary statistics (mean, median, standard deviation, quartiles, etc.) is assumed. It’s important to note that this workshop alone is not sufficient to practice data analysis. Attendees are encouraged to also participate in the Data Wrangling with R (Part 1) and Data Visualization with R (Part 1) workshops to acquire essential skills for contemporary data wrangling and visualization practices.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Introduction to R programming",
+    "section": "",
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop is designed to introduce participants to the fundamentals of using R for basic computations. It is suitable for individuals with no prior experience in R or those seeking a refresher in R. Familiarity with basic summary statistics (mean, median, standard deviation, quartiles, etc.) is assumed. It’s important to note that this workshop alone is not sufficient to practice data analysis. Attendees are encouraged to also participate in the Data Wrangling with R (Part 1) and Data Visualization with R (Part 1) workshops to acquire essential skills for contemporary data wrangling and visualization practices."
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Introduction to R programming",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nUpon completion of the workshop, participants should be able to:\n\nConduct elementary arithmetic operations using R\nNavigate the RStudio interactive development environment (IDE)\nInstall external packages in R to extend functionality\nComprehend various object types in R\nManipulate lists, matrices, and vectors in R\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\nGrasp the concept of missing values within the R environment\nImport and export data in R\nCreate basic functions, employ conditional statements, and utilize for loops in R\nDecipher error messages and do basic troubleshooting"
+  },
+  {
+    "objectID": "index.html#preperation",
+    "href": "index.html#preperation",
+    "title": "Introduction to R programming",
+    "section": "Preperation",
+    "text": "Preperation\nYou will need a laptop that can connect to the internet during the workshop. Please ensure that you download and install\n\nthe latest version of R,\nthe latest version of RStudio Desktop,\n(Optional) Slack (alternatively you can use the web version), and\n\n If you are having issues, ask in the slack channel or talk to the teaching team during the workshop.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
+  },
+  {
+    "objectID": "index.html#teaching-team",
+    "href": "index.html#teaching-team",
+    "title": "Introduction to R programming",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\n\nDr. Emi TanakaJeremias IvanRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+  },
+  {
+    "objectID": "index.html#materials",
+    "href": "index.html#materials",
+    "title": "Introduction to R programming",
+    "section": "Materials",
+    "text": "Materials\nThe materials can be found here.\n   \nThese materials are shared under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+  },
+  {
+    "objectID": "next-time.html",
+    "href": "next-time.html",
+    "title": "[ANU BDSI<br>workshop]{.tag-label} Introduction to R programming",
+    "section": "",
+    "text": "This website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "slides/slide2.html#current-learning-objective",
+    "href": "slides/slide2.html#current-learning-objective",
+    "title": "Working with objects",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\n\n\n-Conduct elementary arithmetic operations using R\n\n\n-Navigate the RStudio interactive development environment (IDE)\n\n\n-Install external packages in R to extend functionality\n\n\nComprehend various object types in R\n\n\nManipulate lists, matrices, and vectors in R\n\n\nCompute basic summary statistics including mean, median, quartiles, and standard deviation using R\n\n\nGrasp the concept of missing values within the R environment\n\n\n-Import and export data in R\n\n\n-Create basic functions, employ conditional statements, and utilize for loops in R\n\n\n-Decipher error messages and do basic troubleshooting"
+  },
+  {
+    "objectID": "slides/slide2.html#using-r-as-a-calculator",
+    "href": "slides/slide2.html#using-r-as-a-calculator",
+    "title": "Working with objects",
+    "section": "Using R as a calculator",
+    "text": "Using R as a calculator\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nBut we want to save results to reuse later!"
+  },
+  {
+    "objectID": "slides/slide2.html#assignment",
+    "href": "slides/slide2.html#assignment",
+    "title": "Working with objects",
+    "section": "Assignment",
+    "text": "Assignment\n\n\nYou can assign values to objects using &lt;- or = or even -&gt;\nJust be consistent which one you use!\nThe name of the object can be variable so long as it is syntactically valid (no spaces and most special characters, and the name cannot start with a digit)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#vectors",
+    "href": "slides/slide2.html#vectors",
+    "title": "Working with objects",
+    "section": "Vectors",
+    "text": "Vectors\n\nWe can combine scalars to form vectors using c():\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nThis is a vector of length 3\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nThis vector is stored as a double with the class as numeric\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#vector-types",
+    "href": "slides/slide2.html#vector-types",
+    "title": "Working with objects",
+    "section": "Vector types",
+    "text": "Vector types\n\nThere are four primary types of atomic vectors: logical, integer, double and character.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nThe integer and double vectors are collectively called numeric vectors."
+  },
+  {
+    "objectID": "slides/slide2.html#vector",
+    "href": "slides/slide2.html#vector",
+    "title": "Working with objects",
+    "section": "Vector",
+    "text": "Vector\n\nA vector can only consist of the same type\nIf you attempt to combine mismatched types together, it will try to coerce all values to the same type.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#casting-to-other-types",
+    "href": "slides/slide2.html#casting-to-other-types",
+    "title": "Working with objects",
+    "section": "Casting to other types",
+    "text": "Casting to other types\n\nE.g., as.numeric() tries to coerce input to numeric value.\nIf a logical value is coerced to numeric or integer, then\n\nTRUE is 1 and\nFALSE is 0.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#factor",
+    "href": "slides/slide2.html#factor",
+    "title": "Working with objects",
+    "section": "Factor",
+    "text": "Factor\n\nA factor in R is a special type of integer vector used typically to encode categorical variables.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#lists",
+    "href": "slides/slide2.html#lists",
+    "title": "Working with objects",
+    "section": "Lists",
+    "text": "Lists\n\nLists allow to combine elements of different types.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nYou can use str() to see the internal structure of an object in R.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#data-frames",
+    "href": "slides/slide2.html#data-frames",
+    "title": "Working with objects",
+    "section": "Data frames",
+    "text": "Data frames\n\ndata.frame is a special type of a named list where each element of the vector is the same length.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#subsetting-vectors-part-1",
+    "href": "slides/slide2.html#subsetting-vectors-part-1",
+    "title": "Working with objects",
+    "section": "Subsetting vectors Part 1",
+    "text": "Subsetting vectors Part 1\n\nPositive integers select elements at the specified positions:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nNegative integers exclude elements at the specified positions:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#subsetting-vectors-part-2",
+    "href": "slides/slide2.html#subsetting-vectors-part-2",
+    "title": "Working with objects",
+    "section": "Subsetting vectors Part 2",
+    "text": "Subsetting vectors Part 2\n\nLogical vectors select elements where logical value is TRUE.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nIf the logical vector used for subsetting a vector is shorter than it then the logical vector is recycled to match the length of the vector.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#subsetting-named-vectors",
+    "href": "slides/slide2.html#subsetting-named-vectors",
+    "title": "Working with objects",
+    "section": "Subsetting named vectors",
+    "text": "Subsetting named vectors\n\nCharacter vectors select elements based on the name of the vector (if any):\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#subsetting-lists",
+    "href": "slides/slide2.html#subsetting-lists",
+    "title": "Working with objects",
+    "section": "Subsetting lists",
+    "text": "Subsetting lists\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#subsetting-named-lists",
+    "href": "slides/slide2.html#subsetting-named-lists",
+    "title": "Working with objects",
+    "section": "Subsetting named lists",
+    "text": "Subsetting named lists\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#subsetting-data-frames",
+    "href": "slides/slide2.html#subsetting-data-frames",
+    "title": "Working with objects",
+    "section": "Subsetting data frames",
+    "text": "Subsetting data frames\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#numerical-summaries",
+    "href": "slides/slide2.html#numerical-summaries",
+    "title": "Working with objects",
+    "section": "Numerical summaries",
+    "text": "Numerical summaries\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#missing-values",
+    "href": "slides/slide2.html#missing-values",
+    "title": "Working with objects",
+    "section": "Missing values",
+    "text": "Missing values\n\n\nNA in R denotes missing values – there are in fact different types of missing values (NA_character_, NA_integer_, NA_real_, NA_complex_).\n\n\n\n\nWhen there are missing values, it can cause issues in the computation.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nBelow we remove the missing values:\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slides/slide2.html#summary",
+    "href": "slides/slide2.html#summary",
+    "title": "Working with objects",
+    "section": "Summary",
+    "text": "Summary\n\nFour primary types of atomic vectors: logical, integer, double and character.\nA vector can only consist of the same type.\nOther objects types: factor, list, and data.frame.\nThere were several ways of subsetting vectors and lists.\nCalculating some basic numerical summaries.\nMissing values represented as NA and may need to be handled specially."
+  },
+  {
+    "objectID": "slides/slide2.html#base-r-cheatsheet",
+    "href": "slides/slide2.html#base-r-cheatsheet",
+    "title": "Working with objects",
+    "section": "Base R Cheatsheet",
+    "text": "Base R Cheatsheet\n\n\n\n\n\n\n\n\n Base R Cheatsheet"
+  },
+  {
+    "objectID": "slides/slide-end.html#how-to-get-better-at-r",
+    "href": "slides/slide-end.html#how-to-get-better-at-r",
+    "title": "Wrap-up",
+    "section": "How to get better at R?",
+    "text": "How to get better at R?\nPRACTICE\n\nPractice with a purpose (e.g. using R on your own data).\nTry teaching and helping others with their R problem.\nHave a willingness to continuously learn and adapt.\n\nR is an ever evolving language (check the release news every so often),\nnew features and packages are added very frequently,\nwhether you are a beginner or not, there are always things we do not know about R."
+  },
+  {
+    "objectID": "slides/slide-end.html#resources",
+    "href": "slides/slide-end.html#resources",
+    "title": "Wrap-up",
+    "section": "Resources",
+    "text": "Resources\n\nR for Data Science\nR4DS Online Learning Community\nAsk questions on Stack Overflow or Posit Community."
+  },
+  {
+    "objectID": "slides/slide-end.html#local-resources",
+    "href": "slides/slide-end.html#local-resources",
+    "title": "Wrap-up",
+    "section": "Local Resources",
+    "text": "Local Resources\n\nR-Ladies Canberra Meetup\nAsk the local experts such as at the\n\nBDSI Drop-In Sessions and\nANU Statistical Support Network.\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
+  },
+  {
+    "objectID": "slides/slide-end.html#feedback",
+    "href": "slides/slide-end.html#feedback",
+    "title": "Wrap-up",
+    "section": "Feedback",
+    "text": "Feedback\n\nPlease complete this completely anonymous survey for us!\n\n\n\n\n\nWhat worked or didn’t work for you?\nWhat other workshops?\nTell us at  workshop.bdsi@anu.edu.au\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-to-R/"
   },
   {
     "objectID": "slides/slide5.html#how-to-get-better-at-r",
