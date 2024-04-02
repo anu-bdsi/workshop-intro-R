@@ -10,7 +10,9 @@ format:
     auto-stretch: false
     html-math-method: katex
     self-contained: false
-    css: assets/custom.css
+    css: 
+     - assets/custom.css
+     - assets/table.css
     footer: anu-bdsi.github.io/workshop-intro-R/
 author: Emi Tanaka
 institute: Biological Data Science Institute
@@ -31,7 +33,9 @@ library(tidyverse)
 library(plotly)
 library(crosstalk)
 theme_set(theme_classic(base_size = 24))
+source("setup.R")
 ```
+
 
 # Welcome 👋
 
@@ -72,14 +76,40 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 ![](/images/qrcode-intro-r-programming.png)
 </center>
 
+## 🕙 Schedule
+
+```{r}
+#| echo: false
+ex_tabset <- function(id) {
+  paste0("_Exercise ", id, "_")
+}
+
+slide_title <- function(id) {
+ paste0("**", rmarkdown::yaml_front_matter(paste0("slide", id, ".qmd"))$title, "**")
+}
+
+start <- dmy_hms("03/04/2024 10.00.00")
+timedisplay <- function(duration) {
+  end <- start + duration(duration, units = "minutes")
+  ret <- paste0(format(start, "%H:%M"), "--", format(end, "%H:%M"))
+  start <<- end
+  ret
+}
+
+content |> 
+  rowwise() |> 
+  mutate(Time = timedisplay(time)) |> 
+  mutate(Content = switch(type,
+                              "exercise" = ex_tabset(content_id),
+                              "slide" = slide_title(content_id),
+                              "break" = "_Break_")) |>
+  select(Time, Content) |> 
+  knitr::kable()
+```
 
 ## Learning objectives
 
-```{r}
-#| include: false
-library(tidyverse)
-source("setup.R")
-```
+
 
 
 ::: f1
