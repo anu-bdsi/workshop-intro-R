@@ -49,7 +49,7 @@ The following operations were not shown in the slides so you will need to find t
 
 **Installing R packages**
 
-- Which function installs an R package on CRAN? `r mcq(c(answer = "install.pacakges", "library"))`
+- Which function installs an R package from CRAN? `r mcq(c(answer = "install.pacakges", "library"))`
 - Which function loads an R package into your system? `r mcq(c("install.pacakges", answer = "library"))`
 -  On your own laptop, install the following packages: 
     - `praise`, 
