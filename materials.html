@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.545">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -235,7 +235,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"\n\n","id":1,"options":{"fig-cap":"","results":"markup","context":"interactive","out-width":"700px","message":"true","warning":"true","autorun":"false","classes":"","read-only":"false","out-height":"","label":"unnamed-chunk-1","fig-height":5,"comment":"","dpi":72,"output":"true","fig-width":7}},{"code":"PlantGrowth\ninfert\nHarman23.cor","id":2,"options":{"fig-cap":"","results":"markup","context":"interactive","out-width":"700px","message":"true","warning":"true","autorun":"false","classes":"","read-only":"false","out-height":"","label":"unnamed-chunk-2","fig-height":5,"comment":"","dpi":72,"output":"true","fig-width":7}},{"code":"cor.test(cars$speed, cars$dist)\ncor.test(cars$speed, cars$dist)$p.value # to get the p-value","id":3,"options":{"fig-cap":"","results":"markup","context":"interactive","out-width":"700px","message":"true","warning":"true","autorun":"false","classes":"","read-only":"false","out-height":"","label":"unnamed-chunk-3","fig-height":5,"comment":"","dpi":72,"output":"true","fig-width":7}},{"code":"num_distinct <- function(x) {\n  length(unique(x))\n}\n","id":4,"options":{"fig-cap":"","results":"markup","context":"interactive","out-width":"700px","message":"true","warning":"true","autorun":"false","classes":"","read-only":"false","out-height":"","label":"unnamed-chunk-4","fig-height":5,"comment":"","dpi":72,"output":"true","fig-width":7}},{"code":"pairs_df <- expand.grid(var1 = names(mtcars), var2 = names(mtcars))\npairs_df$p_value <- NA_real_\n\nfor(i in 1:nrow(pairs_df)) {\n  x1 <- mtcars[[pairs_df$var1[i]]]\n  x2 <- mtcars[[pairs_df$var2[i]]]\n  \n  if(num_distinct(x1) > 3 & num_distinct(x2) > 3) {\n    pairs_df$p_value[i] <- cor.test(x1, x2)$p.value\n  }\n}\n\npairs_df","id":5,"options":{"fig-cap":"","results":"markup","context":"interactive","out-width":"700px","message":"true","warning":"true","autorun":"false","classes":"","read-only":"false","out-height":"","label":"unnamed-chunk-5","fig-height":5,"comment":"","dpi":72,"output":"true","fig-width":7}}];
+globalThis.qwebrCellDetails = [{"id":1,"options":{"fig-height":5,"autorun":"false","out-width":"700px","results":"markup","dpi":72,"output":"true","label":"unnamed-chunk-1","read-only":"false","context":"interactive","out-height":"","classes":"","warning":"true","message":"true","comment":"","fig-width":7,"fig-cap":""},"code":"\n\n"},{"id":2,"options":{"fig-height":5,"autorun":"false","out-width":"700px","results":"markup","dpi":72,"output":"true","label":"unnamed-chunk-2","read-only":"false","context":"interactive","out-height":"","classes":"","warning":"true","message":"true","comment":"","fig-width":7,"fig-cap":""},"code":"PlantGrowth\ninfert\nHarman23.cor"},{"id":3,"options":{"fig-height":5,"autorun":"false","out-width":"700px","results":"markup","dpi":72,"output":"true","label":"unnamed-chunk-3","read-only":"false","context":"interactive","out-height":"","classes":"","warning":"true","message":"true","comment":"","fig-width":7,"fig-cap":""},"code":"cor.test(cars$speed, cars$dist)\ncor.test(cars$speed, cars$dist)$p.value # to get the p-value"},{"id":4,"options":{"fig-height":5,"autorun":"false","out-width":"700px","results":"markup","dpi":72,"output":"true","label":"unnamed-chunk-4","read-only":"false","context":"interactive","out-height":"","classes":"","warning":"true","message":"true","comment":"","fig-width":7,"fig-cap":""},"code":"num_distinct <- function(x) {\n  length(unique(x))\n}\n"},{"id":5,"options":{"fig-height":5,"autorun":"false","out-width":"700px","results":"markup","dpi":72,"output":"true","label":"unnamed-chunk-5","read-only":"false","context":"interactive","out-height":"","classes":"","warning":"true","message":"true","comment":"","fig-width":7,"fig-cap":""},"code":"pairs_df <- expand.grid(var1 = names(mtcars), var2 = names(mtcars))\npairs_df$p_value <- NA_real_\n\nfor(i in 1:nrow(pairs_df)) {\n  x1 <- mtcars[[pairs_df$var1[i]]]\n  x2 <- mtcars[[pairs_df$var2[i]]]\n  \n  if(num_distinct(x1) > 3 & num_distinct(x2) > 3) {\n    pairs_df$p_value[i] <- cor.test(x1, x2)$p.value\n  }\n}\n\npairs_df"}];
 
 </script>
 <script type="module">
@@ -1337,7 +1337,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>The following operations were not shown in the slides so you will need to find the relevant functions yourself. How would you find these? Once you find the relevant functions, compute the following values in R and enter the value in the corresponding box.</p>
 <ul>
 <li>What is <span class="math inline">\(10! = 10\times 9 \times 8 \times \cdots \times 2 \times 1\)</span>? This operation is referred to as “factorial”. <input class="webex-solveme nospaces" size="7" data-answer="[&quot;3628800&quot;]"></li>
-<li>What is <span class="math inline">\(\cos\left(\frac{2}{3}\pi\right) + \sin(-\pi)\)</span> to two decimal places? <input class="webex-solveme nospaces" size="4" data-answer="[&quot;1.39&quot;]"></li>
+<li>What is <span class="math inline">\(\cos\left(\frac{2}{3}\pi\right) + \sin(-\pi)\)</span> to two decimal places? <input class="webex-solveme nospaces" size="4" data-answer="[&quot;-0.5&quot;,&quot;-.5&quot;]"></li>
 <li>The <span class="math inline">\(\lfloor x \rfloor\)</span> denotes the floor function (the largest integer such that it is smaller or equal to <span class="math inline">\(x\)</span>) and <span class="math inline">\(\lceil x \rceil\)</span> denotes the ceiling function (the smallest integer such that it is larger or equal to <span class="math inline">\(x\)</span>). What is <span class="math inline">\(\lfloor \frac{1}{4} \pi \rfloor + \lceil \pi e \rceil\)</span>? <input class="webex-solveme nospaces" size="1" data-answer="[&quot;9&quot;]"></li>
 </ul>
 <p><strong>Installing R packages</strong></p>
@@ -1875,24 +1875,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/anu-bdsi\.github\.io\/workshop-intro-R\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1927,11 +1909,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
