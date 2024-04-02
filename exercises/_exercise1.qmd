@@ -43,7 +43,7 @@ Using R either on your laptop or above console, compute the following values and
 The following operations were not shown in the slides so you will need to find the relevant functions yourself. How would you find these? Once you find the relevant functions, compute the following values in R and enter the value in the corresponding box.
 
 - What is $10! = 10\times 9 \times 8 \times \cdots \times 2 \times 1$? This operation is referred to as "factorial".   `r fitb(factorial(10))`
-- What is $\cos\left(\frac{2}{3}\pi\right) + \sin(-\pi)$ to two decimal places?  `r fitb(round(cospi(2/3 * pi) + sinpi(-pi), 2))`
+- What is $\cos\left(\frac{2}{3}\pi\right) + \sin(-\pi)$ to two decimal places?  `r fitb(round(cos(2/3 * pi) + sin(-pi), 2))`
 - The $\lfloor x \rfloor$  denotes the floor function (the largest integer such that it is smaller or equal to $x$) and $\lceil x \rceil$ denotes the ceiling function (the smallest integer such that it is larger or equal to $x$). What is $\lfloor \frac{1}{4} \pi \rfloor + \lceil \pi e \rceil$? `r fitb(floor(1/4 * pi) + ceiling(pi * exp(1)))`
 
 
