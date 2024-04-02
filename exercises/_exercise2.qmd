@@ -44,7 +44,7 @@ Identify the object class for the following variables:
 **Compute summary statistics**
 
 - What is the median weight of plants in the control group in  `PlantGrowth` data? `r fitb(median(PlantGrowth$weight[PlantGrowth$group=="ctrl"]))`
-- What is the total number of cases (`case = 1`) in infertility after spontaneous _and_ induced abortion in the `infert` data? `r fitb(sum(infert$case[infert$induced > 0 & infert$spontaneous]))`
+- What is the total number of cases (`case = 1`) in infertility after spontaneous _and_ induced abortion in the `infert` data? `r fitb(sum(infert$case[infert$induced > 0 & infert$spontaneous > 0]))`
 - What is the 20th value in the `education` variable in `infert` data? `r fitb(as.character(infert$education[20]))`
 - What is the value in the fifth row, fifth column in the `cov` matrix in `Harman23.cor` data? `r fitb(Harman23.cor$cov[5, 5])`
 - What is the mean ozone value in `airquality` data to two decimal places? `r fitb(round(mean(airquality$Ozone, na.rm = TRUE), 2))`
