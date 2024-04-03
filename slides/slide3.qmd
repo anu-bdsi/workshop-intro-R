@@ -18,6 +18,9 @@ filters:
   - webr
 webr: 
   show-startup-message: false  
+  packages:
+    - readr
+    - readxl
 ---
 
 
